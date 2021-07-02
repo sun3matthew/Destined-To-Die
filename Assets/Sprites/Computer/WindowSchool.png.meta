@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: f6cc25328d42d453cbc7a1c9fe3f3cb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 893694970804947290
+    second: WindowSchool_0
+  - first:
+      213: 6208361883964789759
+    second: WindowSchool_1
+  - first:
+      213: -296989709977686863
+    second: WindowSchool_2
+  - first:
+      213: 6157974629409289041
+    second: WindowSchool_3
+  - first:
+      213: -6508557522879968350
+    second: WindowSchool_4
+  - first:
+      213: -2795691470395794816
+    second: WindowSchool_5
+  - first:
+      213: -1916158546112794954
+    second: WindowSchool_6
+  - first:
+      213: 7145901013246632918
+    second: WindowSchool_7
+  - first:
+      213: 5976278857590303641
+    second: WindowSchool_8
+  - first:
+      213: 3421988737679488374
+    second: WindowSchool_9
+  - first:
+      213: 7099058225344357753
+    second: WindowSchool_10
+  - first:
+      213: 5028344988180666752
+    second: WindowSchool_11
+  - first:
+      213: 1501453000487800443
+    second: WindowSchool_12
+  - first:
+      213: 2985084805990823239
+    second: WindowSchool_13
+  - first:
+      213: 8152863972316579597
+    second: WindowSchool_14
+  - first:
+      213: -8354378160464100645
+    second: WindowSchool_15
+  - first:
+      213: 5773619231590542049
+    second: WindowSchool_16
+  - first:
+      213: -2196748910673559964
+    second: WindowSchool_17
+  - first:
+      213: -7496224367974884404
+    second: WindowSchool_18
+  - first:
+      213: -6875488935094121354
+    second: WindowSchool_19
+  - first:
+      213: -2639393713391960734
+    second: WindowSchool_20
+  - first:
+      213: -6105474264291202012
+    second: WindowSchool_21
+  - first:
+      213: -7414964826183738694
+    second: WindowSchool_22
+  - first:
+      213: -8559948850578642156
+    second: WindowSchool_23
+  - first:
+      213: 4599028778009553763
+    second: WindowSchool_24
+  - first:
+      213: -4923797381227244348
+    second: WindowSchool_25
+  - first:
+      213: -1584657546204645528
+    second: WindowSchool_26
+  - first:
+      213: 7684298406246730681
+    second: WindowSchool_27
+  - first:
+      213: 8564089435955832500
+    second: WindowSchool_28
+  - first:
+      213: -3770299320756641958
+    second: WindowSchool_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowSchool_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5511cfb6662d4bf7a864b14baa0005c
+      internalID: 893694970804947290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1020
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ac8122a91654719a2d72c724c8e881
+      internalID: 6208361883964789759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1020
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c623386ed75481d82be6a88ce4c567
+      internalID: -296989709977686863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1020
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5341a69bb582d41f8b7112728dc1cd74
+      internalID: 6157974629409289041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1020
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adecced13c3df4bf894905b5bb7276fc
+      internalID: -6508557522879968350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_5
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 1020
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dccaaf778ec47d78db1786a9cdef2a
+      internalID: -2795691470395794816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483fc13fecefb45a88aed47d1c061755
+      internalID: -1916158546112794954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 765
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cf29e7c8e0740f18bfeb77dfa78cbc
+      internalID: 7145901013246632918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 765
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db8278b7c84c4264b57f124d7dd162b
+      internalID: 5976278857590303641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 765
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38879b4b1ab564f5f9014f7a2585f2f0
+      internalID: 3421988737679488374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_10
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 765
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a76239faa0a04656bcce466e1aaa2ca
+      internalID: 7099058225344357753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_11
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 765
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3a566105e5c434b81c0f3976bb255a
+      internalID: 5028344988180666752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dd37fffd23641d5b79a76e037d72d7
+      internalID: 1501453000487800443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 510
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c1f18ffb4364c6ca3027ff8f2bb38e
+      internalID: 2985084805990823239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 510
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eb116dbddfd4708bd53a1c917094a5
+      internalID: 8152863972316579597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_15
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 510
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22f2c8c66e254b6f93e7b46364ffbe7
+      internalID: -8354378160464100645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_16
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 510
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef31b586332644429ae0c62d72e18ed
+      internalID: 5773619231590542049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_17
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 510
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8581376f886471a87a44988ced31b6
+      internalID: -2196748910673559964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48ea124b1f684651aff3a99cedcd46a
+      internalID: -7496224367974884404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 255
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65754412bdf5d4efcb9b156208a06f57
+      internalID: -6875488935094121354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_20
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 255
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5a297a3f0dc4d74ab1b8c1ad91462f
+      internalID: -2639393713391960734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_21
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 255
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78ede6dc9d52440b98c67d18610ef98
+      internalID: -6105474264291202012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_22
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 255
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0beed8e6a1f064a5384228e5fcd90f5d
+      internalID: -7414964826183738694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_23
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 255
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b87601bdba3242849b99381fdd4031f
+      internalID: -8559948850578642156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a60bf8253bdc4780a4b708cd9923e59
+      internalID: 4599028778009553763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_25
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbf76fcdcff44d92b1b087116b0f741
+      internalID: -4923797381227244348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_26
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1143b5fc3274dfa9a091e41ebd2b74
+      internalID: -1584657546204645528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_27
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 0
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70be6ddb93e264ad4afef1bc7e77b340
+      internalID: 7684298406246730681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_28
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 0
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e170d9e51b6547c198f6e583b388c6f
+      internalID: 8564089435955832500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSchool_29
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 0
+        width: 271
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7644f29be12034661a3f6915aea6a39a
+      internalID: -3770299320756641958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 57fdc58f993eb4208b03a55a95c3ac3a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

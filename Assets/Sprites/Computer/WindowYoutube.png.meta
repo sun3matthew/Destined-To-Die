@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 4c441d542d8f14009854cbb902ffe6f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1307650653026213662
+    second: WindowYoutube_0
+  - first:
+      213: -2922669998098161945
+    second: WindowYoutube_1
+  - first:
+      213: 8205425873367565732
+    second: WindowYoutube_2
+  - first:
+      213: -3733669475804625440
+    second: WindowYoutube_3
+  - first:
+      213: 2259390551608896805
+    second: WindowYoutube_4
+  - first:
+      213: -7552113968595541201
+    second: WindowYoutube_5
+  - first:
+      213: -3816922403421568243
+    second: WindowYoutube_6
+  - first:
+      213: 8548179185260289107
+    second: WindowYoutube_7
+  - first:
+      213: 3095035431039960828
+    second: WindowYoutube_8
+  - first:
+      213: 8942962237382956542
+    second: WindowYoutube_9
+  - first:
+      213: 2663278357264977790
+    second: WindowYoutube_10
+  - first:
+      213: -4993859986321589725
+    second: WindowYoutube_11
+  - first:
+      213: 4272222234797164291
+    second: WindowYoutube_12
+  - first:
+      213: 365200500273566341
+    second: WindowYoutube_13
+  - first:
+      213: 1030709219628321539
+    second: WindowYoutube_14
+  - first:
+      213: -3068282176912204528
+    second: WindowYoutube_15
+  - first:
+      213: 8702561339134347024
+    second: WindowYoutube_16
+  - first:
+      213: 7617011876644081351
+    second: WindowYoutube_17
+  - first:
+      213: 6554669882588040504
+    second: WindowYoutube_18
+  - first:
+      213: 5224755578266941793
+    second: WindowYoutube_19
+  - first:
+      213: 8575712453945461094
+    second: WindowYoutube_20
+  - first:
+      213: -4760436377141231538
+    second: WindowYoutube_21
+  - first:
+      213: 5374205061067880916
+    second: WindowYoutube_22
+  - first:
+      213: 7121724702235012032
+    second: WindowYoutube_23
+  - first:
+      213: 3006738921168759192
+    second: WindowYoutube_24
+  - first:
+      213: 5166140594414819475
+    second: WindowYoutube_25
+  - first:
+      213: -116585721146168730
+    second: WindowYoutube_26
+  - first:
+      213: 6343905670029014851
+    second: WindowYoutube_27
+  - first:
+      213: 7068643119466114361
+    second: WindowYoutube_28
+  - first:
+      213: 7336046200958788199
+    second: WindowYoutube_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowYoutube_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 776
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aca5c30bf0a34bcb8de241c5dc613d1
+      internalID: 1307650653026213662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 776
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7650b447201da4dc8a1e875f569e9314
+      internalID: -2922669998098161945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 776
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b267af900524caf8fe14036cc06a38
+      internalID: 8205425873367565732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 776
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ec6dd44ff5349f7a7897458361efb6
+      internalID: -3733669475804625440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 776
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9984c1991416941f9a97ad1fa6b9e2a2
+      internalID: 2259390551608896805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 776
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7bea100686c4ebe940e6c84b0bf761
+      internalID: -7552113968595541201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 582
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1737e61efc23742b59eea89e6dc3cb2e
+      internalID: -3816922403421568243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 582
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46eb6c7b460244601abe2c3b0716d0bb
+      internalID: 8548179185260289107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 582
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcbc72da5f7547af8e05cb3da861b51
+      internalID: 3095035431039960828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 582
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aedc36d5a282473a9c38aeb78c59c44
+      internalID: 8942962237382956542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 582
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd2454be39b942ac90070a00e2b5bf6
+      internalID: 2663278357264977790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 582
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08c83254643544c983be97e97a69742
+      internalID: -4993859986321589725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9b2518a156949528e919d8e9a63cc2
+      internalID: 4272222234797164291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 388
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43d139a35b19432787a4cc827a16d90
+      internalID: 365200500273566341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 388
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360aeadce57dd4b5da2718d7a32499c0
+      internalID: 1030709219628321539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 388
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73113a818f0ee455b98e9d1972a67a42
+      internalID: -3068282176912204528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_16
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 388
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1da162adad1475cbd3cc42e79533f6
+      internalID: 8702561339134347024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 388
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7b08a02a4f54333958eea0eccd5109
+      internalID: 7617011876644081351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cfe2e89729e4d85a80235ffb114a46
+      internalID: 6554669882588040504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 194
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a611292a3d84024b7e8761964a5114
+      internalID: 5224755578266941793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_20
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 194
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089464994b9f64d65a6f53a30338521d
+      internalID: 8575712453945461094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_21
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 194
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be5733f6cf8e48f195b58d8e78beb25
+      internalID: -4760436377141231538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_22
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 194
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8130944b17f14b46878e885408d0d0f
+      internalID: 5374205061067880916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_23
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 194
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c89738d419844115a28e3ea50c7d679
+      internalID: 7121724702235012032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910810cfcedb94b4ab96f42d487f11a0
+      internalID: 3006738921168759192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45f6eaf74264424c940ce68c689ddef
+      internalID: 5166140594414819475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_26
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8008be4a3fde45f2a1baf60843f4a36
+      internalID: -116585721146168730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_27
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be8141db759f411891a3ae533f37bc9
+      internalID: 6343905670029014851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_28
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c9849d92b66452db8eabfb6006b3fe
+      internalID: 7068643119466114361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowYoutube_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 280
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4318029319e4e46cbb71632502a16aa5
+      internalID: 7336046200958788199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0766e5a6cced8421cbb3839db0a260da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

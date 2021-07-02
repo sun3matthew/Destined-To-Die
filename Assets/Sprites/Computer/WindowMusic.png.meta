@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: b0d9eb3265bcb4250b99ebc9449dc242
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5795048974351662129
+    second: WindowMusic_0
+  - first:
+      213: 3071396522428709124
+    second: WindowMusic_1
+  - first:
+      213: -5639721819419080319
+    second: WindowMusic_2
+  - first:
+      213: 9218490807709346787
+    second: WindowMusic_3
+  - first:
+      213: -3532693527496832515
+    second: WindowMusic_4
+  - first:
+      213: -9102779674844238943
+    second: WindowMusic_5
+  - first:
+      213: 1602839327067251066
+    second: WindowMusic_6
+  - first:
+      213: 5197509243830677745
+    second: WindowMusic_7
+  - first:
+      213: -8731644488444080163
+    second: WindowMusic_8
+  - first:
+      213: 3587212393283282763
+    second: WindowMusic_9
+  - first:
+      213: -298397632652074959
+    second: WindowMusic_10
+  - first:
+      213: 852598500203608551
+    second: WindowMusic_11
+  - first:
+      213: 2014503311757106313
+    second: WindowMusic_12
+  - first:
+      213: 6477451082408522944
+    second: WindowMusic_13
+  - first:
+      213: 8725406769797642435
+    second: WindowMusic_14
+  - first:
+      213: -3666570870140982384
+    second: WindowMusic_15
+  - first:
+      213: 395920352741076546
+    second: WindowMusic_16
+  - first:
+      213: 8073166361612351339
+    second: WindowMusic_17
+  - first:
+      213: 715267608892218372
+    second: WindowMusic_18
+  - first:
+      213: 789153650138577281
+    second: WindowMusic_19
+  - first:
+      213: 5782690249087651078
+    second: WindowMusic_20
+  - first:
+      213: 7915032664073252573
+    second: WindowMusic_21
+  - first:
+      213: 6095940274828020103
+    second: WindowMusic_22
+  - first:
+      213: 3594127386962803972
+    second: WindowMusic_23
+  - first:
+      213: 6175540746275797527
+    second: WindowMusic_24
+  - first:
+      213: 3839749436268721484
+    second: WindowMusic_25
+  - first:
+      213: 6407030648323102634
+    second: WindowMusic_26
+  - first:
+      213: -5907182895951409167
+    second: WindowMusic_27
+  - first:
+      213: -8457687372149445184
+    second: WindowMusic_28
+  - first:
+      213: 1819578611508019078
+    second: WindowMusic_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowMusic_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5c5d8fb82c24f3193f299dacac91e8
+      internalID: 5795048974351662129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 496
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3831f2296a94cc49c76ebb19b33506
+      internalID: 3071396522428709124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 496
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59059f29c6a1044a0832aac64399435c
+      internalID: -5639721819419080319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 496
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430bd4b448de9499a81bd78d27fbc643
+      internalID: 9218490807709346787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_4
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 496
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea656a3d1f9e14ababe014d0dff412b7
+      internalID: -3532693527496832515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 496
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee9fa794c8a347fbab7eb902a274a6d
+      internalID: -9102779674844238943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f7b739167444de09b7b608e1911e90
+      internalID: 1602839327067251066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 372
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1730a4325dcb34c5eb02c99b3449d56b
+      internalID: 5197509243830677745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_8
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 372
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3559a614e3faf43aa9a1a46e29e4fb11
+      internalID: -8731644488444080163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 372
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22db38ea52bb549c4b3d89f67edaffb6
+      internalID: 3587212393283282763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_10
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 372
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa77346dad5742499d3827596022a86
+      internalID: -298397632652074959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_11
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 372
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e12f2c719cd4399bd6a96ae4cf7b34
+      internalID: 852598500203608551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4f9ddecb9da462688e75829cc1b8ea
+      internalID: 2014503311757106313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 248
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdc5abcb475e44979e30f5f1e309a4a
+      internalID: 6477451082408522944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_14
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 248
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79293cfe55e348f9a53efa176eb893c
+      internalID: 8725406769797642435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_15
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 248
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf15db102b9143168ec96249e557b46
+      internalID: -3666570870140982384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_16
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 248
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de97e08b696854cb6a8ee78d1ebf4b99
+      internalID: 395920352741076546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_17
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 248
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706ad96f94ec04719b40f102231c2a86
+      internalID: 8073166361612351339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95a33f269a2344daab6e4d042c41f19
+      internalID: 715267608892218372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 124
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a143298ad2246c5a065e44263055f7
+      internalID: 789153650138577281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_20
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 124
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79147b7e48914126a81af51f6a42d6c
+      internalID: 5782690249087651078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_21
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 124
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b58bbf36517941aeb14785706d6167e
+      internalID: 7915032664073252573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_22
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 124
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3ca13ee139c49798eaebec6d345a76
+      internalID: 6095940274828020103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_23
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 124
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0eda8bf723244f40adfb7111f76536c
+      internalID: 3594127386962803972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9699bbc0ad3c0468b9898e70cd6d0691
+      internalID: 6175540746275797527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72446b751ac5a4450a80abb57fc679b0
+      internalID: 3839749436268721484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_26
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e00c1a3ea3a4e088077b1f91bbfefe
+      internalID: 6407030648323102634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_27
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78845a818c3904e788064d51e2523974
+      internalID: -5907182895951409167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_28
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425456c0030494aa28e56a2c54fdb5db
+      internalID: -8457687372149445184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowMusic_29
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 79
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769bc8397227048baa1315d8d04d854d
+      internalID: 1819578611508019078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9f86a63fd82e044ebb757a448ff36644
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

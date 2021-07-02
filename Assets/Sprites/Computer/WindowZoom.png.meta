@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: b30d44f6dd68b46fd8cc5aa157d5d268
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8865838188300684553
+    second: WindowZoom_0
+  - first:
+      213: -6580548547440423151
+    second: WindowZoom_1
+  - first:
+      213: 7995208747094188463
+    second: WindowZoom_2
+  - first:
+      213: 4493658268442215410
+    second: WindowZoom_3
+  - first:
+      213: -3070703624703803397
+    second: WindowZoom_4
+  - first:
+      213: 7647140131407188226
+    second: WindowZoom_5
+  - first:
+      213: -1671661323684208741
+    second: WindowZoom_6
+  - first:
+      213: 1052828046949842989
+    second: WindowZoom_7
+  - first:
+      213: -4365456555771571093
+    second: WindowZoom_8
+  - first:
+      213: -94015441961104677
+    second: WindowZoom_9
+  - first:
+      213: -7440491455390606744
+    second: WindowZoom_10
+  - first:
+      213: 195300431432371622
+    second: WindowZoom_11
+  - first:
+      213: 4208380078224464140
+    second: WindowZoom_12
+  - first:
+      213: -17772841424798090
+    second: WindowZoom_13
+  - first:
+      213: -8770740021956564196
+    second: WindowZoom_14
+  - first:
+      213: 6468838434264446084
+    second: WindowZoom_15
+  - first:
+      213: 4844307965354920909
+    second: WindowZoom_16
+  - first:
+      213: -2685907247072302245
+    second: WindowZoom_17
+  - first:
+      213: -4487405099911407608
+    second: WindowZoom_18
+  - first:
+      213: -2614791630329591840
+    second: WindowZoom_19
+  - first:
+      213: -7256627262893604672
+    second: WindowZoom_20
+  - first:
+      213: -6050922160067701947
+    second: WindowZoom_21
+  - first:
+      213: 5718644454499905825
+    second: WindowZoom_22
+  - first:
+      213: 1935007525905105949
+    second: WindowZoom_23
+  - first:
+      213: -4615520023184014416
+    second: WindowZoom_24
+  - first:
+      213: 2849491597414949470
+    second: WindowZoom_25
+  - first:
+      213: 7761813419694582202
+    second: WindowZoom_26
+  - first:
+      213: -1586749972938466063
+    second: WindowZoom_27
+  - first:
+      213: 4715270948612152459
+    second: WindowZoom_28
+  - first:
+      213: -287531642728870978
+    second: WindowZoom_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowZoom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 904
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef5a2fc17c244fbca425afc1bb7289c
+      internalID: -8865838188300684553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 904
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1307b874f204409eb2f35d01386b1cb
+      internalID: -6580548547440423151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 904
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efa95e2ade984254b21805d5a7280e6
+      internalID: 7995208747094188463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_3
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 904
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f112d475f574274978ef79034732d5
+      internalID: 4493658268442215410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_4
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 904
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cb86926a07b4e19999bd63e55578fa
+      internalID: -3070703624703803397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_5
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 904
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a38bb070c6343938b8af3a7722d51e
+      internalID: 7647140131407188226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 678
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b26fb9061084c409c924dfb61d6e25
+      internalID: -1671661323684208741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 678
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72c29ac0e78146dd8bfd8404baea93f
+      internalID: 1052828046949842989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_8
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 678
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c203465445594453e9e3bdd6bcf9cb6b
+      internalID: -4365456555771571093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_9
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 678
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3012ae2c6954086a59eaaf8c3e2134
+      internalID: -94015441961104677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_10
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 678
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e186788365b4a5484867879f93d49e
+      internalID: -7440491455390606744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_11
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 678
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89b74fa1f8d2424b8a354ed6c40eadb
+      internalID: 195300431432371622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c1701d655bc497598227cc2a873244
+      internalID: 4208380078224464140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 452
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a8fdc373e7c46a08eafe6356300faf
+      internalID: -17772841424798090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 452
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a7cd63541b741cc95c22dafb5b1ef9
+      internalID: -8770740021956564196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_15
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 452
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a996d94ba0184cbaad7590522aeb7af
+      internalID: 6468838434264446084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_16
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 452
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e18fd46aebfb457cabd63a2db8f6c52
+      internalID: 4844307965354920909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_17
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 452
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ebf7e3f166c4a3aae57f682bf30f9b
+      internalID: -2685907247072302245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fe41f8e6e8a40c49277007544e148d
+      internalID: -4487405099911407608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 226
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5030b0b1cf81e469fb6e15b0eb439f01
+      internalID: -2614791630329591840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_20
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 226
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d80e8cc13e14cccbcc86f99f0be2e8
+      internalID: -7256627262893604672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_21
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 226
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9766691f2eef48eda53c4a89c40a694
+      internalID: -6050922160067701947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_22
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 226
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436ecdea950b44ad19f5bff5ed3c824e
+      internalID: 5718644454499905825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_23
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 226
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4203dbcb6054400290ecedf29974538
+      internalID: 1935007525905105949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c8b62f9e81b423dad20812c609d79e
+      internalID: -4615520023184014416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_25
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f839aa581bad145cda98340dcdf45a3d
+      internalID: 2849491597414949470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_26
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 0
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a310cb5ed59a24e4a9657faaf6a7fc41
+      internalID: 7761813419694582202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_27
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 0
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbad6d227d6a84f8f874deb99e6f0095
+      internalID: -1586749972938466063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_28
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 0
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a2592d853bf4859b34660be1e91123
+      internalID: 4715270948612152459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowZoom_29
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 0
+        width: 342
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c939f0ce5654abd8dd8fbb572f3346
+      internalID: -287531642728870978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 428fcc360ab8e4c92bfdca4218f28f69
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

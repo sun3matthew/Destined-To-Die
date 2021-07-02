@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 30096a2f478e74cb5b36d447ad6e110d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3737878173821032314
+    second: WindowSteam_0
+  - first:
+      213: -2906102378336311967
+    second: WindowSteam_1
+  - first:
+      213: 102463766113229815
+    second: WindowSteam_2
+  - first:
+      213: -2588664755307533818
+    second: WindowSteam_3
+  - first:
+      213: -2394269370262975246
+    second: WindowSteam_4
+  - first:
+      213: -8517787716799357902
+    second: WindowSteam_5
+  - first:
+      213: 7252235646313098471
+    second: WindowSteam_6
+  - first:
+      213: -7008016314423899350
+    second: WindowSteam_7
+  - first:
+      213: -3384713603702965562
+    second: WindowSteam_8
+  - first:
+      213: 2441664822965511126
+    second: WindowSteam_9
+  - first:
+      213: -6789285832943995128
+    second: WindowSteam_10
+  - first:
+      213: 4807284533928980846
+    second: WindowSteam_11
+  - first:
+      213: -2193790888325435189
+    second: WindowSteam_12
+  - first:
+      213: -1419078391465541473
+    second: WindowSteam_13
+  - first:
+      213: 6602906426181757543
+    second: WindowSteam_14
+  - first:
+      213: 256423401372330542
+    second: WindowSteam_15
+  - first:
+      213: -8441705797240715735
+    second: WindowSteam_16
+  - first:
+      213: 718376926349243763
+    second: WindowSteam_17
+  - first:
+      213: -6238112503022687543
+    second: WindowSteam_18
+  - first:
+      213: 6001671887291360411
+    second: WindowSteam_19
+  - first:
+      213: -7800442132378329898
+    second: WindowSteam_20
+  - first:
+      213: 5171313345107156352
+    second: WindowSteam_21
+  - first:
+      213: -5551735576986922168
+    second: WindowSteam_22
+  - first:
+      213: -6230832255418028651
+    second: WindowSteam_23
+  - first:
+      213: -2343597290560855867
+    second: WindowSteam_24
+  - first:
+      213: 3611447143765551359
+    second: WindowSteam_25
+  - first:
+      213: 6168234963976870703
+    second: WindowSteam_26
+  - first:
+      213: 4751822710188165229
+    second: WindowSteam_27
+  - first:
+      213: -3061755492081926333
+    second: WindowSteam_28
+  - first:
+      213: 4621163733354749515
+    second: WindowSteam_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowSteam_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8628240055114dfea31232e52272e68
+      internalID: -3737878173821032314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 704
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dbd88c183d74e19b70fe91f5e0f50c
+      internalID: -2906102378336311967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 704
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b58dd2dbff5949dd860eb17162809cb
+      internalID: 102463766113229815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 704
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784bf6e4067884966aa10050da04bd23
+      internalID: -2588664755307533818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 704
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1587b41f12d544f6d8597f51d79dbadb
+      internalID: -2394269370262975246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_5
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 704
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c973351341242c5a8cdff9a20e3e77
+      internalID: -8517787716799357902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2542003d6b0b846baa7039d046fcfb3d
+      internalID: 7252235646313098471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 528
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e015a6974da614bbea2fd5aa53f18a10
+      internalID: -7008016314423899350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 528
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab832ae53b29d4f2395041c2cef3cb28
+      internalID: -3384713603702965562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 528
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314bf24c1512d410eba8a7a03547ee93
+      internalID: 2441664822965511126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_10
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 528
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f341f5e3e8a47e996c4ba397711cff
+      internalID: -6789285832943995128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_11
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 528
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cb05216f9b54a28ac450556bba2fb5
+      internalID: 4807284533928980846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32be904ec0656472fbb93bac00bb7d5f
+      internalID: -2193790888325435189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 352
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e54a5b2237940d384f46d3747f76ea
+      internalID: -1419078391465541473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 352
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cb3a26f194a4035b56a0beadb48d51
+      internalID: 6602906426181757543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_15
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 352
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b31455487eab4660bfef9380ad50432
+      internalID: 256423401372330542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_16
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 352
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be093afd211a4ead9a056c9d3266419
+      internalID: -8441705797240715735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_17
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 352
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb9dad6339694ad182a54172ac5b820
+      internalID: 718376926349243763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5d36940e9184b25ae7caa2b9a74917
+      internalID: -6238112503022687543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 176
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893bcd7dd52e04fe48c1c6e51167c368
+      internalID: 6001671887291360411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_20
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 176
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdb6ad3c74564857bd683f4214bf5d4
+      internalID: -7800442132378329898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_21
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 176
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdda2aadaabea49cb80095ca15fb97b6
+      internalID: 5171313345107156352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_22
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 176
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8af223a8c5d64400843d8bfa579e0db
+      internalID: -5551735576986922168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_23
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 176
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c01daea8317a44ce9b3473407b0c900
+      internalID: -6230832255418028651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bf80a91b34440c19d84b1fa7db4d9d
+      internalID: -2343597290560855867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_25
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9888cb88bf2284b619fc6b1a744e0ae9
+      internalID: 3611447143765551359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_26
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7071664fbd413416a9e6a15cc3a57ffa
+      internalID: 6168234963976870703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_27
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 0
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90637048452446c0872473d9c42848c
+      internalID: 4751822710188165229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_28
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 0
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d79067f705d4bb18a81cea499c1897
+      internalID: -3061755492081926333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowSteam_29
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 0
+        width: 271
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c0490917714ed4849e2e0b34a383f
+      internalID: 4621163733354749515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c1cfb20d826064ead8bc68b5e1959955
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

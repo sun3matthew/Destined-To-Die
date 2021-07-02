@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: ca2f5f5a982934a128107ecb571c9310
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7527450448513143745
+    second: WindowTerminal_0
+  - first:
+      213: 1155763304751343234
+    second: WindowTerminal_1
+  - first:
+      213: 1807070549635909294
+    second: WindowTerminal_2
+  - first:
+      213: -564150592778130197
+    second: WindowTerminal_3
+  - first:
+      213: -4257548868654619129
+    second: WindowTerminal_4
+  - first:
+      213: 7284932875981119710
+    second: WindowTerminal_5
+  - first:
+      213: 7752500344332293725
+    second: WindowTerminal_6
+  - first:
+      213: 6053382378906171318
+    second: WindowTerminal_7
+  - first:
+      213: 3260416296576459845
+    second: WindowTerminal_8
+  - first:
+      213: -7765583492095121694
+    second: WindowTerminal_9
+  - first:
+      213: 7884034887438303131
+    second: WindowTerminal_10
+  - first:
+      213: 1580492450800832867
+    second: WindowTerminal_11
+  - first:
+      213: 7864830998276941910
+    second: WindowTerminal_12
+  - first:
+      213: 2195052969865796589
+    second: WindowTerminal_13
+  - first:
+      213: 4253245571273106853
+    second: WindowTerminal_14
+  - first:
+      213: -5145105526645405772
+    second: WindowTerminal_15
+  - first:
+      213: -3477448935719977944
+    second: WindowTerminal_16
+  - first:
+      213: -6924171005310867067
+    second: WindowTerminal_17
+  - first:
+      213: -3509420255085108086
+    second: WindowTerminal_18
+  - first:
+      213: -2975410907965048316
+    second: WindowTerminal_19
+  - first:
+      213: -6215886742636638092
+    second: WindowTerminal_20
+  - first:
+      213: -2640331919718188653
+    second: WindowTerminal_21
+  - first:
+      213: -2465166664588417122
+    second: WindowTerminal_22
+  - first:
+      213: 8810846907476485859
+    second: WindowTerminal_23
+  - first:
+      213: -8929845211143932639
+    second: WindowTerminal_24
+  - first:
+      213: 7902930064916009643
+    second: WindowTerminal_25
+  - first:
+      213: -8368949696558453516
+    second: WindowTerminal_26
+  - first:
+      213: -2471738095958715273
+    second: WindowTerminal_27
+  - first:
+      213: 7306466222574167562
+    second: WindowTerminal_28
+  - first:
+      213: 8928908363984628412
+    second: WindowTerminal_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowTerminal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fa50522f9754797b5df4cee2513176
+      internalID: -7527450448513143745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 320
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f77a732d0474c6aa24dc5d591eab6a
+      internalID: 1155763304751343234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 320
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0441383918ddf43fa86afca559ba1168
+      internalID: 1807070549635909294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 320
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309a5f67593d3463082189c10eabe6ef
+      internalID: -564150592778130197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_4
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 320
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2542ad4a11a461f8cc20840c7edb62
+      internalID: -4257548868654619129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_5
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 320
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b803129b94540e09c3843e34ae552e
+      internalID: 7284932875981119710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6198d78f18044e49904ad753b6bedf
+      internalID: 7752500344332293725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 240
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ff0ab7a461f45e494ae2fcbb5177d8
+      internalID: 6053382378906171318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_8
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 240
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bffa54b0b674734b4f12c22747ad78
+      internalID: 3260416296576459845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_9
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 240
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa8217de4adf48dc8b5079a63690717
+      internalID: -7765583492095121694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 240
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc1823b0dd974874a13504e8da34212
+      internalID: 7884034887438303131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_11
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 240
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35de9b9fcf0bc47a5a0cb60a85a18191
+      internalID: 1580492450800832867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fd6522d2bf64c479b748549f068cf7
+      internalID: 7864830998276941910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 160
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60ceaf6c61cc4ccebb9ae774af5be53
+      internalID: 2195052969865796589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 160
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c07ca4e94744a0aa9ec2791f141401
+      internalID: 4253245571273106853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_15
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 160
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e9e761cfe47483c90ff1d7ae6012a4
+      internalID: -5145105526645405772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_16
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 160
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c199eb2939de4132a1950e1ad78a889
+      internalID: -3477448935719977944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_17
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 160
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780b0ec1240d24baf95b6e4268bdad86
+      internalID: -6924171005310867067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cd685a4c6884fddb1e56148e97aca2
+      internalID: -3509420255085108086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 80
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9f12e80ff424c6c99bd95b50a706d6
+      internalID: -2975410907965048316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 80
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7447954c440b43c096aeb43e91caf37
+      internalID: -6215886742636638092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_21
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 80
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9d5392ec584441baa001148e232405
+      internalID: -2640331919718188653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_22
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 80
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876cc9d7cbd8746ae907588980892127
+      internalID: -2465166664588417122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_23
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 80
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074862b9f084c4c908150f9084e78cf0
+      internalID: 8810846907476485859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838b8e28288c444e981be3ef11db937c
+      internalID: -8929845211143932639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_25
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b39b82821344431964d7053a037533
+      internalID: 7902930064916009643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_26
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5fc58f1a3e54474b73d49eac10ed15
+      internalID: -8368949696558453516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_27
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9d69718b7146249aa7ea25c3533f6
+      internalID: -2471738095958715273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_28
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab5e3db4e13c473995627316f7763ca
+      internalID: 7306466222574167562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowTerminal_29
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 0
+        width: 122
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414044a323cca43f99bd62524df04d1f
+      internalID: 8928908363984628412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 577e7f9bf14484c6a9c0668d8a22b65d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

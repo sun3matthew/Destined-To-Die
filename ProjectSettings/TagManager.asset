@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Cutscene
+  - Human
+  - World
+  - Lighting
+  - CatPostcard
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Collide
+  - FuckOff
+  - Window
+  - WindowBounds
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 0Back1
+    uniqueID: 2997429843
+    locked: 0
+  - name: 1Back
+    uniqueID: 3423077987
+    locked: 0
+  - name: 2Mid
+    uniqueID: 1826752869
+    locked: 0
+  - name: 3Front1
+    uniqueID: 2094443667
+    locked: 0
+  - name: 4Front
+    uniqueID: 1643044567
+    locked: 0
+  - name: 5CatPostcard
+    uniqueID: 2615113683
+    locked: 0
+  - name: 6OSBackground
+    uniqueID: 3274953369
+    locked: 0
+  - name: 7OSWindow
+    uniqueID: 3543223675
+    locked: 0
+  - name: 8WindowBar
+    uniqueID: 2822795993
+    locked: 0
+  - name: 9TextUI
+    uniqueID: 3873887837
+    locked: 0
