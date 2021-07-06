@@ -43,14 +43,21 @@
             float offsetUpAmt;
             float offsetDownAmt;
 
+            float windowX, windowY;
+
             float grayscale;
 
             float r,g,b;
 
             fixed4 frag (v2f i) : SV_Target
             {
-
                 fixed4 col = tex2D(_MainTex, i.uv);
+                if(i.uv.x >= windowX && i.uv.x <= 1-windowX && i.uv.y >= windowY && i.uv.y <= 1-windowY)
+                {
+                    fixed avgG = (col.r + col.g + col.b)/3;
+                    col += fixed4((col.r - avgG)*grayscale, (col.g - avgG)*grayscale, (col.b - avgG)*grayscale, 0);
+                    return col;
+                }
                 fixed4 offsetUp = tex2D(_MainTex, i.uv + glitch * 0.01);
 			    fixed4 offsetDown = tex2D(_MainTex,  i.uv - glitch * 0.01);
 

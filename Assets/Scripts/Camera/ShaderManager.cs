@@ -11,11 +11,14 @@ public class ShaderManager : MonoBehaviour
     private Player player;
     private AudioLowPassFilter lp;
     private GameObject computer;
+    private SpriteRenderer compsr;
+    private Camera mainCamera;
+    private GameObject cutscene;
 
     private float happy;
     private float gray;
 
-    public float r,b,g;
+    public float r, b, g;
 
     private float timer;
     private float happyTime;
@@ -25,6 +28,9 @@ public class ShaderManager : MonoBehaviour
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
         computer = GameObject.Find("ComputerB(Clone)").transform.GetChild(0).gameObject;
         material = new Material(shader);
+        compsr = computer.GetComponent<SpriteRenderer>();
+        mainCamera = Camera.main;
+        cutscene = GameObject.Find("Cutscene(Clone)");
         lp = GetComponent<AudioLowPassFilter>();
     }
 
@@ -34,7 +40,20 @@ public class ShaderManager : MonoBehaviour
         gray = player.graySmooth;
         material.SetFloat("grayscale", gray < -10 ? (gray + 10) / 100 : 0);
 
-        if(happy > -20 || computer.activeSelf)
+
+        if ((computer != null && computer.activeSelf) || !cutscene.activeSelf)
+        {
+            Vector2 temp = mainCamera.WorldToScreenPoint(compsr.bounds.min);
+            material.SetFloat("windowX", temp.x / mainCamera.pixelWidth);
+            material.SetFloat("windowY", temp.y / mainCamera.pixelHeight);
+        }
+        else
+        {
+            material.SetFloat("windowX", 1);
+            material.SetFloat("windowY", 1);
+        }
+
+        if (happy > -20)
         {
             material.SetFloat("offsetUpAmt", 0);
             material.SetFloat("offsetDownAmt", 0);
@@ -44,7 +63,7 @@ public class ShaderManager : MonoBehaviour
         {
             float happyNorm = (happy * -1) / 100f;
             timer += Time.deltaTime;
-            if(timer > (happyTime/3f) * 2f)
+            if (timer > (happyTime / 3f) * 2f)
             {
                 material.SetFloat("offsetUpAmt", 0);
                 material.SetFloat("offsetDownAmt", 0);

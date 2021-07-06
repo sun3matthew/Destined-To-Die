@@ -39,20 +39,21 @@ public class TimeDay : MonoBehaviour
             classmates = FindObjectsOfType<Classmate>();
         }
 
-        if(fowardsAmt > 0)
+        if (fowardsAmt > 0)
         {
             fowardsAmt -= 0.05f;
             updateTime(0.05f);
             for (int i = 0; i < classmates.Length; i++)
-                for(int j = 0; j < 60; j++)//ig 60 is a arbitary number
+                for (int j = 0; j < 60; j++)//ig 60 is a arbitary number
                     classmates[i].updateMovement(true);
-        }else
+        }
+        else
         {
             updateTime();
         }
         for (int i = 0; i < lighting.Length; i++)
             lighting[i].changeLighting(timeDay);
-        if(shaderShit != null)
+        if (shaderShit != null)
         {
             shaderShit.r = r;
             shaderShit.g = g;
@@ -63,12 +64,7 @@ public class TimeDay : MonoBehaviour
     {
         timeDay += amt;
         amt *= 1 / 2.0f;//Time.deltaTime*25;// (Time.deltaTime *);
-        if(timeDay < 3)
-        {
-            r = -0f;
-            g = -0.1f;
-            b = -0.2f;
-        }else if (timeDay < 4)//(initial - final) * (Time.deltaTime/90) * (1.0f/difference)
+        if (timeDay < 4)//(initial - final) * (Time.deltaTime/90) * (1.0f/difference)
         {
             //night
             r = -0.6f;
@@ -102,7 +98,7 @@ public class TimeDay : MonoBehaviour
             g -= 0.25f * amt;//-0.25
             b -= 0.4f * amt;//-0.4
         }
-        else if (timeDay < 18f)
+        else if (timeDay < 19f)
         {
             //to night
             r -= 0.6f * amt;//-0.6
@@ -111,9 +107,10 @@ public class TimeDay : MonoBehaviour
         }
         else
         {
-            r = -0f;
-            g = -0.1f;
-            b = -0.2f;
+            //night
+            r = -0.6f;
+            g = -0.4f;
+            b = -0.15f;
         }
         if (timeDay > 24)
         {
@@ -147,7 +144,7 @@ public class TimeDay : MonoBehaviour
         {
             updateTime(0.05f);
             for (int i = 0; i < classmates.Length; i++)
-                for(int j = 0; j < 60; j++)//ig 60 is a arbitary number
+                for (int j = 0; j < 60; j++)//ig 60 is a arbitary number
                     classmates[i].updateMovement(true);
         }
     }
