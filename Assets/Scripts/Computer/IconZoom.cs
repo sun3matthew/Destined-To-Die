@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class IconZoom : IconNotificationManage
 {
-    public override string badStatus() => "Class has ended already.";
+    public override string badStatus()
+    {
+        LanguageLocalization<string> localization = new LanguageLocalization<string>();
+        localization.addLanguage("Class has ended already.", 0);
+        localization.addLanguage("课已经结束了。", 1);
+        localization.addLanguage("課已經結束了。", 2);
+        return localization.getLanguage();
+    }
 
     void Update()
     {

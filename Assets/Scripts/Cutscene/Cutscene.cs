@@ -93,7 +93,7 @@ public class Cutscene : MonoBehaviour
             playCS = 0;
         if (playCS > 14)
             playCS = 14;
-        print((num+10) + "\t\t" + playCS);
+//        print((num+10) + "\t\t" + playCS);
         turnOffCounter = 0.0f;
         string nameOfCS = cutsceneRefs[playCS][Random.Range(0, cutsceneRefs[playCS].Length)];
         videoplayer.clip = Resources.Load<VideoClip>(nameOfCS);

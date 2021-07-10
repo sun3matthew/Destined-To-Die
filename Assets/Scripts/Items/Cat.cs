@@ -61,9 +61,13 @@ public class Cat : MonoBehaviour, Clickable
         if (alClickedOn)
             return;
         alClickedOn = true;
+        LanguageLocalization<string> localization = new LanguageLocalization<string>();
         if (PlayerPrefs.GetInt("GameWin", 0) == 1)
         {
-            Cutscene.cutscene("Remaining Postcards Aquired!|You're already dead.|Why are you still here?|You should be gone.|*Yawn*");
+            localization.addLanguage("Remaining Postcards Acquired!|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
+            localization.addLanguage("剩余明信片已购！|你已经死了。|你怎么还在这里？|你应该走了。|待会见", 1);
+            localization.addLanguage("剩余明信片已購！|你已經死了。|你怎麼還在這裡？|你應該走了。|待會見", 2);
+            Cutscene.cutscene(localization.getLanguage());
             PlayerPrefs.SetInt("CatPostcards", 17);
         }
         else
@@ -75,11 +79,17 @@ public class Cat : MonoBehaviour, Clickable
                     SteamUserStats.SetAchievement("GOOD_BYE");
                     SteamUserStats.StoreStats();
                 }
-                Cutscene.cutscene("Remember me, please. I don't want to disappear again");
+                localization.addLanguage("Remember me, please. I don't want to disappear again", 0);
+                localization.addLanguage("记住我。我不想再消失", 1);
+                localization.addLanguage("記住我。我不想再消失", 2);
+                Cutscene.cutscene(localization.getLanguage());
             }
             else
             {
-                Cutscene.cutscene("Postcard Aquired!|You're already dead.|Why are you still here?|You should be gone.|*Yawn*");
+                localization.addLanguage("Postcard Acquired!|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
+                localization.addLanguage("获得明信片！|你已经死了。|你怎么还在这里？|你应该走了。|待会见", 1);
+                localization.addLanguage("獲得明信片！|你已經死了。|你怎麼還在這裡？|你應該走了。|待會見", 2);
+                Cutscene.cutscene(localization.getLanguage());
             }
             PlayerPrefs.SetInt("CatPostcards", PlayerPrefs.GetInt("CatPostcards", 0) + 1);
         }

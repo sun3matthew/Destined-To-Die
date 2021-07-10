@@ -56,14 +56,18 @@ public class Human1 : Classmate
     }
 }
 /*
-lang.addLanguage(new string[]{
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-}, 0);
+        LanguageLocalization<string[]> lang = new LanguageLocalization<string[]>();
+
+        lang.addLanguage(new string[]{
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        }, 0);
+
+        tcsPos = lang.getLanguage();
             */

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Steamworks;
 
 public class BudgetTerminal : MonoBehaviour
 {
@@ -40,21 +41,72 @@ public class BudgetTerminal : MonoBehaviour
         keyb = transform.GetChild(1).GetComponent<InputField>();
         string temp = "                  ..............................................                  \n            ...&&&&&&&&&&&&&&&&&######################&&&&&&&&&&&&&...            \n       ...&&&&&&&&&&&&&&&&&&&&&&&&############&&&&&&&&&&&&&&&&&&&&&&&&&&...       \n     ..&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..     \n   ..&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..   \n  ..&&&&&&&&&&&&&&&&&&&&&&&&&&@@@@@@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&..  \n..&&&&&&&&&&&&&&&&&&&&&&&&&&&&@@((((@@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&######..\n..&&&&&&&&&&&&&&&&%%%%%%%%&&&&&&##&&((@@&&&&&&&&&&&&&&%%%%%%%%%%################..\n..&&&&&&&&&&&&&&&&&&########@@((&&&&&&((@@&&&&&&&&&&############################..\n..&&&&&&&&&&&&####&&########@@((&&&&&&((@@&&&&&&&&&&##########@@################..\n..&&&&&&&&&&&&####&&&&######@@((&&&&((((@@&&&&&&&&&&##########@@################..\n..&&&&&&&&&&&&%%####&&######@@((&&((((@@@@@@@@&&&&&&&&####%%&&&&################..\n..&&&&&&&&&&&&&&&&##&&######    ################@@&&&&####@@########@@@@@@######..\n..&&&&&&&&&&&&&&&&&&&&&&&&,,,,      ######@@####@@@@&&##&&&&######@@((((((@@####..\n..&&&&&&&&&&&&&&&&&&&&&&,,,,######          @@######@@@@@@&&##@@@@((&&&&&&((@@##..\n..##&&&&&&&&&&&&&&&&&&&&,,########&&&&##      ############@@@@@@((((&&&&&&((@@##..\n..####&&&&&&&&&&&&&&&&,,##&&&&@@@@      &&%%      ############((##&&&&&&((@@####..\n..####&&&&&&&&&&&&&&&&&&&&&&,,@@@@    &&&&    ##    ##@@@@######&&&&&&((((@@####..\n..######&&&&&&&&&&&&&&&&&&,,@@@@@@@@  &&    ######    @@  ######&&&&&&((@@######..\n..########&&&&&&&&&&##,,,,,,@@@@@@&&&&&&&&######    @@@@    ######&&((@@########..\n..######&&############&&&&@@@@@@@@@@@@&&&&    ##@@@@    &&  ################&&##..\n..####&&&&############&&&&&&@@@@@@@@      &&&&@@      &&&&    ##############&&&&..\n..####&&&&##############((((&&@@@@@@@@@@    &&@@@@  &&&&##,,##############&&&&##..\n..####&&##&&############((((((&&&&@@@@&&&&  &&&&@@@@@@####,,############&&&&####..\n..########&&&&############((&&((&&&&&&&&&&@@&&&&@@@@@@##,,##########&&&&########..\n..##########&&&&##########((&&((((**&&@@@@@@@@@@@@,,,,##,,####&&&&##&&##########..\n..%%%%######**&&##########&&&&((((**&&&&@@@@@@@@@@&&&&##,,((##&&**##&&##########..\n..%%%%%%####**&&##########&&((((((**((((&&&&&&@@@@&&&&((((((((****&&######@@@@##..\n..####%%%%####**&&&&&&&&&&&&##((((((****&&##########&&((((((****&&&&&&####@@####..\n..&&####%%####****&&&&&&&&**##%%((((##**&&########@@&&@@((((**&&&&&&&&&&####@@&&..\n..&&####%%%%####**&&&&&&&&****%%&&####**&&&&@@@@@@&&&&@@((@@**&&&&&&&&&&%%%%##&&..\n..&&&&&&&&%%%%&&**&&&&&&&&##**%%%%%%@@&&**&&@@@@&&&&@@@@@@**&&&&&&&&&&&&%%%%####..\n....&&&&&&&&%%%%@@**&&&&&&##&&**%%%%&&&&**@@@@&&&&@@@@@@****&&&&&&&&&&%%%%&&##....\n....&&&&&&@@%%%%@@****&&&&&&&&**%%%%%%&&**@@@@&&&&@@((((**%%&&&&&&&&%%%%@@@@##....\n....&&@@&&@@@@%%@@@@**&&&&&&&&**&&%%%%%%**@@@@&&%%@@((&&**%%&&&&&&%%%%%%&&&&@@....\n......@@&&&&@@%%@@@@**&&&&&&&&**&&&&%%%%**@@@@&&%%%%&&****&&&&&&%%%%%%&&&&&&......\n..............&&%%%%&&&&&&##&&**&&&&&&@@@@@@&&&&&&%%%%**%%&&&&%%&&&&..............\n..................................................................................\n........&&&&&&&&..................................................................\n  ......&&....................................................&&................  \n  ......&&&&&&&&..........................&&&&&&....&&&&&&..&&&&&&....&&&&......  \n  ............&&..&&....&&..&&&&&&&&....&&&&......&&....&&....&&....&&..........  \n    ..........&&..&&....&&..&&....&&....&&........&&....&&....&&......&&......    \n    ....&&&&&&&&..&&&&&&&&..&&....&&......&&&&&&....&&&&&&&&....&&..&&&&......    \n      ......................................................................      \n        ..................................................................        \n \n \n";
         logo = temp.Split('\n');
-        logIn = new string[14];
-        logIn[0] = "Last login: Sun Jan  NaN NaN:NaN:NaN\n";
-        logIn[1] = "Simulation Initializing...";
-        logIn[2] = "...";
-        logIn[3] = "...";
-        logIn[4] = "Unable to Fetch Time.";
-        logIn[5] = "Unable to Connect.";
-        logIn[6] = "1 Error, 692 Warnings.";
-        logIn[7] = ">>>";
-        logIn[8] = "Simulation Initialized.";
-        logIn[9] = "Simulation Starting.";
-        logIn[10] = "Type \"help\" for more information";
-        logIn[11] = "...";
-        logIn[12] = "...";
-        logIn[13] = (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "Why are you still here." : "...";
+        if (!PlayerPrefs.HasKey("language"))
+        {
+            if (SteamManager.Initialized)
+            {
+                if (SteamApps.GetCurrentGameLanguage().Equals("schinese"))
+                    PlayerPrefs.SetInt("language", 1);
+                else if (SteamApps.GetCurrentGameLanguage().Equals("tchinese"))
+                    PlayerPrefs.SetInt("language", 2);
+                else
+                    PlayerPrefs.SetInt("language", 0);
+            }
+        }
+        Language.language = PlayerPrefs.GetInt("language", 0);
+        LanguageLocalization<string[]> localization = new LanguageLocalization<string[]>();
+        localization.addLanguage(new string[]{
+            "Last login: Sun Jan  NaN NaN:NaN:NaN\n",
+            "Simulation Initializing...",
+            "...",
+            "...",
+            "Unable to Fetch Time.",
+            "Unable to Connect.",
+            "1 Error, 692 Warnings.",
+            ">>>",
+            "Simulation Initialized.",
+            "Simulation Starting.",
+            "Type \"help\" for more information",
+            "...",
+            "...",
+            (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "Why are you still here." : "..."
+            }, 0);
+
+        localization.addLanguage(new string[]{
+            "上次登录: Sun Jan  NaN NaN:NaN:NaN\n",
+            "仿真初始化...",
+            "...",
+            "...",
+            "无法获取时间。",
+            "无法连接。",
+            "1 个错误，692 个警告。",
+            ">>>",
+            "仿真初始化结束",
+            "仿真开始",
+            "输入\"help\"以获取更多信息",
+            "...",
+            "...",
+            (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "你怎么还在这。" : "..."
+            }, 1);
+
+        localization.addLanguage(new string[]{
+            "上次登錄: Sun Jan NaN NaN:NaN:NaN\n",
+            "仿真初始化...",
+            "...",
+            "...",
+            "無法獲取時間。",
+            "無法連接。",
+            "1 個錯誤，692 個警告。",
+            ">>>",
+            "仿真初始化結束",
+            "仿真開始",
+            "輸入\"help\"以獲取更多信息",
+            "...",
+            "...",
+            (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "你怎麼還在這。" : "..."
+            }, 2);
+
+        logIn = localization.getLanguage();
         pauseFor();
 
     }
@@ -81,7 +133,11 @@ public class BudgetTerminal : MonoBehaviour
             if(!typn)
             {
                 typn = true;
-                currTxt += "Keyboard Interrupt\n[ENTER] to resume\n";
+                LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                localization.addLanguage("Keyboard Interrupt\n[ENTER] to resume\n", 0);
+                localization.addLanguage("键盘中断\n[ENTER] => 恢复\n", 1);
+                localization.addLanguage("鍵盤中斷\n[ENTER] => 恢復\n", 2);
+                currTxt += localization.getLanguage();
                 //currTxt += keyb.text + "\n";
                 if(keyb.text.Equals("\n"))
                     keyb.text = "";
@@ -101,6 +157,7 @@ public class BudgetTerminal : MonoBehaviour
                     currTxt += "kill - Terminate Program\n";
                     currTxt += "wipe - Clear Save *WARNING*\n";
                     currTxt += "skip - Skip Simulation Bootup\n";
+                    currTxt += "language - Set Language [int:{english=0}{简体中文=1}{繁体中文=2}]\n";
                 }
                 else if(requestedCommand.Equals("kill"))
                 {
@@ -111,8 +168,23 @@ public class BudgetTerminal : MonoBehaviour
                 }
                 else if(requestedCommand.Equals("wipe"))
                 {
+                    currTxt += "Wiped\n";
                     PlayerPrefs.DeleteAll();
-                }else if(requestedCommand.Split(' ')[0].Equals("volume"))
+                }
+                else if (requestedCommand.Split(' ')[0].Equals("language"))
+                {
+                    PlayerPrefs.SetInt("language", int.Parse(requestedCommand.Split(' ')[1]));
+                    if (PlayerPrefs.GetInt("language", 0) < 0 || PlayerPrefs.GetInt("language", 0) >= Language.languageAmt)
+                    {
+                        PlayerPrefs.SetInt("language", 0);
+                        currTxt += "Out of bounds. Resetting to english";
+                    }else
+                    {
+                        Language.language = PlayerPrefs.GetInt("language", 0);
+                        currTxt += "Language set to: " + PlayerPrefs.GetInt("language", 0);
+                    }
+                }
+                else if(requestedCommand.Split(' ')[0].Equals("volume"))
                 {
                     currTxt += "(volume was " + PlayerPrefs.GetInt("volume", 50) + ")\n";
                     PlayerPrefs.SetInt("volume", int.Parse(requestedCommand.Split(' ')[1]));

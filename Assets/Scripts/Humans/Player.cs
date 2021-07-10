@@ -37,6 +37,8 @@ public class Player : Human
     public float happySmooth;
     public float graySmooth;
 
+    private string[] statsTranslated;
+
     protected override void Start()
     {
         timeDayObj = GameObject.Find("Time(Clone)").GetComponent<TimeDay>();
@@ -45,6 +47,12 @@ public class Player : Human
         systemTime = GameObject.Find("ComputerB(Clone)").transform.GetChild(0).GetChild(1).GetComponent<SystemTime>();
         psAmt = PlayerPrefs.GetInt("CatPostcards", 0);
         computerWindow = GameObject.Find("ComputerB(Clone)").transform.GetChild(0).gameObject;
+
+        LanguageLocalization<string[]> localization = new LanguageLocalization<string[]>();
+        localization.addLanguage(new string[] {"AMOUNT OF SLEEP", "HAPPY", "INSTANTANEOUS HAPPY", "SATISFACTION", "DEATH TOLERANCE", "ART", "CODE", "SCHOOL", "FRIEND"}, 0);
+        localization.addLanguage(new string[] {"睡眠量", "快乐", "瞬间快乐", "满足", "死亡容忍", "艺术", "编程", "学校", "朋友"}, 1);
+        localization.addLanguage(new string[] {"睡眠量", "快樂", "瞬間快樂", "滿足", "死亡容忍", "藝術", "編程", "學校", "朋友"}, 2);
+        statsTranslated = localization.getLanguage();
 
         emotions = new HundredBound[5];
         abilities = new HundredBound[4];
@@ -176,50 +184,49 @@ public class Player : Human
         systemTime.falseDay++;
         timeDayObj.rollTime(5.5f);
 
-        string outputText = "AMOUNT OF SLEEP: " + emotions[3].getIntValue() + "\n\n";
+        string outputText = statsTranslated[0] + ": " + emotions[3].getIntValue() + "\n\n";
 
         if (psAmt >= 9)
-            outputText += "HAPPY: " + emotionsPrev[0].getIntValue() + " => " + emotions[0].getIntValue() + "\n";
+            outputText += statsTranslated[1] + ": " + emotionsPrev[0].getIntValue() + " => " + emotions[0].getIntValue() + "\n";
         else if (psAmt >= 1)
-            outputText += "HAPPY: " + (emotions[0].getValue() - emotionsPrev[0].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[1] + ": " + (emotions[0].getValue() - emotionsPrev[0].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 10)
-            outputText += "INSTANTANEOUS HAPPY: " + emotionsPrev[1].getIntValue() + " => " + emotions[1].getIntValue() + "\n";
+            outputText += statsTranslated[2] + ": " + emotionsPrev[1].getIntValue() + " => " + emotions[1].getIntValue() + "\n";
         else if (psAmt >= 2)
-            outputText += "INSTANTANEOUS HAPPY: " + (emotions[1].getValue() - emotionsPrev[1].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[2] + ": " + (emotions[1].getValue() - emotionsPrev[1].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 11)
-            outputText += "SATISFACTION: " + emotionsPrev[2].getIntValue() + " => " + emotions[2].getIntValue() + "\n";
+            outputText += statsTranslated[3] + ": " + emotionsPrev[2].getIntValue() + " => " + emotions[2].getIntValue() + "\n";
         else if (psAmt >= 3)
-            outputText += "SATISFACTION: " + (emotions[2].getValue() - emotionsPrev[2].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[3] + ": " + (emotions[2].getValue() - emotionsPrev[2].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 12)
-            outputText += "DEATH TOLERANCE: " + emotionsPrev[4].getIntValue() + " => " + emotions[4].getIntValue() + "\n\n";
+            outputText += statsTranslated[4] + ": " + emotionsPrev[4].getIntValue() + " => " + emotions[4].getIntValue() + "\n\n";
         else if (psAmt >= 4)
-            outputText += "DEATH TOLERANCE: " + (emotions[4].getValue() - emotionsPrev[4].getValue() > 0 ? "+" : "-") + "\n\n";
+            outputText += statsTranslated[4] + ": " + (emotions[4].getValue() - emotionsPrev[4].getValue() > 0 ? "+" : "-") + "\n\n";
 
 
         if (psAmt >= 13)
-            outputText += "ART: " + abilitiesPrev[0].getIntValue() + " => " + abilities[0].getIntValue() + "\n";
+            outputText += statsTranslated[5] + ": " + abilitiesPrev[0].getIntValue() + " => " + abilities[0].getIntValue() + "\n";
         else if (psAmt >= 5)
-            outputText += "ART: " + (abilities[0].getValue()-abilitiesPrev[0].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[5] + ": " + (abilities[0].getValue()-abilitiesPrev[0].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 14)
-            outputText += "CODE: " + abilitiesPrev[1].getIntValue() + " => " + abilities[1].getIntValue() + "\n";
+            outputText += statsTranslated[6] + ": " + abilitiesPrev[1].getIntValue() + " => " + abilities[1].getIntValue() + "\n";
         else if (psAmt >= 6)
-            outputText += "CODE: " + (abilities[1].getValue() - abilitiesPrev[1].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[6] + ": " + (abilities[1].getValue() - abilitiesPrev[1].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 15)
-            outputText += "SCHOOL: " + abilitiesPrev[2].getIntValue() + " => " + abilities[2].getIntValue() + "\n";
+            outputText += statsTranslated[7] + ": " + abilitiesPrev[2].getIntValue() + " => " + abilities[2].getIntValue() + "\n";
         else if (psAmt >= 7)
-            outputText += "SCHOOL: " + (abilities[2].getValue() - abilitiesPrev[2].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[7] + ": " + (abilities[2].getValue() - abilitiesPrev[2].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 16)
-            outputText += "FRIEND: " + abilitiesPrev[3].getIntValue() + " => " + abilities[3].getIntValue();
+            outputText += statsTranslated[8] + ": " + abilitiesPrev[3].getIntValue() + " => " + abilities[3].getIntValue();
         else if (psAmt >= 8)
-            outputText += "FRIEND: " + (abilities[3].getValue() - abilitiesPrev[3].getValue() > 0 ? "+" : "-");
-
-        print(outputText);
+            outputText += statsTranslated[8] + ": " + (abilities[3].getValue() - abilitiesPrev[3].getValue() > 0 ? "+" : "-");
+            
         for (int i = 0; i < emotionsPrev.Length; i++)
             emotionsPrev[i].setValue(emotions[i].getValue());
         for (int i = 0; i < abilitiesPrev.Length; i++)

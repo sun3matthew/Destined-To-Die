@@ -5,10 +5,11 @@ using UnityEngine;
 public class Bed : Interactable, Clickable
 {
     TimeDay timeDayObj;
+    private string notice;
     protected override void Start()
     {
         base.Start();
-        tcs[00] = "Please, I don't want to die. Maybe I do. Why am I sad. I don't know. I don't know. I'm so scared someone please just help me. Please please please...";
+        /*tcs[00] = "Please, I don't want to die. Maybe I do. Why am I sad. I don't know. I don't know. I'm so scared someone please just help me. Please please please...";
         tcs[01] = "True Friend... I want someone I can cry to. I want to cry. I want to talk to someone. It just hurts so so much.";
         tcs[02] = "Why am I crying so much. I just want to feel something. It feels good. Help me, Help me. Please...";
         tcs[03] = "I'm sad. this is bad. Why can't I just tell someone. I'm just so so scared. Help. Help me";
@@ -28,7 +29,13 @@ public class Bed : Interactable, Clickable
         tcs[17] = "ERROR: Unable to Fetch|ERROR: Unable to Fetch|ERROR: Unable to Fetch|ERROR: Unable to Fetch|@#@# &&&@**";
         tcs[18] = "ERROR: Unable to Fetch|ERROR: Unable to Fetch|ERROR: Unable to Fetch|ERROR: Unable to Fetch|(*&#$&$&&@ @#$ @# #@#__%@# &|@#*($& @#@#* @#*#@ @#(*&$";
         tcs[19] = "ERROR: Unable to Fetch|ERROR: Unable to Fetch|ERROR: Unable to Fetch|@#$*(%&&*(&*@#&*(*($*(&|(*)@#$*#(@)*$@#$!!|#@()$)@(#%*)@#(*$@#)(#$*@$|@#$#@$@#%!@%@!$!@$";
-        tcs[20] = "ERROR: Unable to Fetch|@!^$%#!@%^$#^% !@&&!@*!@*$!@!!|!@%&^(*@#*&(*(&@#*&*(*( &&&&&&&@&@&&@&@&@|!@#!@$#@%%#@@@@@# # @#@@@$%#@@#|*(&*( @#*($*@# *#$&@#*(&$*(&@*(#&$(& @@#$$$$|I can't be happy.";
+        tcs[20] = "ERROR: Unable to Fetch|@!^$%#!@%^$#^% !@&&!@*!@*$!@!!|!@%&^(*@#*&(*(&@#*&*(*( &&&&&&&@&@&&@&@&@|!@#!@$#@%%#@@@@@# # @#@@@$%#@@#|*(&*( @#*($*@# *#$&@#*(&$*(&@*(#&$(& @@#$$$$|I can't be happy.";*/
+
+        LanguageLocalization<string> localization = new LanguageLocalization<string>();
+        localization.addLanguage("I'm not sleepy, it's still too early in the day", 0);
+        localization.addLanguage("我不困, 现在太早了", 1);
+        localization.addLanguage("我不困, 現在太早了", 2);
+        notice = localization.getLanguage();
     }
     public void clickedOn(bool type)
     {
@@ -37,7 +44,7 @@ public class Bed : Interactable, Clickable
             if (time.timeDay > 20 || time.timeDay < 5.5)
                 player.resetDay();
             else
-                Cutscene.cutscene("I'm not sleepy, it's still to early in the day");
+                Cutscene.cutscene(notice);
         }
     }
 }

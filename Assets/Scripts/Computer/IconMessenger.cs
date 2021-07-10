@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class IconMessenger : IconNotificationManage
 {
-    public override string badStatus() => "There's no one online.";
+    public override string badStatus() {
+        LanguageLocalization<string> localization = new LanguageLocalization<string>();
+        localization.addLanguage("There's no one online.", 0);
+        localization.addLanguage("网上没人。", 1);
+        localization.addLanguage("網上沒人。", 2);
+        return localization.getLanguage();
+    }
 
     // Update is called once per frame
     void Update()

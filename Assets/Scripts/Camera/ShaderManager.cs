@@ -71,7 +71,6 @@ public class ShaderManager : MonoBehaviour
             }
             if (timer > happyTime)
             {
-                print("ASDADASDAS");
                 timer = 0;
                 happyTime = Random.Range(0.5f, 6f - 5f * happyNorm);
                 material.SetFloat("offsetUpAmt", Random.Range(0, 2));

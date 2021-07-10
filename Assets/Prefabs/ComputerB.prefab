@@ -919,7 +919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527319942734807143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.172, y: 0.88, z: 0}
+  m_LocalPosition: {x: -1.128, y: 0.814, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3708590609389146670}
@@ -942,7 +942,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c81f8d7093fca4469b1d13a985e9ae72, type: 2}
+  - {fileID: 2100000, guid: a8b522b98bb424f0ea59ee452ade764d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -998,15 +998,15 @@ TextMesh:
 
     Please.'
   m_OffsetZ: 0
-  m_CharacterSize: 0.2
-  m_LineSpacing: 0.6
+  m_CharacterSize: 0.06
+  m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 29821db8324231f4481e730bf6288b9c, type: 2}
+  m_Font: {fileID: 12800000, guid: a8b522b98bb424f0ea59ee452ade764d, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -1456,7 +1456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873194095066641159}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.755, y: 0.674, z: 0}
+  m_LocalPosition: {x: -0.736, y: 0.635, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8039856590692864369}
@@ -1479,7 +1479,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c81f8d7093fca4469b1d13a985e9ae72, type: 2}
+  - {fileID: 2100000, guid: a8b522b98bb424f0ea59ee452ade764d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1512,15 +1512,15 @@ TextMesh:
     Status: Single till I die\n\tAlso virgin for life...\n\nBut at least I have friends?
     Honestly\nbeing single is not bad.\n\nWhich is what a single person would say"
   m_OffsetZ: 0
-  m_CharacterSize: 0.1
-  m_LineSpacing: 0.6
+  m_CharacterSize: 0.035
+  m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 29821db8324231f4481e730bf6288b9c, type: 2}
+  m_Font: {fileID: 12800000, guid: a8b522b98bb424f0ea59ee452ade764d, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -2383,7 +2383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3862105086239515847
 Transform:
   m_ObjectHideFlags: 0

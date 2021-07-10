@@ -19,11 +19,16 @@ public class WinExit : MonoBehaviour
     void Start()
     {
         counter = 0;
+        LanguageLocalization<string> localization = new LanguageLocalization<string>();
+        localization.addLanguage("English", 0);
+        localization.addLanguage("ChineseS", 1);
+        localization.addLanguage("ChineseT", 2);
+
         vp = GameObject.Find("Video Player").GetComponent<VideoPlayer>();
-        fade1 = GameObject.Find("Canvas").transform.GetChild(2).GetComponent<Image>();
-        maintxt = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Text>();
-        lovetxt = GameObject.Find("Canvas").transform.GetChild(1).GetComponent<Text>();
-        titleTxt = GameObject.Find("Canvas").transform.GetChild(3).GetComponent<Text>();
+        fade1 = GameObject.Find(localization.getLanguage()).transform.GetChild(2).GetComponent<Image>();
+        maintxt = GameObject.Find(localization.getLanguage()).transform.GetChild(0).GetComponent<Text>();
+        lovetxt = GameObject.Find(localization.getLanguage()).transform.GetChild(1).GetComponent<Text>();
+        titleTxt = GameObject.Find(localization.getLanguage()).transform.GetChild(3).GetComponent<Text>();
     }
 
     // Update is called once per frame
