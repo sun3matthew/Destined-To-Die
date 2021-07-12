@@ -25,6 +25,8 @@ public class Player : Human
     private SystemTime systemTime;
     private GameObject computerWindow;
 
+    public int falseDay;
+
     private int prio;
     private int psAmt;
 
@@ -83,13 +85,28 @@ public class Player : Human
         wentToPractice = false;
         wentToBed = false;
         hoursOfSleep = 8;
+        falseDay = 0;
         emotions[3].setValue(Random.Range(60, 80));
+        //SteamUserStats.ClearAchievement("FIRST_DEATH");
+        //SteamUserStats.StoreStats();
 
+        //for (int i = 0; i < emotions.Length; i++)
+        //    emotions[i].setValue(-100);
         base.Start();
     }
     // Update is called once per frame
     protected override void Update()
     {
+        if(Input.GetKey(KeyCode.Space))
+        {
+            bool tempOut = false;
+            SteamUserStats.GetAchievement("FIRST_DEATH", out tempOut);
+            //SteamUserStats.SetAchievement("FIRST_DEATH");
+            //SteamUserStats.StoreStats();
+            //SteamUserStats.GetAchievement("FIRST_DEATH", out tempOut);
+            print(tempOut);
+            SteamUserStats.SetAchievement("FIRST_DEATH");
+        }
         if (wentToBed && timeDayObj.timeDay > 7 && timeDayObj.timeDay < 8)
             wentToBed = false;
         if(!wentToBed && timeDayObj.timeDay > 4.5 && timeDayObj.timeDay < 5 && GameObject.Find("BedB") != null)
@@ -182,6 +199,7 @@ public class Player : Human
             classmates[i].talkedTo = false;
 
         systemTime.falseDay++;
+        falseDay++;
         timeDayObj.rollTime(5.5f);
 
         string outputText = statsTranslated[0] + ": " + emotions[3].getIntValue() + "\n\n";
@@ -253,6 +271,7 @@ public class Player : Human
                     SteamUserStats.StoreStats();
                 }
             }
+            GameObject.Find("Music(Clone)").GetComponent<AudioSource>().pitch = -0.6f;
             death();
             return;
         }

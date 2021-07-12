@@ -5,23 +5,28 @@ using Steamworks;
 
 public class SeasonChange : MonoBehaviour
 {
-    private int currSeason = -1;
-    private TimeDay time;
-    void Start() => time = GameObject.Find("Time(Clone)").GetComponent<TimeDay>();
+    private int currSeason;
+    private Player time;
+    void Start() {
+        time = GameObject.Find("Player(Clone)").GetComponent<Player>();
+
+        currSeason = (time.falseDay == 6 ? 2 : time.falseDay / 2);
+        for (int i = 0; i < 4; i++)
+            transform.GetChild(i).gameObject.SetActive(false);
+        transform.GetChild(currSeason).gameObject.SetActive(true);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(time.day/2 != currSeason)
+        if((time.falseDay == 6 ? 2 : time.falseDay/2) != currSeason)
         {
-            currSeason = time.day / 2;
+            currSeason = time.falseDay / 2;
+
             for (int i = 0; i < 4; i++)
                 transform.GetChild(i).gameObject.SetActive(false);
 
-            if(currSeason > 3)
-                transform.GetChild(3).gameObject.SetActive(true);
-            else
-                transform.GetChild(currSeason).gameObject.SetActive(true);
+            transform.GetChild(currSeason).gameObject.SetActive(true);
 
             if(currSeason == 3)
             {

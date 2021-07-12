@@ -151,13 +151,42 @@ public class BudgetTerminal : MonoBehaviour
                 currTxt += "\n";
                 if (requestedCommand.Equals("help"))
                 {
-                    currTxt += "List of commands:\n";
-                    currTxt += "help - List of Commands\n";
-                    currTxt += "volume [int:0-100] - Set volume\n";
-                    currTxt += "kill - Terminate Program\n";
-                    currTxt += "wipe - Clear Save *WARNING*\n";
-                    currTxt += "skip - Skip Simulation Bootup\n";
-                    currTxt += "language - Set Language [int:{english=0}{简体中文=1}{繁体中文=2}]\n";
+                    LanguageLocalization<string[]> localization = new LanguageLocalization<string[]>();
+                    localization.addLanguage(new string[] {
+                        "List of commands:",
+                        "List of Commands",
+                        "Set volume",
+                        "Terminate Program",
+                        "Clear Save *DANGER*",
+                        "Skip Simulation Bootup",
+                        "Set Language"
+                        }, 0);
+                    localization.addLanguage(new string[] {
+                        "命令列表：",
+                        "命令列表",
+                        "设置音量",
+                        "终止程序",
+                        "清除保存 *危险*",
+                        "跳过模拟启动",
+                        "设置语言"
+                        }, 1);
+                    localization.addLanguage(new string[] {
+                        "命令列表：",
+                        "命令列表",
+                        "設置音量",
+                        "終止程序",
+                        "清除保存 *危險*",
+                        "跳過模擬啟動",
+                        "設置語言"
+                        }, 2);
+                    string[] temp = localization.getLanguage();
+                    currTxt += temp[0] + "\n";
+                    currTxt += "help - " + temp[1] + "\n";
+                    currTxt += "volume [0-100] - " + temp[2] + "\n";
+                    currTxt += "kill - " + temp[3] + "\n";
+                    currTxt += "wipe - " + temp[4] + "\n";
+                    currTxt += "skip - " + temp[5] + "\n";
+                    currTxt += "language [{english=0}{简体中文=1}{繁体中文=2}] - " + temp[6] + "\n";
                 }
                 else if(requestedCommand.Equals("kill"))
                 {
@@ -168,7 +197,11 @@ public class BudgetTerminal : MonoBehaviour
                 }
                 else if(requestedCommand.Equals("wipe"))
                 {
-                    currTxt += "Wiped\n";
+                    LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                    localization.addLanguage("Wiped", 0);
+                    localization.addLanguage("擦拭", 1);
+                    localization.addLanguage("擦拭", 2);
+                    currTxt += localization.getLanguage() + "\n";
                     PlayerPrefs.DeleteAll();
                 }
                 else if (requestedCommand.Split(' ')[0].Equals("language"))
@@ -177,23 +210,44 @@ public class BudgetTerminal : MonoBehaviour
                     if (PlayerPrefs.GetInt("language", 0) < 0 || PlayerPrefs.GetInt("language", 0) >= Language.languageAmt)
                     {
                         PlayerPrefs.SetInt("language", 0);
-                        currTxt += "Out of bounds. Resetting to english";
+                        Language.language = PlayerPrefs.GetInt("language", 0);
+                        LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                        localization.addLanguage("Out of bounds. Resetting to english", 0);
+                        localization.addLanguage("越界。 重置为英文", 1);
+                        localization.addLanguage("越界。 重置為英文", 2);
+                        currTxt += localization.getLanguage() + "\n";
                     }else
                     {
                         Language.language = PlayerPrefs.GetInt("language", 0);
-                        currTxt += "Language set to: " + PlayerPrefs.GetInt("language", 0);
+                        LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                        localization.addLanguage("Language set to: ", 0);
+                        localization.addLanguage("語言設置為：", 1);
+                        localization.addLanguage("語言設置為：", 2);
+                        currTxt += localization.getLanguage() + PlayerPrefs.GetInt("language", 0);
                     }
                 }
                 else if(requestedCommand.Split(' ')[0].Equals("volume"))
                 {
-                    currTxt += "(volume was " + PlayerPrefs.GetInt("volume", 50) + ")\n";
+                    LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                    localization.addLanguage("volume: ", 0);
+                    localization.addLanguage("音量: ", 1);
+                    localization.addLanguage("音量: ", 2);
+                    currTxt += localization.getLanguage() + PlayerPrefs.GetInt("volume", 50) + " => " + (int.Parse(requestedCommand.Split(' ')[1])) + "\n";
                     PlayerPrefs.SetInt("volume", int.Parse(requestedCommand.Split(' ')[1]));
                     AudioListener.volume = PlayerPrefs.GetInt("volume", 50)/ 100.0f;
                 }else
                 {
-                    currTxt += "Command {" + requestedCommand + "} was not found\nType \"help\" for more information";
+                    LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                    localization.addLanguage("Command {" + requestedCommand + "} was not found\nType \"help\" for more information", 0);
+                    localization.addLanguage("命令 {" + requestedCommand + "} 没有找到 \n输入\"help\"以获取更多信息", 1);
+                    localization.addLanguage("命令 {" + requestedCommand + "} 沒有找到 \n輸入\"help\"以獲取更多信息", 2);
+                    currTxt += localization.getLanguage() + "\n";
                 }
-                currTxt += "\nResuming...\n";
+                LanguageLocalization<string> language = new LanguageLocalization<string>();
+                language.addLanguage("Resuming", 0);
+                language.addLanguage("恢复", 1);
+                language.addLanguage("恢復", 2);
+                currTxt += "\n" + language.getLanguage() + "...\n";
                 pauseFor(2.0f);
                 //print(requestedCommand);
             }
@@ -210,6 +264,10 @@ public class BudgetTerminal : MonoBehaviour
             //typn = false;
             if (currNum > 50)
             {
+                LanguageLocalization<string> language1 = new LanguageLocalization<string>();
+                language1.addLanguage("Failed", 0);
+                language1.addLanguage("失败", 1);
+                language1.addLanguage("失敗", 2);
                 currTxt = "";
                 string front = "";
                 //print(simulationRepeatCounter);
@@ -217,13 +275,17 @@ public class BudgetTerminal : MonoBehaviour
                     for (int i = 0; i < simulationRepeatCounter-75; i++)
                         front += string.Format("{0:X}", Random.Range(0,16));
                 for (int i = 0; i < 100; i++)
-                    currTxt += "<color=red>Failed</color> >>> Simulation 0x" + front + string.Format("{0:X}", currNum + i) + "\n";
+                    currTxt += "<color=red>" + language1.getLanguage() + "</color> >>> Simulation 0x" + front + string.Format("{0:X}", currNum + i) + "\n";
                 currNum = (int)(1.1f * currNum);
                 simulationRepeatCounter++;
                 if (currNum <= 50)
                 {
+                    LanguageLocalization<string> language2 = new LanguageLocalization<string>();
+                    language2.addLanguage("Success", 0);
+                    language2.addLanguage("成功", 1);
+                    language2.addLanguage("成功", 2);
                     textComponent.alignment = TextAnchor.MiddleCenter;
-                    currTxt = "<color=#66ff66ff>Success</color>";//\n[Loading]\n[...]\n[...]\n";
+                    currTxt = "<color=#66ff66ff>" + language2.getLanguage() + "</color>";//\n[Loading]\n[...]\n[...]\n";
                     waitTimer = 1;
                     //pauseFor(100);
                     //currTimer = 0;
@@ -248,7 +310,11 @@ public class BudgetTerminal : MonoBehaviour
                     }
                     else
                     {
-                        currTxt += "<color=red>Failed</color> >>> Simulation 0x" + string.Format("{0:X}", currNum) + "\n";
+                        LanguageLocalization<string> language1 = new LanguageLocalization<string>();
+                        language1.addLanguage("Failed", 0);
+                        language1.addLanguage("失败", 1);
+                        language1.addLanguage("失敗", 2);
+                        currTxt += "<color=red>" + language1.getLanguage() + "</color> >>> Simulation 0x" + string.Format("{0:X}", currNum) + "\n";
                         currNum++;
                         if (currNum < 50)
                             pauseFor(1.0f / (currNum * 2));

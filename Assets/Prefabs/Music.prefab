@@ -46,9 +46,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0
+  m_Pitch: 0.9
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -143,10 +143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music:
-  - {fileID: 8300000, guid: 83c8155d36acc489fb9eb9048c302bf4, type: 3}
-  - {fileID: 8300000, guid: 94be4a036f3d6486fadd071cce1be2ab, type: 3}
-  - {fileID: 8300000, guid: 41bba54792d414829b080473308071d5, type: 3}
-  - {fileID: 8300000, guid: 850abea75e9e241a78fa749e81d88ab5, type: 3}
+  - {fileID: 8300000, guid: 301c78b31178849e5966b7249fbd520f, type: 3}
+  - {fileID: 8300000, guid: 3caba68d84d7e4b96a73b4d4252a7db3, type: 3}
+  - {fileID: 8300000, guid: c4f53faa214df494aac8889977674c77, type: 3}
+  - {fileID: 8300000, guid: 8e809321bb90e4367b355e98bf2478f4, type: 3}
+  - {fileID: 8300000, guid: b78c3b366bd8b4304969776167a537f0, type: 3}
+  - {fileID: 8300000, guid: abf742a722589443da79f5416edc6ce4, type: 3}
+  - {fileID: 8300000, guid: d13756203ff27418a9949855dca5f9dc, type: 3}
+  - {fileID: 8300000, guid: 8ee48eef3fb0c4011b00efd2d291e8f8, type: 3}
 --- !u!169 &7200241829138361539
 AudioLowPassFilter:
   m_ObjectHideFlags: 0
@@ -184,3 +188,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a091165c6a5394525b9d2aaf32315708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newAmtRepeat: 0

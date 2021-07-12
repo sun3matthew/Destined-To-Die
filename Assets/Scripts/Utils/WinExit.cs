@@ -53,10 +53,10 @@ public class WinExit : MonoBehaviour
         }else if(counter < 14)
         {
             fade1.color = new Color(0, 0, 0, 1-((counter - 13) / 1f));
-        }else if(counter < 69)
+        }else if(counter < 49)
         {
-            if(counter > 60)
-                titleTxt.color = new Color(1, 1, 1, (counter - 60) / 4f);
+            if(counter > 40)
+                titleTxt.color = new Color(1, 1, 1, (counter - 40) / 4f);
         }
         else
         {

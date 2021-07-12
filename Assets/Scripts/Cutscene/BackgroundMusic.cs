@@ -10,15 +10,15 @@ public class BackgroundMusic : MonoBehaviour
     Player player;
     AudioLowPassFilter lp;
     AudioGlitch ag;
-    float counter;
-    float randomWaitTime;
 
-    float prevValue;
+    int currFalseDay;
+
+    bool fadeMusic;
     // Start is called before the first frame update
     void Start()
     {
-        counter = 0;
-        randomWaitTime = Random.Range(0, 5f);
+        fadeMusic = false;
+        currFalseDay = -1;
         audioPlayer = GetComponent<AudioSource>();
         player = GameObject.FindObjectOfType<Player>();
         lp = GetComponent<AudioLowPassFilter>();
@@ -33,17 +33,29 @@ public class BackgroundMusic : MonoBehaviour
         if (player.happySmooth > -20f)
             ag.newAmtRepeat = 0;
         else
-            ag.newAmtRepeat = (int)(player.happySmooth/-10f)-1;
-        if (!audioPlayer.isPlaying)
+            ag.newAmtRepeat = (int)(player.happySmooth / -10f) - 1;
+
+        if (currFalseDay != player.falseDay)
         {
-            counter += Time.deltaTime;
-            if(counter > randomWaitTime)
+            currFalseDay = player.falseDay;
+            if (currFalseDay >= music.Length)
+                return;
+            fadeMusic = true;
+        }
+
+        if(fadeMusic)
+        {
+            audioPlayer.volume -= 0.15f * Time.deltaTime;
+            if (audioPlayer.volume <= 0.01)
             {
-                audioPlayer.clip = music[Random.Range(0, music.Length)]; //PlayOneShot(music[Random.Range(0, music.Length)]);
+                audioPlayer.volume = 0;
+                audioPlayer.clip = music[currFalseDay];
                 audioPlayer.Play();
-                counter = 0;
-                randomWaitTime = Random.Range(0, 10f);
+                fadeMusic = false;
             }
+        }else if(audioPlayer.volume < 0.4)
+        {
+            audioPlayer.volume += 0.01f * Time.deltaTime;
         }
 
     }

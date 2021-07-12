@@ -19,13 +19,14 @@ public class DeathVideoController : MonoBehaviour
     private bool donePlay;
     private float time;
 
-    void Start() {
+    void Start()
+    {
         int day = -1;
-        if(GameObject.Find("DeathDayTransfer") == null)
+        if (GameObject.Find("DeathDayTransfer") == null)
             day = GameObject.Find("DDTTEST").GetComponent<DeathDayTransfer>().getDay();
         else
             day = GameObject.Find("DeathDayTransfer").GetComponent<DeathDayTransfer>().getDay();
-        dsr = Instantiate(days[day], new Vector3(0,0,0), Quaternion.identity).GetComponent<SpriteRenderer>();
+        dsr = Instantiate(days[day], new Vector3(0, 0, 0), Quaternion.identity).GetComponent<SpriteRenderer>();
         deathPicSR = GameObject.Find("DeathPic").GetComponent<SpriteRenderer>();
         dsr.color = new Color(1f, 1f, 1f, 0f);
         vp = transform.GetComponent<VideoPlayer>();
@@ -44,10 +45,11 @@ public class DeathVideoController : MonoBehaviour
         {
             dsr.color = new Color(1f, 1f, 1f, time);
         }
-        else if(time < 4)
+        else if (time < 4)
         {
             dsr.color = new Color(1f, 1f, 1f, 1 - ((time - 1) / 3f));
-        }else if(time < 31)
+        }
+        else if (time < 31)
         {
             dsr.enabled = false;
             if (!donePlay && !vp.isPlaying)
@@ -55,16 +57,19 @@ public class DeathVideoController : MonoBehaviour
                 donePlay = true;
                 vp.Play();
             }
-        }else if(time < 32)
+        }
+        else if (time < 32)
         {
             vp.enabled = false;
             deathPicSR.color = new Color(1f, 1f, 1f, (time - 31f));
-        }else if(time < 34)
+        }
+        else if (time < 34)
         {
             deathPicSR.color = Color.white;
-        }else if(time < 37)
+        }
+        else if (time < 37)
         {
-            deathPicSR.color = new Color(1f, 1f, 1f, 1 - (time - 34f)/3f);
+            deathPicSR.color = new Color(1f, 1f, 1f, 1 - (time - 34f) / 3f);
         }
         else
         {
