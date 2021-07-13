@@ -74,10 +74,14 @@ public class Cat : MonoBehaviour, Clickable
         {
             if(PlayerPrefs.GetInt("CatPostcards", 0) == 16)
             {
-                if (SteamManager.Initialized)
+                if(PlayerPrefs.GetInt("GOOD_BYE", 0) == 0)
                 {
-                    SteamUserStats.SetAchievement("GOOD_BYE");
-                    SteamUserStats.StoreStats();
+                    PlayerPrefs.SetInt("GOOD_BYE", 1);
+                    if (SteamManager.Initialized)
+                    {
+                        SteamUserStats.SetAchievement("GOOD_BYE");
+                        SteamUserStats.StoreStats();
+                    }
                 }
                 localization.addLanguage("Remember me, please. I don't want to disappear again", 0);
                 localization.addLanguage("记住我。我不想再消失", 1);

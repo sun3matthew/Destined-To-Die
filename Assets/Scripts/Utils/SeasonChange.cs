@@ -28,8 +28,9 @@ public class SeasonChange : MonoBehaviour
 
             transform.GetChild(currSeason).gameObject.SetActive(true);
 
-            if(currSeason == 3)
+            if(currSeason == 3 && PlayerPrefs.GetInt("RAIN", 0) == 0)
             {
+                PlayerPrefs.SetInt("RAIN", 1);
                 if(SteamManager.Initialized)
                 {
                     SteamUserStats.SetAchievement("RAIN");

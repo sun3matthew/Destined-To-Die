@@ -159,7 +159,8 @@ public class BudgetTerminal : MonoBehaviour
                         "Terminate Program",
                         "Clear Save *DANGER*",
                         "Skip Simulation Bootup",
-                        "Set Language"
+                        "Set Language",
+                        "Update Achievements on Server"
                         }, 0);
                     localization.addLanguage(new string[] {
                         "命令列表：",
@@ -168,7 +169,8 @@ public class BudgetTerminal : MonoBehaviour
                         "终止程序",
                         "清除保存 *危险*",
                         "跳过模拟启动",
-                        "设置语言"
+                        "设置语言",
+                        "更新服务器成就"
                         }, 1);
                     localization.addLanguage(new string[] {
                         "命令列表：",
@@ -177,7 +179,8 @@ public class BudgetTerminal : MonoBehaviour
                         "終止程序",
                         "清除保存 *危險*",
                         "跳過模擬啟動",
-                        "設置語言"
+                        "設置語言",
+                        "更新服務器成就"
                         }, 2);
                     string[] temp = localization.getLanguage();
                     currTxt += temp[0] + "\n";
@@ -187,6 +190,7 @@ public class BudgetTerminal : MonoBehaviour
                     currTxt += "wipe - " + temp[4] + "\n";
                     currTxt += "skip - " + temp[5] + "\n";
                     currTxt += "language [{english=0}{简体中文=1}{繁体中文=2}] - " + temp[6] + "\n";
+                    currTxt += "push - " + temp[7] + "\n";
                 }
                 else if(requestedCommand.Equals("kill"))
                 {
@@ -195,7 +199,31 @@ public class BudgetTerminal : MonoBehaviour
                 {
                     GameObject.Find("Door").GetComponent<Door>().provoke();
                 }
-                else if(requestedCommand.Equals("wipe"))
+                else if (requestedCommand.Equals("push"))
+                {
+                    LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                    localization.addLanguage("Synced", 0);
+                    localization.addLanguage("已同步", 1);
+                    localization.addLanguage("已同步", 2);
+                    currTxt += localization.getLanguage() + "\n";
+                    if(SteamManager.Initialized)
+                    {
+                        if (PlayerPrefs.GetInt("FIRST_DEATH", 0) == 1)
+                            SteamUserStats.SetAchievement("FIRST_DEATH");
+                        if (PlayerPrefs.GetInt("NO_POINT", 0) == 1)
+                            SteamUserStats.SetAchievement("NO_POINT");
+                        if (PlayerPrefs.GetInt("END", 0) == 1)
+                            SteamUserStats.SetAchievement("END");
+                        if (PlayerPrefs.GetInt("SINGLE", 0) == 1)
+                            SteamUserStats.SetAchievement("SINGLE");
+                        if (PlayerPrefs.GetInt("GOOD_BYE", 0) == 1)
+                            SteamUserStats.SetAchievement("GOOD_BYE");
+                        if (PlayerPrefs.GetInt("RAIN", 0) == 1)
+                            SteamUserStats.SetAchievement("RAIN");
+                        SteamUserStats.StoreStats();
+                    }
+                }
+                else if (requestedCommand.Equals("wipe"))
                 {
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
                     localization.addLanguage("Wiped", 0);

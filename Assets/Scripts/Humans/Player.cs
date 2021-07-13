@@ -97,16 +97,6 @@ public class Player : Human
     // Update is called once per frame
     protected override void Update()
     {
-        if(Input.GetKey(KeyCode.Space))
-        {
-            bool tempOut = false;
-            SteamUserStats.GetAchievement("FIRST_DEATH", out tempOut);
-            //SteamUserStats.SetAchievement("FIRST_DEATH");
-            //SteamUserStats.StoreStats();
-            //SteamUserStats.GetAchievement("FIRST_DEATH", out tempOut);
-            print(tempOut);
-            SteamUserStats.SetAchievement("FIRST_DEATH");
-        }
         if (wentToBed && timeDayObj.timeDay > 7 && timeDayObj.timeDay < 8)
             wentToBed = false;
         if(!wentToBed && timeDayObj.timeDay > 4.5 && timeDayObj.timeDay < 5 && GameObject.Find("BedB") != null)
@@ -255,17 +245,19 @@ public class Player : Human
 
         if (emotions[0].getValue() < -80 && emotions[4].getValue() < -80)
         {
-            if (PlayerPrefs.GetInt("CatPostcards", 0) == 0)
+            if(PlayerPrefs.GetInt("FIRST_DEATH", 0) == 0)
             {
-                if (SteamManager.Initialized)
+                PlayerPrefs.SetInt("FIRST_DEATH", 1);
+                if(SteamManager.Initialized)
                 {
                     SteamUserStats.SetAchievement("FIRST_DEATH");
                     SteamUserStats.StoreStats();
                 }
             }
-            else if (PlayerPrefs.GetInt("CatPostcards", 0) == 7)
+            if (PlayerPrefs.GetInt("CatPostcards", 0) >= 7 && PlayerPrefs.GetInt("NO_POINT", 0) == 0)
             {
-                if (SteamManager.Initialized)
+                PlayerPrefs.SetInt("NO_POINT", 1);
+                if(SteamManager.Initialized)
                 {
                     SteamUserStats.SetAchievement("NO_POINT");
                     SteamUserStats.StoreStats();
@@ -280,10 +272,14 @@ public class Player : Human
             PlayerPrefs.SetInt("GameWin", 1);
             if (PlayerPrefs.GetInt("CatPostcards", 0) >= 17)
             {
-                if (SteamManager.Initialized)
+                if(PlayerPrefs.GetInt("END", 0) == 0)
                 {
-                    SteamUserStats.SetAchievement("END");
-                    SteamUserStats.StoreStats();
+                    PlayerPrefs.SetInt("END", 1);
+                    if (SteamManager.Initialized)
+                    {
+                        SteamUserStats.SetAchievement("END");
+                        SteamUserStats.StoreStats();
+                    }
                 }
                 DontDestroyOnLoadManager.becomeMortal();
                 SceneManager.LoadScene("Win");

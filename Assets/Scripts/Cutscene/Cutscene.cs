@@ -97,8 +97,9 @@ public class Cutscene : MonoBehaviour
         turnOffCounter = 0.0f;
         string nameOfCS = cutsceneRefs[playCS][Random.Range(0, cutsceneRefs[playCS].Length)];
         videoplayer.clip = Resources.Load<VideoClip>(nameOfCS);
-        if(nameOfCS.Equals("LoveTwoHandMakeHeart"))
+        if(nameOfCS.Equals("LoveTwoHandMakeHeart") && PlayerPrefs.GetInt("SINGLE", 0) == 0)
         {
+            PlayerPrefs.SetInt("SINGLE", 1);
             if (SteamManager.Initialized)
             {
                 SteamUserStats.SetAchievement("SINGLE");
