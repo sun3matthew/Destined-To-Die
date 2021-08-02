@@ -51,9 +51,9 @@ public class Player : Human
         computerWindow = GameObject.Find("ComputerB(Clone)").transform.GetChild(0).gameObject;
 
         LanguageLocalization<string[]> localization = new LanguageLocalization<string[]>();
-        localization.addLanguage(new string[] {"AMOUNT OF SLEEP", "HAPPY", "INSTANTANEOUS HAPPY", "SATISFACTION", "DEATH TOLERANCE", "ART", "CODE", "SCHOOL", "FRIEND"}, 0);
-        localization.addLanguage(new string[] {"睡眠量", "快乐", "瞬间快乐", "满足", "死亡容忍", "艺术", "编程", "学校", "朋友"}, 1);
-        localization.addLanguage(new string[] {"睡眠量", "快樂", "瞬間快樂", "滿足", "死亡容忍", "藝術", "編程", "學校", "朋友"}, 2);
+        localization.addLanguage(new string[] {"AMOUNT OF SLEEP", "HAPPY", "INSTANTANEOUS HAPPY", "SATISFACTION", "DEATH TOLERANCE", "ART", "CODE", "SCHOOL", "FRIEND", "WENT TO CLASS"}, 0);
+        localization.addLanguage(new string[] {"睡眠量", "快乐", "瞬间快乐", "满足", "死亡容忍", "艺术", "编程", "学校", "朋友", "上课了" }, 1);
+        localization.addLanguage(new string[] {"睡眠量", "快樂", "瞬間快樂", "滿足", "死亡容忍", "藝術", "編程", "學校", "朋友", "上課了" }, 2);
         statsTranslated = localization.getLanguage();
 
         emotions = new HundredBound[5];
@@ -67,9 +67,9 @@ public class Player : Human
             abilities[i] = new HundredBound();
 
         for (int i = 0; i < emotions.Length; i++)
-            emotions[i].setValue(Random.Range(-5, 5));
+            emotions[i].setValue(Random.Range(-10, 5));
         for (int i = 0; i < abilities.Length; i++)
-            abilities[i].setValue(Random.Range(-30, 30));
+            abilities[i].setValue(Random.Range(-10, 10));
 
         for (int i = 0; i < emotionsPrev.Length; i++)
             emotionsPrev[i] = new HundredBound();
@@ -87,11 +87,6 @@ public class Player : Human
         hoursOfSleep = 8;
         falseDay = 0;
         emotions[3].setValue(Random.Range(60, 80));
-        //SteamUserStats.ClearAchievement("FIRST_DEATH");
-        //SteamUserStats.StoreStats();
-
-        //for (int i = 0; i < emotions.Length; i++)
-        //    emotions[i].setValue(-100);
         base.Start();
     }
     // Update is called once per frame
@@ -142,15 +137,16 @@ public class Player : Human
         if (hoursOfSleep > 24)
             hoursOfSleep -= 24;
 
-        for(int i = 0; i < emotions.Length; i++)
-            emotions[i].changeValue(timeDayObj.day * 2 * -1);//emotions by "Intentional Game Design'
+        for (int i = 0; i < emotions.Length; i++)
+            emotions[i].changeValue((emotions[i].getValue() - 50) < 0 ? (emotions[i].getValue() - 50) * 0.1f : 0);//emotions by snowball
+
+        for (int i = 0; i < emotions.Length; i++)
+            emotions[i].changeValue(timeDayObj.day * -4);//emotions by "Intentional Game Design'
 
 
-        emotions[4].changeValue(emotions[1].getValue() < 0 ? emotions[1].getValue() * 3f : 0);//deathTolerance by depression handling - pre reset
+        emotions[4].changeValue(emotions[1].getValue() < 0 ? emotions[1].getValue() * 4f : 0);//deathTolerance by depression handling - pre reset
 
-        emotions[4].changeValue(emotions[0].getValue() * 0.4f);//deathTolerance by happy - slow
-        emotions[0].changeValue(emotions[2].getValue() * 0.7f);//happy by satisfaction - slow
-        emotions[2].changeValue(emotions[3].getValue() * 0.3f);//satisfaction by Mental energy - slow
+        emotions[2].changeValue((emotions[3].getValue()-40) * 0.1f);//satisfaction by Mental energy - slow
 
         emotions[3].setValue(((hoursOfSleep * 12f) * 2) - 110);//Mental energy by hours of sleep
 
@@ -163,20 +159,33 @@ public class Player : Human
 
         if (!wentToPractice)//guilt
             emotions[4].changeValue(-50);
-        else
-            emotions[1].changeValue(25);
 
         for (int i = 0; i < abilities.Length; i++)
         {
-            emotions[2].changeValue(abilities[i].getValue() * 0.3f);//satisfaction by abilities
-            abilities[i].changeValue(Random.Range(-15, 0));//ability deteriorate
+            abilities[i].changeValue(Random.Range(-20, 0));//ability deteriorate
+            emotions[2].changeValue(abilities[i].getValue() * 0.4f);//satisfaction by abilities
         }
 
-        emotions[0].changeValue(emotions[0].getValue() < 0 ? emotions[0].getValue() * 0.4f : 0);//happy by snowball
-        emotions[0].changeValue(timeDayObj.day * -4);//happy by "Intentional Game Design"
+        emotions[0].changeValue(emotions[2].getValue() * 0.7f);//happy by satisfaction
+        emotions[4].changeValue(emotions[0].getValue() * 0.25f);//deathTolerance by happy
+
+        emotions[0].changeValue(timeDayObj.day * -3);//happy by "Intentional Game Design"
 
         emotions[1].changeValue(emotions[0].getValue());//happyImp by happy
-        emotions[1].changeValue(timeDayObj.day * -2);//happyImp by "Intentional Game Design'
+        emotions[1].changeValue(timeDayObj.day * -6);//happyImp by "Intentional Game Design'
+
+        if(psAmt < 3)
+            for (int i = 0; i < emotions.Length; i++)
+                emotions[i].changeValue(timeDayObj.day * -1);//emotions by "Intentional Game Design'
+        if (psAmt < 9)
+            for (int i = 0; i < emotions.Length; i++)
+                emotions[i].changeValue(timeDayObj.day * -1);//emotions by "Intentional Game Design'
+        if (psAmt < 12)
+            for (int i = 0; i < emotions.Length; i++)
+                emotions[i].changeValue(timeDayObj.day * -1);//emotions by "Intentional Game Design'
+        if (psAmt < 16)
+            for (int i = 0; i < emotions.Length; i++)
+                emotions[i].changeValue(timeDayObj.day * -1);//emotions by "Intentional Game Design'
 
         wentToClass = false;
         wentToPractice = false;
@@ -218,7 +227,7 @@ public class Player : Human
         if (psAmt >= 13)
             outputText += statsTranslated[5] + ": " + abilitiesPrev[0].getIntValue() + " => " + abilities[0].getIntValue() + "\n";
         else if (psAmt >= 5)
-            outputText += statsTranslated[5] + ": " + (abilities[0].getValue()-abilitiesPrev[0].getValue() > 0 ? "+" : "-") + "\n";
+            outputText += statsTranslated[5] + ": " + (abilities[0].getValue() - abilitiesPrev[0].getValue() > 0 ? "+" : "-") + "\n";
 
         if (psAmt >= 14)
             outputText += statsTranslated[6] + ": " + abilitiesPrev[1].getIntValue() + " => " + abilities[1].getIntValue() + "\n";
@@ -234,21 +243,21 @@ public class Player : Human
             outputText += statsTranslated[8] + ": " + abilitiesPrev[3].getIntValue() + " => " + abilities[3].getIntValue();
         else if (psAmt >= 8)
             outputText += statsTranslated[8] + ": " + (abilities[3].getValue() - abilitiesPrev[3].getValue() > 0 ? "+" : "-");
-            
+
         for (int i = 0; i < emotionsPrev.Length; i++)
             emotionsPrev[i].setValue(emotions[i].getValue());
         for (int i = 0; i < abilitiesPrev.Length; i++)
-            abilitiesPrev[i].setValue(abilitiesPrev[i].getValue());
+            abilitiesPrev[i].setValue(abilities[i].getValue());
 
         Cutscene.cutscene(emotions[0].getIntValue() / 10);
         Cutscene.cutscene(outputText);
 
         if (emotions[0].getValue() < -80 && emotions[4].getValue() < -80)
         {
-            if(PlayerPrefs.GetInt("FIRST_DEATH", 0) == 0)
+            if (PlayerPrefs.GetInt("FIRST_DEATH", 0) == 0)
             {
                 PlayerPrefs.SetInt("FIRST_DEATH", 1);
-                if(SteamManager.Initialized)
+                if (SteamManager.Initialized)
                 {
                     SteamUserStats.SetAchievement("FIRST_DEATH");
                     SteamUserStats.StoreStats();
@@ -257,7 +266,7 @@ public class Player : Human
             if (PlayerPrefs.GetInt("CatPostcards", 0) >= 7 && PlayerPrefs.GetInt("NO_POINT", 0) == 0)
             {
                 PlayerPrefs.SetInt("NO_POINT", 1);
-                if(SteamManager.Initialized)
+                if (SteamManager.Initialized)
                 {
                     SteamUserStats.SetAchievement("NO_POINT");
                     SteamUserStats.StoreStats();
@@ -272,7 +281,7 @@ public class Player : Human
             PlayerPrefs.SetInt("GameWin", 1);
             if (PlayerPrefs.GetInt("CatPostcards", 0) >= 17)
             {
-                if(PlayerPrefs.GetInt("END", 0) == 0)
+                if (PlayerPrefs.GetInt("END", 0) == 0)
                 {
                     PlayerPrefs.SetInt("END", 1);
                     if (SteamManager.Initialized)

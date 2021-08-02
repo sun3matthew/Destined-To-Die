@@ -7,7 +7,7 @@ public class Zoom : InteractableWindow
     protected override void provoke()
     {
         player.wentToClass = true;
-        player.abilities[2].changeValue(2);
+        player.abilities[2].changeValue(14);
     }
     protected override void initToggleMulti() => toggleMulti = 60;
 }

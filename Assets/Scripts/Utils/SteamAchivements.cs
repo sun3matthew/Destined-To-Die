@@ -18,7 +18,7 @@ public class SteamAchivements : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            SteamUserStats.ResetAllStats(true);
+            //SteamUserStats.ResetAllStats(true);
             //print(SteamUserStats.SetAchievement("RAIN") + ":TEST");
             //SteamUserStats.StoreStats();
         }

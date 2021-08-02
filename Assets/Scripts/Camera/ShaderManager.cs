@@ -41,7 +41,7 @@ public class ShaderManager : MonoBehaviour
         material.SetFloat("grayscale", gray < -10 ? (gray + 10) / 100 : 0);
 
 
-        if ((computer != null && computer.activeSelf) || !cutscene.activeSelf)
+        if ((computer != null && computer.activeSelf) || (cutscene != null && !cutscene.activeSelf))
         {
             Vector2 temp = mainCamera.WorldToScreenPoint(compsr.bounds.min);
             material.SetFloat("windowX", temp.x / mainCamera.pixelWidth);

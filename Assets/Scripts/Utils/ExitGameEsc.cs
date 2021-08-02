@@ -8,8 +8,10 @@ public class ExitGameEsc : MonoBehaviour
 {
     private float exitGame;
     private Image exitFade;
+    private Text text;
     void Start()
     {
+        text = transform.parent.GetChild(1).GetComponent<Text>();
         exitFade = GetComponent<Image>();
     }
 
@@ -33,5 +35,6 @@ public class ExitGameEsc : MonoBehaviour
             SceneManager.LoadScene("BudgetTerminal");
         }
         exitFade.color = new Color(0.75f, 0, 0, exitGame);
+        text.color = new Color(1, 1, 1, exitGame);
     }
 }

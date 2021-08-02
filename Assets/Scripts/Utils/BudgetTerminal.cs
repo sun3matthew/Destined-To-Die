@@ -66,6 +66,10 @@ public class BudgetTerminal : MonoBehaviour
             ">>>",
             "Simulation Initialized.",
             "Simulation Starting.",
+            "...",
+            "...",
+            "Type \"help\" for more information",
+            "Type \"help\" for more information",
             "Type \"help\" for more information",
             "...",
             "...",
@@ -114,6 +118,8 @@ public class BudgetTerminal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Escape))
+            Application.Quit();
         if (done)
             return;
         keyb.ActivateInputField();
@@ -160,7 +166,8 @@ public class BudgetTerminal : MonoBehaviour
                         "Clear Save *DANGER*",
                         "Skip Simulation Bootup",
                         "Set Language",
-                        "Update Achievements on Server"
+                        "Update Achievements on Server",
+                        "Prints out tips"
                         }, 0);
                     localization.addLanguage(new string[] {
                         "命令列表：",
@@ -170,7 +177,8 @@ public class BudgetTerminal : MonoBehaviour
                         "清除保存 *危险*",
                         "跳过模拟启动",
                         "设置语言",
-                        "更新服务器成就"
+                        "更新服务器成就",
+                        "提示"
                         }, 1);
                     localization.addLanguage(new string[] {
                         "命令列表：",
@@ -180,7 +188,8 @@ public class BudgetTerminal : MonoBehaviour
                         "清除保存 *危險*",
                         "跳過模擬啟動",
                         "設置語言",
-                        "更新服務器成就"
+                        "更新服務器成就",
+                        "提示"
                         }, 2);
                     string[] temp = localization.getLanguage();
                     currTxt += temp[0] + "\n";
@@ -191,6 +200,7 @@ public class BudgetTerminal : MonoBehaviour
                     currTxt += "skip - " + temp[5] + "\n";
                     currTxt += "language [{english=0}{简体中文=1}{繁体中文=2}] - " + temp[6] + "\n";
                     currTxt += "push - " + temp[7] + "\n";
+                    currTxt += "tips - " + temp[8] + "\n";
                 }
                 else if(requestedCommand.Equals("kill"))
                 {
@@ -223,6 +233,10 @@ public class BudgetTerminal : MonoBehaviour
                         SteamUserStats.StoreStats();
                     }
                 }
+                else if (requestedCommand.Equals("ASDFasdf"))
+                {
+                    PlayerPrefs.SetInt("CatPostcards", 16);
+                }
                 else if (requestedCommand.Equals("wipe"))
                 {
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
@@ -231,6 +245,66 @@ public class BudgetTerminal : MonoBehaviour
                     localization.addLanguage("擦拭", 2);
                     currTxt += localization.getLanguage() + "\n";
                     PlayerPrefs.DeleteAll();
+                }else if (requestedCommand.Equals("tips"))
+                {
+                    LanguageLocalization<string[]> tipsLo = new LanguageLocalization<string[]>();
+                    tipsLo.addLanguage(new string[] {
+                    "Learn how to live from trial and error. I will assist you with more information, each time you see me.",
+                    "Make sure you go to school. Otherwise your satisfaction will decrease very fast.",
+                    "Bouncing Icons indicate the task to go much faster.",
+                    "The knife will increase your Instantaneous Happiness, but decrease happiness.",
+                    "Talking to someone constantly will better positive effects they have on you.",
+                    "Death Tolerance is influenced by Instantaneous Happiness.",
+                    "Happiness is heavily influenced by Satisfaction.",
+                    "Death is dependent only on Happiness and Death Tolerance.",
+                    "Your Art, Coding, Friendship and School values influence Satisfaction.",
+                    "Death Tolerance is somewhat influenced by Happiness.",
+                    "Your Art, Coding, Friendship and School values decrease naturally.",
+                    "Instantaneous Happiness is influenced by Happiness.",
+                    "Playing Games and Watching Videos can increase Instantatious Happiness.",
+                    "Listening to music will exacerbate Instantaneous Happiness.",
+                    "The amount of sleep you get effects your satisfaction.",
+                    "Happiness is influenced by Happiness Instantaneous Happiness is influnced by Instantaneous Happiness.\nSatisfaction is influenced by Satisfaction. Death Tolerance is influenced by Death Tolerance"
+                    }, 0);
+                    tipsLo.addLanguage(new string[] {
+                    "一定要上学，不然你的满足感会下降的很快。",
+                    "跑步有益于瞬间的幸福。",
+                    "弹跳图标表示任务进行得更快。",
+                    "刀会增加你的瞬间幸福感，但会降低幸福感。",
+                    "不断地与某人交谈，他们会对你产生更好的积极影响。",
+                    "死亡容忍受到瞬间幸福的影响。",
+                    "幸福在很大程度上受满足感的影响。",
+                    "死亡只取决于幸福和死亡容忍。",
+                    "你的艺术、编码、友谊和学校价值观影响满意度。",
+                    "死亡容忍在某种程度上受到幸福的影响。",
+                    "你的艺术、编码、友谊和学校价值自然下降。",
+                    "瞬间的幸福受幸福的影响。",
+                    "玩游戏和看视频可以增加瞬间的幸福感。",
+                    "听音乐会加剧瞬间的幸福感。",
+                    "睡眠时间长短会影响你的满意度。",
+                    "幸福受幸福的影响。"}
+                        , 1);
+                    tipsLo.addLanguage(new string[] {
+                    "一定要上學，不然你的滿足感會下降的很快。",
+                    "跑步有益於瞬間的幸福。",
+                    "彈跳圖標表示任務進行得更快。",
+                    "刀會增加你的瞬間幸福感，但會降低幸福感。",
+                    "不斷地與某人交談，他們會對你產生更好的積極影響。",
+                    "死亡容忍受到瞬間幸福的影響。",
+                    "幸福在很大程度上受滿足感的影響。",
+                    "死亡只取決於幸福和死亡容忍。",
+                    "你的藝術、編碼、友誼和學校價值觀影響滿意度。",
+                    "死亡容忍在某種程度上受到幸福的影響。",
+                    "你的藝術、編碼、友誼和學校價值自然下降。",
+                    "瞬間的幸福受幸福的影響。",
+                    "玩遊戲和看視頻可以增加瞬間的幸福感。",
+                    "聽音樂會加劇瞬間的幸福感。",
+                    "睡眠時間長短會影響你的滿意度。",
+                    "幸福受幸福的影響。"}
+                        , 2);
+                    for (int i = 0; i < PlayerPrefs.GetInt("CatPostcards", 0); i++)
+                        if (i < tipsLo.getLanguage().Length)
+                            currTxt += (i+1) + ": " + tipsLo.getLanguage()[i] + "\n";
                 }
                 else if (requestedCommand.Split(' ')[0].Equals("language"))
                 {
@@ -313,7 +387,7 @@ public class BudgetTerminal : MonoBehaviour
                     language2.addLanguage("成功", 1);
                     language2.addLanguage("成功", 2);
                     textComponent.alignment = TextAnchor.MiddleCenter;
-                    currTxt = "<color=#66ff66ff>" + language2.getLanguage() + "</color>";//\n[Loading]\n[...]\n[...]\n";
+                    currTxt = "<color=#66ff66ff>" + language2.getLanguage() + "</color>\nGoal: Make it to day 9. Past the rainy day.";//\n[Loading]\n[...]\n[...]\n";
                     waitTimer = 1;
                     //pauseFor(100);
                     //currTimer = 0;

@@ -16,7 +16,7 @@ public class ForceExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (time.timeDay > 17.8f && !done)
+        if (time.timeDay > 23f && !done)
         {
             done = true;
             GameObject.Find("Door").transform.GetComponent<Door>().provoke();

@@ -247,12 +247,20 @@ public abstract class Classmate : Human, Clickable
                 }
                 else
                 {
-                    Cutscene.cutscene("My social battery is drained.");
+                    LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                    localization.addLanguage("My social battery is drained.", 0);
+                    localization.addLanguage("我太累了不想和人说话", 1);
+                    localization.addLanguage("我太累了不想和人說話", 2);
+                    Cutscene.cutscene(localization.getLanguage());
                 }
             }
             else
             {
-                Cutscene.cutscene("I already talked to them.");
+                LanguageLocalization<string> localization = new LanguageLocalization<string>();
+                localization.addLanguage("I already talked to them.", 0);
+                localization.addLanguage("我已经和他们谈过了。", 1);
+                localization.addLanguage("我已經和他們談過了。", 2);
+                Cutscene.cutscene(localization.getLanguage());
             }
         }
     }

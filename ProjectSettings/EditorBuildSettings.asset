@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Death.unity
     guid: 12f9aaa3cedda48cca2539fad2421b6f
+  - enabled: 1
+    path: Assets/Scenes/CatGone.unity
+    guid: 6e9fc5a5da23a45bb81358115c5fedbb
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
