@@ -52,8 +52,7 @@ public class Player : Human
 
         LanguageLocalization<string[]> localization = new LanguageLocalization<string[]>();
         localization.addLanguage(new string[] {"AMOUNT OF SLEEP", "HAPPY", "INSTANTANEOUS HAPPY", "SATISFACTION", "DEATH TOLERANCE", "ART", "CODE", "SCHOOL", "FRIEND", "WENT TO CLASS"}, 0);
-        localization.addLanguage(new string[] {"睡眠量", "快乐", "瞬间快乐", "满足", "死亡容忍", "艺术", "编程", "学校", "朋友", "上课了" }, 1);
-        localization.addLanguage(new string[] {"睡眠量", "快樂", "瞬間快樂", "滿足", "死亡容忍", "藝術", "編程", "學校", "朋友", "上課了" }, 2);
+        localization.addLanguage(new string[] { "ปริมาณการนอนหลับ", "ความสุข", "ความสุขชั่วขณะ", "ความพึงพอใจ", "ความอดทนต่อความตาย", "ศิลปะ", "การเขียนโค้ด", "การเข้าเรียน", "เพื่อน", "การเข้าคาบเรียน"}, 1);
         statsTranslated = localization.getLanguage();
 
         emotions = new HundredBound[5];

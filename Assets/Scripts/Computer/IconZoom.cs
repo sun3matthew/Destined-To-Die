@@ -8,8 +8,7 @@ public class IconZoom : IconNotificationManage
     {
         LanguageLocalization<string> localization = new LanguageLocalization<string>();
         localization.addLanguage("Class has ended already.", 0);
-        localization.addLanguage("课已经结束了。", 1);
-        localization.addLanguage("課已經結束了。", 2);
+        localization.addLanguage("คาบเรียนจบลงแล้ว", 1);
         return localization.getLanguage();
     }
 

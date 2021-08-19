@@ -45,10 +45,8 @@ public class BudgetTerminal : MonoBehaviour
         {
             if (SteamManager.Initialized)
             {
-                if (SteamApps.GetCurrentGameLanguage().Equals("schinese"))
+                if (SteamApps.GetCurrentGameLanguage().Equals("thai"))
                     PlayerPrefs.SetInt("language", 1);
-                else if (SteamApps.GetCurrentGameLanguage().Equals("tchinese"))
-                    PlayerPrefs.SetInt("language", 2);
                 else
                     PlayerPrefs.SetInt("language", 0);
             }
@@ -77,38 +75,25 @@ public class BudgetTerminal : MonoBehaviour
             }, 0);
 
         localization.addLanguage(new string[]{
-            "上次登录: Sun Jan  NaN NaN:NaN:NaN\n",
-            "仿真初始化...",
+            "เข้าสู่ระบบครั้งล่าสุด: Sun Jan  NaN NaN:NaN:NaN\n",
+            "กำลังเริ่มต้นการจำลองสถานการณ์...",
             "...",
             "...",
-            "无法获取时间。",
-            "无法连接。",
-            "1 个错误，692 个警告。",
+            "ไม่สามารถตรวจสอบเวลาได้",
+            "ไม่สามารถเชื่อมต่อได้",
+            "1 ข้อผิดพลาด 692 คำเตือน",
             ">>>",
-            "仿真初始化结束",
-            "仿真开始",
-            "输入\"help\"以获取更多信息",
+            "กำลังเริ่มต้นการจำลองสถานการณ์",
+            "กำลังเริ่มสถานการณ์จำลอง",
             "...",
             "...",
-            (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "你怎么还在这。" : "..."
+            "พิมพ์ \"help\" เพื่อเรียนรู้เพิ่มเติม",
+            "พิมพ์  \"help\" เพื่อเรียนรู้เพิ่มเติม",
+            "พิมพ์  \"help\" เพื่อเรียนรู้เพิ่มเติม",
+            "...",
+            "...",
+            (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "ทำไมคุณยังอยู่ที่นี่" : "..."
             }, 1);
-
-        localization.addLanguage(new string[]{
-            "上次登錄: Sun Jan NaN NaN:NaN:NaN\n",
-            "仿真初始化...",
-            "...",
-            "...",
-            "無法獲取時間。",
-            "無法連接。",
-            "1 個錯誤，692 個警告。",
-            ">>>",
-            "仿真初始化結束",
-            "仿真開始",
-            "輸入\"help\"以獲取更多信息",
-            "...",
-            "...",
-            (PlayerPrefs.GetInt("CatPostcards", 0) == 17 && PlayerPrefs.GetInt("GameWin", 0) == 1) ? "你怎麼還在這。" : "..."
-            }, 2);
 
         logIn = localization.getLanguage();
         pauseFor();
@@ -141,8 +126,7 @@ public class BudgetTerminal : MonoBehaviour
                 typn = true;
                 LanguageLocalization<string> localization = new LanguageLocalization<string>();
                 localization.addLanguage("Keyboard Interrupt\n[ENTER] to resume\n", 0);
-                localization.addLanguage("键盘中断\n[ENTER] => 恢复\n", 1);
-                localization.addLanguage("鍵盤中斷\n[ENTER] => 恢復\n", 2);
+                localization.addLanguage("ถูกขัดจังหวะโดยแป้นพิมพ์\n[ENTER] เพื่อดำเนินการต่อ\n", 1);
                 currTxt += localization.getLanguage();
                 //currTxt += keyb.text + "\n";
                 if(keyb.text.Equals("\n"))
@@ -170,27 +154,16 @@ public class BudgetTerminal : MonoBehaviour
                         "Prints out tips"
                         }, 0);
                     localization.addLanguage(new string[] {
-                        "命令列表：",
-                        "命令列表",
-                        "设置音量",
-                        "终止程序",
-                        "清除保存 *危险*",
-                        "跳过模拟启动",
-                        "设置语言",
-                        "更新服务器成就",
-                        "提示"
+                        "รายการคำสั่ง:",
+                        "รายการคำสั่ง",
+                        "ตั้งค่าระดับเสียง",
+                        "บังคับปิดโปรแกรม",
+                        "ล้างเกมที่บันทึกไว้ *อันตราย*",
+                        "ข้ามการจำลองการทำงานของคอมพิวเตอร์",
+                        "ตั้งค่าภาษา",
+                        "อัปเดตความสำเร็จบนเซิร์ฟเวอร์",
+                        "พิมพ์เคล็ดลับในการเล่น"
                         }, 1);
-                    localization.addLanguage(new string[] {
-                        "命令列表：",
-                        "命令列表",
-                        "設置音量",
-                        "終止程序",
-                        "清除保存 *危險*",
-                        "跳過模擬啟動",
-                        "設置語言",
-                        "更新服務器成就",
-                        "提示"
-                        }, 2);
                     string[] temp = localization.getLanguage();
                     currTxt += temp[0] + "\n";
                     currTxt += "help - " + temp[1] + "\n";
@@ -198,9 +171,9 @@ public class BudgetTerminal : MonoBehaviour
                     currTxt += "kill - " + temp[3] + "\n";
                     currTxt += "wipe - " + temp[4] + "\n";
                     currTxt += "skip - " + temp[5] + "\n";
-                    currTxt += "language [{english=0}{简体中文=1}{繁体中文=2}] - " + temp[6] + "\n";
                     currTxt += "push - " + temp[7] + "\n";
                     currTxt += "tips - " + temp[8] + "\n";
+                    currTxt += "\nlanguage - " + temp[6] + ":\n{english=0}\n{ภาษาไทย=1} by Tidamard Malaithong\n";
                 }
                 else if(requestedCommand.Equals("kill"))
                 {
@@ -213,8 +186,7 @@ public class BudgetTerminal : MonoBehaviour
                 {
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
                     localization.addLanguage("Synced", 0);
-                    localization.addLanguage("已同步", 1);
-                    localization.addLanguage("已同步", 2);
+                    localization.addLanguage("ซิงค์แล้ว", 1);
                     currTxt += localization.getLanguage() + "\n";
                     if(SteamManager.Initialized)
                     {
@@ -241,8 +213,7 @@ public class BudgetTerminal : MonoBehaviour
                 {
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
                     localization.addLanguage("Wiped", 0);
-                    localization.addLanguage("擦拭", 1);
-                    localization.addLanguage("擦拭", 2);
+                    localization.addLanguage("ล้างแล้ว", 1);
                     currTxt += localization.getLanguage() + "\n";
                     PlayerPrefs.DeleteAll();
                 }else if (requestedCommand.Equals("tips"))
@@ -266,42 +237,25 @@ public class BudgetTerminal : MonoBehaviour
                     "The amount of sleep you get effects your satisfaction.",
                     "Happiness is influenced by Happiness Instantaneous Happiness is influnced by Instantaneous Happiness.\nSatisfaction is influenced by Satisfaction. Death Tolerance is influenced by Death Tolerance"
                     }, 0);
+
                     tipsLo.addLanguage(new string[] {
-                    "一定要上学，不然你的满足感会下降的很快。",
-                    "跑步有益于瞬间的幸福。",
-                    "弹跳图标表示任务进行得更快。",
-                    "刀会增加你的瞬间幸福感，但会降低幸福感。",
-                    "不断地与某人交谈，他们会对你产生更好的积极影响。",
-                    "死亡容忍受到瞬间幸福的影响。",
-                    "幸福在很大程度上受满足感的影响。",
-                    "死亡只取决于幸福和死亡容忍。",
-                    "你的艺术、编码、友谊和学校价值观影响满意度。",
-                    "死亡容忍在某种程度上受到幸福的影响。",
-                    "你的艺术、编码、友谊和学校价值自然下降。",
-                    "瞬间的幸福受幸福的影响。",
-                    "玩游戏和看视频可以增加瞬间的幸福感。",
-                    "听音乐会加剧瞬间的幸福感。",
-                    "睡眠时间长短会影响你的满意度。",
-                    "幸福受幸福的影响。"}
-                        , 1);
-                    tipsLo.addLanguage(new string[] {
-                    "一定要上學，不然你的滿足感會下降的很快。",
-                    "跑步有益於瞬間的幸福。",
-                    "彈跳圖標表示任務進行得更快。",
-                    "刀會增加你的瞬間幸福感，但會降低幸福感。",
-                    "不斷地與某人交談，他們會對你產生更好的積極影響。",
-                    "死亡容忍受到瞬間幸福的影響。",
-                    "幸福在很大程度上受滿足感的影響。",
-                    "死亡只取決於幸福和死亡容忍。",
-                    "你的藝術、編碼、友誼和學校價值觀影響滿意度。",
-                    "死亡容忍在某種程度上受到幸福的影響。",
-                    "你的藝術、編碼、友誼和學校價值自然下降。",
-                    "瞬間的幸福受幸福的影響。",
-                    "玩遊戲和看視頻可以增加瞬間的幸福感。",
-                    "聽音樂會加劇瞬間的幸福感。",
-                    "睡眠時間長短會影響你的滿意度。",
-                    "幸福受幸福的影響。"}
-                        , 2);
+                    "เรียนรู้การใช้ชีวิตจากการลองผิดลองถูก เลาจะช่วยให้ข้อมูลเพิ่มเติมทุกครั้งที่นายเจอเลานะ",
+                    "เอาให้แน่ใจว่านายเข้าเรียนเสมอ ไม่งั้นความพึงพอใจของนายจะลดลงอย่างรวดเร็ว",
+                    "ไอค่อนที่เด้งบ่งบอกว่าการใช้งานมันจะทำให้เวลาเดินเร็วขึ้น",
+                    "การใช้มีดจะทำให้เพิ่มความสุขชั่วขณะ แต่จะลดความสุขลง",
+                    "การพูดคุยกับใครสักคนอย่างต่อเนื่อง จะทำให้พวกเขามองนายในแง่บวกมากขึ้น",
+                    "ความอดทนต่อความตายนั้นได้รับอิทธิพลมาจากความสุขชั่วขณะ",
+                    "ความสุขนั้นได้รับอิทธิพลเป็นอย่างมากจากความพึงพอใจ",
+                    "ความตายนั้นขึ้นอยู่กับความสุขและความอดทนต่อความตายเท่านั้น",
+                    "ค่าความสามารถด้านศิลปะ ด้านการเขียนโค้ด มิตรภาพ และการเข้าเรียน มีอิทธิพลต่อความพึงพอใจ",
+                    "ความอดทนต่อความตายนั้นค่อนข้างได้รับอิทธิพลจากความสุข",
+                    "ค่าความสามารถด้านศิลปะ ด้านการเขียนโค้ด มิตรภาพ และการเข้าเรียน นั้นลดลงอย่างธรรมชาติเป็นปกติ",
+                    "ความสุขชั่วขณะนั้นได้รับอิทธิพลจากความสุข",
+                    "การเล่นเกมและการดูวิดิโอสามารถเพิ่มความสุขชั่วขณะได้",
+                    "การฟังเพลงนั้นจะทำให้ความสุขชั่วขณะรุนแรงขึ้น",
+                    "ปริมาณการหลับที่นายได้รับนั้นส่งผลต่อความพึงพอใจของนาย",
+                    "ความสุขได้รับอิทธิพลจากความสุข ความสุขชั่วขณะได้รับอิทธิพลจากความสุขชั่วขณะ\nความพึงพอใจได้รับอิทธิพลจากความพึงพอใจ ความอดทนต่อความตายได้รับอิทธิพลจากความอดทนต่อความตาย"
+                    }, 1);
                     for (int i = 0; i < PlayerPrefs.GetInt("CatPostcards", 0); i++)
                         if (i < tipsLo.getLanguage().Length)
                             currTxt += (i+1) + ": " + tipsLo.getLanguage()[i] + "\n";
@@ -315,16 +269,14 @@ public class BudgetTerminal : MonoBehaviour
                         Language.language = PlayerPrefs.GetInt("language", 0);
                         LanguageLocalization<string> localization = new LanguageLocalization<string>();
                         localization.addLanguage("Out of bounds. Resetting to english", 0);
-                        localization.addLanguage("越界。 重置为英文", 1);
-                        localization.addLanguage("越界。 重置為英文", 2);
+                        localization.addLanguage("นอกเหนือขอบเขต คืนค่าเป็นภาษาอังกฤษ", 1);
                         currTxt += localization.getLanguage() + "\n";
                     }else
                     {
                         Language.language = PlayerPrefs.GetInt("language", 0);
                         LanguageLocalization<string> localization = new LanguageLocalization<string>();
                         localization.addLanguage("Language set to: ", 0);
-                        localization.addLanguage("語言設置為：", 1);
-                        localization.addLanguage("語言設置為：", 2);
+                        localization.addLanguage("ตั้งค่าภาษาเป็น: ", 1);
                         currTxt += localization.getLanguage() + PlayerPrefs.GetInt("language", 0);
                     }
                 }
@@ -332,8 +284,7 @@ public class BudgetTerminal : MonoBehaviour
                 {
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
                     localization.addLanguage("volume: ", 0);
-                    localization.addLanguage("音量: ", 1);
-                    localization.addLanguage("音量: ", 2);
+                    localization.addLanguage("ระดับเสียง: ", 1);
                     currTxt += localization.getLanguage() + PlayerPrefs.GetInt("volume", 50) + " => " + (int.Parse(requestedCommand.Split(' ')[1])) + "\n";
                     PlayerPrefs.SetInt("volume", int.Parse(requestedCommand.Split(' ')[1]));
                     AudioListener.volume = PlayerPrefs.GetInt("volume", 50)/ 100.0f;
@@ -341,14 +292,12 @@ public class BudgetTerminal : MonoBehaviour
                 {
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
                     localization.addLanguage("Command {" + requestedCommand + "} was not found\nType \"help\" for more information", 0);
-                    localization.addLanguage("命令 {" + requestedCommand + "} 没有找到 \n输入\"help\"以获取更多信息", 1);
-                    localization.addLanguage("命令 {" + requestedCommand + "} 沒有找到 \n輸入\"help\"以獲取更多信息", 2);
+                    localization.addLanguage("คำสั่ง {" + requestedCommand + "} ไม่สามารถตรวจสอบได้\nพิมพ์ \"help\" เพื่อข้อมูลเพิ่มเติม", 1);
                     currTxt += localization.getLanguage() + "\n";
                 }
                 LanguageLocalization<string> language = new LanguageLocalization<string>();
                 language.addLanguage("Resuming", 0);
-                language.addLanguage("恢复", 1);
-                language.addLanguage("恢復", 2);
+                language.addLanguage("กลับสู่การทำงาน", 1);
                 currTxt += "\n" + language.getLanguage() + "...\n";
                 pauseFor(2.0f);
                 //print(requestedCommand);
@@ -368,8 +317,7 @@ public class BudgetTerminal : MonoBehaviour
             {
                 LanguageLocalization<string> language1 = new LanguageLocalization<string>();
                 language1.addLanguage("Failed", 0);
-                language1.addLanguage("失败", 1);
-                language1.addLanguage("失敗", 2);
+                language1.addLanguage("ล้มเหลว", 1);
                 currTxt = "";
                 string front = "";
                 //print(simulationRepeatCounter);
@@ -384,8 +332,7 @@ public class BudgetTerminal : MonoBehaviour
                 {
                     LanguageLocalization<string> language2 = new LanguageLocalization<string>();
                     language2.addLanguage("Success", 0);
-                    language2.addLanguage("成功", 1);
-                    language2.addLanguage("成功", 2);
+                    language2.addLanguage("สำเร็จ", 1);
                     textComponent.alignment = TextAnchor.MiddleCenter;
                     currTxt = "<color=#66ff66ff>" + language2.getLanguage() + "</color>\nGoal: Make it to day 9. Past the rainy day.";//\n[Loading]\n[...]\n[...]\n";
                     waitTimer = 1;
@@ -414,8 +361,7 @@ public class BudgetTerminal : MonoBehaviour
                     {
                         LanguageLocalization<string> language1 = new LanguageLocalization<string>();
                         language1.addLanguage("Failed", 0);
-                        language1.addLanguage("失败", 1);
-                        language1.addLanguage("失敗", 2);
+                        language1.addLanguage("ล้มเหลว", 1);
                         currTxt += "<color=red>" + language1.getLanguage() + "</color> >>> Simulation 0x" + string.Format("{0:X}", currNum) + "\n";
                         currNum++;
                         if (currNum < 50)

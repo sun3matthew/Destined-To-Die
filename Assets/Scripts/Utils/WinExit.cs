@@ -21,8 +21,7 @@ public class WinExit : MonoBehaviour
         counter = 0;
         LanguageLocalization<string> localization = new LanguageLocalization<string>();
         localization.addLanguage("English", 0);
-        localization.addLanguage("ChineseS", 1);
-        localization.addLanguage("ChineseT", 2);
+        localization.addLanguage("Thai", 1);
 
         vp = GameObject.Find("Video Player").GetComponent<VideoPlayer>();
         fade1 = GameObject.Find(localization.getLanguage()).transform.GetChild(2).GetComponent<Image>();

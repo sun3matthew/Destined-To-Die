@@ -90,8 +90,7 @@ public class Cat : MonoBehaviour, Clickable
         {
             PlayerPrefs.SetInt("CatPostcards", 17);
             localization.addLanguage("You don't need me. You can win alone.|Remaining Postcards Acquired. 16/16|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
-            localization.addLanguage("剩余明信片已购！|你已经死了。|你怎么还在这里？|你应该走了。|待会见", 1);
-            localization.addLanguage("剩余明信片已購！|你已經死了。|你怎麼還在這裡？|你應該走了。|待會見", 2);
+            localization.addLanguage("นายไม่จำเป็นต้องมีเลาหรอก ถึงไม่มีเลานายก็ชนะได้|โปสการ์ดที่ได้รับคงเหลืออยู่ 16/16|นายตายไปแล้วนะ|ทำไมนายถึงยังอยู่ที่นี่อีกหล่ะ?|นายควรจะหายไปแล้วนี่นา|*หาว*", 1);
             Cutscene.cutscene(localization.getLanguage());
             catGone = true;
         }
@@ -109,8 +108,7 @@ public class Cat : MonoBehaviour, Clickable
                     }
                 }
                 localization.addLanguage("Remember me, please. I don't want to disappear again.|Even if you forget who I am.|Remember my name.|Curry.|Goodbye.", 0);
-                localization.addLanguage("记住我。我不想再消失", 1);
-                localization.addLanguage("記住我。我不想再消失", 2);
+                localization.addLanguage("ได้โปรดจดจำเลาไว้ ขอร้องหล่ะ เลาไม่อยากหายไปอีกแล้ว|ถึงนายจะลืมว่าเลาคือใคร|ก็ขอให้นายจำชื่อเลาไว้เถอะนะ|Curry.|ลาก่อน", 1);
                 Cutscene.cutscene(localization.getLanguage());
                 catGone = true;
             }
@@ -135,45 +133,26 @@ public class Cat : MonoBehaviour, Clickable
                     "The amount of sleep you get effects your satisfaction.",
                     "Happiness is influenced by Happiness Instantaneous Happiness is influnced by Instantaneous Happiness.\nSatisfaction is influenced by Satisfaction. Death Tolerance is influenced by Death Tolerance"
                     }, 0);
-                tipsLo.addLanguage(new string[] { 
-                    "一定要上学，不然你的满足感会下降的很快。",
-                    "跑步有益于瞬间的幸福。",
-                    "弹跳图标表示任务进行得更快。",
-                    "刀会增加你的瞬间幸福感，但会降低幸福感。",
-                    "不断地与某人交谈，他们会对你产生更好的积极影响。",
-                    "死亡容忍受到瞬间幸福的影响。",
-                    "幸福在很大程度上受满足感的影响。",
-                    "死亡只取决于幸福和死亡容忍。",
-                    "你的艺术、编码、友谊和学校价值观影响满意度。",
-                    "死亡容忍在某种程度上受到幸福的影响。",
-                    "你的艺术、编码、友谊和学校价值自然下降。",
-                    "瞬间的幸福受幸福的影响。",
-                    "玩游戏和看视频可以增加瞬间的幸福感。",
-                    "听音乐会加剧瞬间的幸福感。",
-                    "睡眠时间长短会影响你的满意度。",
-                    "幸福受幸福的影响。"}
-                    , 1);
                 tipsLo.addLanguage(new string[] {
-                    "一定要上學，不然你的滿足感會下降的很快。",
-                    "跑步有益於瞬間的幸福。",
-                    "彈跳圖標表示任務進行得更快。",
-                    "刀會增加你的瞬間幸福感，但會降低幸福感。",
-                    "不斷地與某人交談，他們會對你產生更好的積極影響。",
-                    "死亡容忍受到瞬間幸福的影響。",
-                    "幸福在很大程度上受滿足感的影響。",
-                    "死亡只取決於幸福和死亡容忍。",
-                    "你的藝術、編碼、友誼和學校價值觀影響滿意度。",
-                    "死亡容忍在某種程度上受到幸福的影響。",
-                    "你的藝術、編碼、友誼和學校價值自然下降。",
-                    "瞬間的幸福受幸福的影響。",
-                    "玩遊戲和看視頻可以增加瞬間的幸福感。",
-                    "聽音樂會加劇瞬間的幸福感。",
-                    "睡眠時間長短會影響你的滿意度。",
-                    "幸福受幸福的影響。"}
-                    , 2);
+                    "เรียนรู้การใช้ชีวิตจากการลองผิดลองถูก เลาจะช่วยให้ข้อมูลเพิ่มเติมทุกครั้งที่นายเจอเลานะ",
+                    "เอาให้แน่ใจว่านายเข้าเรียนเสมอ ไม่งั้นความพึงพอใจของนายจะลดลงอย่างรวดเร็ว",
+                    "ไอค่อนที่เด้งบ่งบอกว่าการใช้งานมันจะทำให้เวลาเดินเร็วขึ้น",
+                    "การใช้มีดจะทำให้เพิ่มความสุขชั่วขณะ แต่จะลดความสุขลง",
+                    "การพูดคุยกับใครสักคนอย่างต่อเนื่อง จะทำให้พวกเขามองนายในแง่บวกมากขึ้น",
+                    "ความอดทนต่อความตายนั้นได้รับอิทธิพลมาจากความสุขชั่วขณะ",
+                    "ความสุขนั้นได้รับอิทธิพลเป็นอย่างมากจากความพึงพอใจ",
+                    "ความตายนั้นขึ้นอยู่กับความสุขและความอดทนต่อความตายเท่านั้น",
+                    "ค่าความสามารถด้านศิลปะ ด้านการเขียนโค้ด มิตรภาพ และการเข้าเรียน มีอิทธิพลต่อความพึงพอใจ",
+                    "ความอดทนต่อความตายนั้นค่อนข้างได้รับอิทธิพลจากความสุข",
+                    "ค่าความสามารถด้านศิลปะ ด้านการเขียนโค้ด มิตรภาพ และการเข้าเรียน นั้นลดลงอย่างธรรมชาติเป็นปกติ",
+                    "ความสุขชั่วขณะนั้นได้รับอิทธิพลจากความสุข",
+                    "การเล่นเกมและการดูวิดิโอสามารถเพิ่มความสุขชั่วขณะได้",
+                    "การฟังเพลงนั้นจะทำให้ความสุขชั่วขณะรุนแรงขึ้น",
+                    "ปริมาณการหลับที่นายได้รับนั้นส่งผลต่อความพึงพอใจของนาย",
+                    "ความสุขได้รับอิทธิพลจากความสุข ความสุขชั่วขณะได้รับอิทธิพลจากความสุขชั่วขณะ\nความพึงพอใจได้รับอิทธิพลจากความพึงพอใจ ความอดทนต่อความตายได้รับอิทธิพลจากความอดทนต่อความตาย"}
+                    , 1);
                 localization.addLanguage("Postcard Acquired! " + (PlayerPrefs.GetInt("CatPostcards", 0)+1) + "/16\nTip: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
-                localization.addLanguage("获得明信片！|你已经死了。|你怎么还在这里？|你应该走了。|待会见", 1);
-                localization.addLanguage("獲得明信片！|你已經死了。|你怎麼還在這裡？|你應該走了。|待會見", 2);
+                localization.addLanguage("ได้รับโปสการ์ด! " + (PlayerPrefs.GetInt("CatPostcards", 0) + 1) + "/16\nเคล็ดลับ: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|นายตายไปแล้วนะ|ทำไมนายถึงยังอยู่ที่นี่อีกหล่ะ?|นายควรจะไปได้แล้ว|*หาว*", 1);
                 Cutscene.cutscene(localization.getLanguage());
                 catGone = false;
             }

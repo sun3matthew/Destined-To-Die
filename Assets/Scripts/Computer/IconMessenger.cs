@@ -7,8 +7,7 @@ public class IconMessenger : IconNotificationManage
     public override string badStatus() {
         LanguageLocalization<string> localization = new LanguageLocalization<string>();
         localization.addLanguage("There's no one online.", 0);
-        localization.addLanguage("网上没人。", 1);
-        localization.addLanguage("網上沒人。", 2);
+        localization.addLanguage("ไม่มีใครออนไลน์", 1);
         return localization.getLanguage();
     }
 

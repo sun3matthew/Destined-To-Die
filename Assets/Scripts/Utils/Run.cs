@@ -63,8 +63,7 @@ public class Run : MonoBehaviour
             int miles = Mathf.RoundToInt((16 - time.timeDay) * 3f);
             LanguageLocalization<string> localization = new LanguageLocalization<string>(); 
             localization.addLanguage("You ran " + miles + " mile" + (miles == 1 ? "" : "s"), 0);
-            localization.addLanguage("你跑了" + (miles * 1500) + "米", 1);
-            localization.addLanguage("你跑了" + (miles * 1500) + "米", 2);
+            localization.addLanguage("คุณวิ่งไป " + miles + " ไมล์", 1);
             Cutscene.cutscene(localization.getLanguage());
             Player.player().abilities[3].changeValue(miles * 2f);
             Player.player().wentToPractice = true;
@@ -75,8 +74,7 @@ public class Run : MonoBehaviour
         {
             LanguageLocalization<string> localization = new LanguageLocalization<string>();
             localization.addLanguage("It's too late to run", 0);
-            localization.addLanguage("太晚了，我不能跑了", 1);
-            localization.addLanguage("太晚了，我不能跑了", 2);
+            localization.addLanguage("คุณมาวิ่งช้าเกินไป", 1);
             Cutscene.cutscene(localization.getLanguage());
         }
     }
