@@ -41,6 +41,17 @@ public class Human2 : Classmate
             "เฮ้ ช่วงนี้เป็นไงบ้าง?|'ก็เยี่ยมเลย! วันนี้อากาศดีจริงๆ ! ว่าไหมหล่ะ?'|อืมม ก็น่าจะใช่นะ..|'วันนี้นายดูเศร้าๆ นะ ร่าเริงหน่อยสิ!'|เดี๋ยวจะลองดู ไว้คุยกันทีหลังนะ"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Le soleil est vraiment brillant aujourd'hui, tu trouves pas?'|Euh, il semble assez...Normal?|'Tu sais, tu devrais regarder le ciel plus souvent, tu vas avoir mal au dos si tu continues à baisser la tête'|Ben, j'ai déjà mal au dos|'Tu veux un massage?'|Quoi? Non",
+            "'Hey! Comment ça va?'|Comment je suis censé répondre à ça?|'Tu sais,\"Bien\",\"Mal\", quelque chose comme ça?'|Bien|'Et...Continues'|J'suis pas pas vraiment de super humeur|'Aaaaaaah...C'est pas cool'|C'est pas cool d'être toi je suppose",
+            "'J'ai fais un rêve super bizarre la nuit dernière, mais c'est un peu embarrassant'|C'était quoi?|'Noooon, c'est trop embarrassant!'|D'accord, le dis pas alors|'Noooon, t'es supposé continuer à vouloir savoir!'|Euh, C-C'était quoi le rêve?|'J'ai rien dis, maintenant ça se sent que je t'ais forcé'|Euh, je réponds quoi maintenant|'...Juste, oublies'",
+            "'Quoi de neuf?'|Quoi... de neuf?|'Il va bientôt pleuvoir'|Oh, vraiment?|'Ouais, et les jours de pluie sont spéciaux!'|Donc t'aime ça quand il pleut?|'Hm!'|Ouais, j'aime la pluie aussi, et j'aime courir sous la pluie.|Courir? Tu veux attrapper froid? Fais pas ça!'",
+            "'J'ai besoin de quelques bonnes idées de blagues!'|Pourquoi?|Bon sang, c'est ma dernière année ici! Je veux m'amuser un peu!'|Pourquoi j'ai l'impression que tu va faire quelque chose de dangereux|'Heein? T'es celui qui va te blesser tout seul!'|Bien... Puisque t'es la plus responsable|'J'aime pas le ton que t'as utilisé!~",
+            "Juste au bon moment! J'étais en train de penser à toi!'|T'était... Quoi?|'J'ai fait un autre rêve,et t'était dedans!'|Et je faisais quoi dans ton rêve?|'Je te le dirais pas~'|Ça m'inquiète|'Bieeen, je vais te le dire, mais promet moi de ne pas rire!'",
+            "'Tu fais les courses desfois?'|'Euh, j'achète des trucs en ligne, mais pas vraiment dans la vraie vie|'Il y a un marché demain! Tu veux venir? J'ai un groupe d'amis qui viennent'| Ah. euh, je suis occupé demain|'Toute la journée? Tu devrais prendre un peu de temps pour te relaxer! Si tu te reposes pas assez tu vas avoir des rides et des cheveux blancs!'|Merci de t'inquiéter",
+            "Hey, Comment tu vas en ce moment?'Bien! Il fait bon aujourd'hui! Tu trouves pas?'|Ouais je suppose..|'T'es vraiment pas rayonnant aujourd'hui, sois plus gai!'|Je vais essayer, on se reparle plus tard."
+        }, 2);
+
 
         tcsPos = lang.getLanguage();
     }

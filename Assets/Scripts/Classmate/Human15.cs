@@ -41,6 +41,17 @@ public class Human15 : Classmate
             "'วันนี้มีแต่เรื่องให้ฉันรำคาญ'|เกิดอะไรขึ้นเหรอ?|'ฉันยังไม่อยากพูดถึงมันในวันนี้ เดี๋ยวค่อยบอกนายวันหลังก็แล้วกัน'|อ่า โอเค ได้สิ!"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "Salut!|'Qu'est ce que tu veux?'|J'te salue juste?|'Oh salut. Je suppose.'|Comment tu vas?|'T'as besoin de quelque chose?'|Non? Je demandais juste comment se passait ta journée?|'Oh ok. Je passe mon tour.'|Ok",
+            "'Voir ta tête me fait juste souhaiter que ma journée n'aie jamais commencé.'|Ah, désolé|'HAHAHA! Je rigolais juste.T'as vraiment pris ça sérieusement!'|Eheheh...ouais. je crois que c'est le cas.",
+            "Comment ça va?|'Le temps est vraiment nul aujourd'hui.'|Ah, pourquoi ça?|'Il fait trop chaud. Et il n' y a pas de vent du tout.'|Ah, ben je pense que ça va commencer à se rafraîchir bientôt?|'Ça ferait mieux.'",
+            "'Salut, pourquoi tu sembles mort aujourd'hui. Ça plombe l'ambiance.'|J'suis désolé, je vais essayer de sourire un peu?|'C'est comme tu veux, je pense pas vraiment que les gens te prête attention dans tous les cas'|Eheh...pas faux.",
+            "'Pourquoi t'es si énervant?'|Pardon?|'Oublies. J'ai juste pas dormi du tout la nuit dernière.'|Oh, ça fait sens je pense.|'Ouais, les gens m'énervent juste aujourd'hui.'",
+            "'Pourquoi il fait si froid aujourd'hui, c'est super pénible.'|Ouais il fait assez froid, je pense que tu peux juste porter plus de couches de vêtements.|'Quoi, tu crois que j'ai pas essayé ça?'|Oh désolé, c'était juste une suggestion.",
+            "Comment ça va?|'Ça pourrait pas neiger là? Il fait vraiment super froid, mais apparemment pas assez pour qu'il neige.'|Ouais, peut-être que c'est pas assez humide?|'Ouais non. Je pense pas que ce soit la raison.'",
+            "'J'suis super énervé aujourd'hui.'|Qu'est ce qui c'est passé?|'J'ai pas envie de parler de ça aujourd'hui, j'te dirais un autre jour.'|Oh ok, bien sûr!"
+        }, 2);
+
         tcsPos = lang.getLanguage();
     }
 }

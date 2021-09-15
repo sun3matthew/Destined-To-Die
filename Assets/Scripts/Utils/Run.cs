@@ -64,6 +64,7 @@ public class Run : MonoBehaviour
             LanguageLocalization<string> localization = new LanguageLocalization<string>(); 
             localization.addLanguage("You ran " + miles + " mile" + (miles == 1 ? "" : "s"), 0);
             localization.addLanguage("คุณวิ่งไป " + miles + " ไมล์", 1);
+            localization.addLanguage("Tu as couru " + miles + " km", 2);
             Cutscene.cutscene(localization.getLanguage());
             Player.player().abilities[3].changeValue(miles * 2f);
             Player.player().wentToPractice = true;
@@ -75,6 +76,7 @@ public class Run : MonoBehaviour
             LanguageLocalization<string> localization = new LanguageLocalization<string>();
             localization.addLanguage("It's too late to run", 0);
             localization.addLanguage("คุณมาวิ่งช้าเกินไป", 1);
+            localization.addLanguage("Il est trop tard pour courir", 2);
             Cutscene.cutscene(localization.getLanguage());
         }
     }

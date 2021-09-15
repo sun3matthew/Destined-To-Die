@@ -41,6 +41,17 @@ public class Human14 : Classmate
             "!0"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Yo'|Eh salut|'J'ai une question pour toi!'|Ouep?|Sur une échelle de un à dix, à quel point suis-je fort!'|J-je sais pas? Peut-être quelque chose comme sept?|'Oh sérieux mec! Seulement sept???'|Je voulais dire dix, j'me suis trompé|'Ha! C'est mon pote ça!!!'",
+            "'Comment ça va ?'|Salut|'J'aimerais que le soleil soit plus gros! Je veux flex sur vous tous là!'|Je-Pt'être que tu devrais attendre que je sois parti...|'Nan! Souviens-toi de ça, demain vous verrez mes muscles saillants!'",
+            "'J'ai une personnalité trop gentille!'|Gentil c'est bien? C'est ce que les filles aiment non ?|'Quoi? J'ai besoin d'avoir une personnalité plus forte!'|Je veux dire, si c'est c'que tu veux|'Ayyyyy, mon meilleur pote!'",
+            "Salut|'Restes fort mec...'|Uhm, quelque chose est arrivé?|'Le temps. C'est morne, ça te baisse pas le moral?'|J'aime bien cette météo, ça fait moins mal aux yeux je pense.|'Ben tu semblais pas à ton max.'",
+            "'Yo!'|Salut|'T'es prêt à aller courir un max demain!'|Ouais, j'suis prêt|'Tu dois aimer le temps ces derniers jours! Un temps parfait pour courir!'|Euh, ouais je suppose?|'Eh! On se remonte le moral mec! Là c'est le meilleur moment pour courir!'",
+            "Salut|'Mec, j'suis fauché gars'|Hmm, trouves un travail peut être?|'Personne voudra m'embaucher mec! J'suis trop stupide!'|Ben l'été arrive, tu pourrais être sauveteur?|'Ouaaais! T'as raison! Je pourrais flex avec mon corps aussi!",
+            "'Salut! j'ai besoin d'avoir un surnom cool!'|Pourquoi??|'Mec, mon nom sonne trop ennuyeux là! J'ai besoin de quelque chose pour booster ça!'|Hmmmm, je vois. Pourquoi pas-<???????????????????????????????????????????????????????????????????????????????????????????????????????0",
+            "!0"
+        }, 2);
+
 
         tcsPos = lang.getLanguage();
     }

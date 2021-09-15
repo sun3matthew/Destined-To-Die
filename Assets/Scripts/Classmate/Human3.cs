@@ -41,6 +41,17 @@ public class Human3 : Classmate
             "'อาทิตย์หน้านายมางานเลี้ยงวันคล้ายวันเกิดของฉันได้ไหม?'|เอ่อ... ได้ เอาดิ! ฉันจะพยายามไปให้ได้แล้วกัน|'เจ๋ง! ฉันจะรอนายนะ!'"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Tu voudrais bien m'accompagner au cinéma un jour?'|Bien sûr! Ça a l'air sympa!|'Je ferais en sorte de prendre un siège supplémentaire!'",
+            "Pourquoi les jours sont si ennuyeux...|'Je pense que tu n'as juste pas de but dans la vie'|Oh.|'Sois juste sûr de trouver un but et tu seras beaucoup plus heureux!'",
+            "'Je n'en peux plus d'attendre les feux d'artifices de cette année!'|Oh vraiment? Je pense qu'ils sont super beaux.|'Le bruit aussi, les lourdes explosions, les crépitements. Oh j'adore vraiment ça!'",
+            "'Pourquoi il y a autant de personnes insensées?'| Hein?| 'Les gens dorment trop tard, dormir à 23h est trop extrême pour moi.'|Ah, ben je pense que certaines personnes fonctionnent juste comme des chouettes? Peut-être qu'elles sont plus productives de nuit?",
+            "Salut|'Désolé, j'ai quelque chose en tête en ce moment, et je ne pense pas pouvoir tenir une conversation maintenant'|Ah ok, on se reparle plus tard alors.",
+            "'Tu aimes bien regarder des films?'|Euhhh, en fait j’aime pas trop ça, ils sont trop longs je suppose?|'Ah vraiment? Je suis surpris que tu n'aimes pas'|Eh bien, ce n’est pas que je les déteste, ce n’est juste pas ce que je préfère.",
+            "'Je vais chez le fermier demain? Tu veux venir aussi ?'|Euhhhhh, je suis un peu occupé demain, donc probablement pas.|'Oh ok, c'est pas grave!'",
+            "'Tu peux venir à ma fête d'anniversaire la semaine prochaine?'|Euhh, ouais bien sûr! J'essaierai d'être là.|'Super! Je t'attendrais!'"
+        }, 2);
+
 
         tcsPos = lang.getLanguage();
     }

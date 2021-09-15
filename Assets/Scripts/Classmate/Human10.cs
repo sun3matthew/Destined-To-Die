@@ -41,6 +41,17 @@ public class Human10 : Classmate
             "'ผมชอบพี่ฮะ'|...|...|..พี่-|'ล้อเล่นฮะะะ!!'|อ่า โอเค พี่ไม่รู้เลยว่าต้องตอบสนองยังไงดี|'สนุกจังเลยฮะ'|แน่สิ... ทำไมเ-|'ผมไปก่อนนะฮะ เจอกันคราวหน้าฮะ!'|ก็คงงั้น บาย"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Hey! T'est nouveau ici?'|Uhhhh, je suis en première cette année. Mais est-ce que je viens souvent|'Eheh...Je continue de m'habituer à cet endroit. Et tu semblais nouveau aussi'|T'es en troisième?|'Ouais, je suis suuuuuper nerveuse!|Oh ben le soit pas, ça va être amusant-bon je ne sais pas si amusant est le bon mot. Peut-être excitant?|'Je pense qu'excitant c'est pas mal, non?'|Ouais…",
+            "Comment se passe l'année de troisième?|'J'aime vraiment ça! C'est bien plus passionnant que mon ancienne ville!'|C'est bien, tu t'amuses aussi?|'Totallement! C'est bien plus marrant ici aussi!'|C'est bien|'Et pour toi alors? Tu t'amuses?'|Ça se passe bien|'Oh. C'est tout?'| Ouep|'Tu devrais parler plus!'|D'accord, j'vais essayer.",
+            "'J'aime le bruit de la pluie, l'ambiance que ça donne quand elle résonne sur le toit c'est incroyable!'|Ouais, t'aime la pluie?|'Complètement! C'est pas évident? J'adore la pluie!'|Moi aussi.|'Ça devient embêtant desfois quand c'est tout le temps humide'|Je pense que c'est embêtant mais que ça en vaut le coup|'J'suis d'accord!'",
+            "'Yo! Il y a un festival demain! Tu viens?'|J'ai tendance à beaucoup dormir|'Lèves toi plus tôt juste cette fois! Ça peut pas être si dur!'|Tu serais surprise, d'habitude je dors jusqu'à midi|'Midi??? T'as besoin de prendre plus soin de toi!'|Je pense que je le fais,  juste pas physiquement|'Tu continues de manger des plats surgelés?|C'est possible|T'es un cas désespéré.'",
+            "'Peut-être que tu devrais essayer de devenir meilleur en cuisine!'|J'ai essayé une ou deux fois, mais on dirait que je sais uniquement utiliser un micro-onde|'Si tu continues de manger des plats surgelés, tu vas être malade!'|Ça fait déjà quelques années, ça va aller|'Quelques années?! C'est pour ça que t'es si petit?'|Eh, j'suis plus grand que toi",
+            "'Je me sens plus adulte!'|T'as fait quoi?|'J'ai fais mes propres courses hier!'|Ah ok, je m'attendais à quelque chose de plus..|'OK, je pense que je vais arrêter de te dire des trucs~'|Je veux dire je suis pas en droit de juger je suppose, je ne quitte la maison que pour aller en cours dans tous les cas.|'Tu devrais être mon model!'|Je pense que tu devrais trouver un autre élève plus âgé pour ça",
+            "'Est-ce que ta chambre est mal rangée?'|Non, pourquoi?|'Oooooh, rien~'|Ça semble pas vraiment rien|'Ok ok je te le dis!'|mhm?['Tu semble juste pas être le genre de personne à avoir une chambre rangée, j'étais curieuse!'|Ben je pense que des fois c'est un peu mal rangé quand je suis occupé.|'Donc j'avais raison!'|J'ai dis des fois, mais bon j'suis assez occupé ces derniers jours...|'Tu vois!'",
+            "'Je t'aime bien'|...|...|..Je-|'C'est une blague!!'|Ah d'accord, je savais pas comment répondre|'C'était marrant'|Bien sûr...Pourquoi-|'Je dois y aller, on se revoit plus tard!'|Très bien, à plus."
+        }, 2);
+
         tcsPos = lang.getLanguage();
     }
 }

@@ -91,6 +91,7 @@ public class Cat : MonoBehaviour, Clickable
             PlayerPrefs.SetInt("CatPostcards", 17);
             localization.addLanguage("You don't need me. You can win alone.|Remaining Postcards Acquired. 16/16|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
             localization.addLanguage("นายไม่จำเป็นต้องมีเลาหรอก ถึงไม่มีเลานายก็ชนะได้|โปสการ์ดที่ได้รับคงเหลืออยู่ 16/16|นายตายไปแล้วนะ|ทำไมนายถึงยังอยู่ที่นี่อีกหล่ะ?|นายควรจะหายไปแล้วนี่นา|*หาว*", 1);
+            localization.addLanguage("Tu n'as pas besoin de moi. Tu peux gagner seul.|Cartes Postales Restantes Obtenues. 16/16|Tu es déjà mort.|Pourquoi es-tu toujours ici?|Tu devrais être parti.|*Baîllement*", 2);
             Cutscene.cutscene(localization.getLanguage());
             catGone = true;
         }
@@ -109,6 +110,7 @@ public class Cat : MonoBehaviour, Clickable
                 }
                 localization.addLanguage("Remember me, please. I don't want to disappear again.|Even if you forget who I am.|Remember my name.|Curry.|Goodbye.", 0);
                 localization.addLanguage("ได้โปรดจดจำเลาไว้ ขอร้องหล่ะ เลาไม่อยากหายไปอีกแล้ว|ถึงนายจะลืมว่าเลาคือใคร|ก็ขอให้นายจำชื่อเลาไว้เถอะนะ|Curry.|ลาก่อน", 1);
+                localization.addLanguage("Souviens-toi de moi, s'il te plaît. Je ne veux pas disparaître une fois de plus.|Même si tu oublies qui je suis.|Souviens-toi de mon nom.|Curry.|Au revoir.", 2);
                 Cutscene.cutscene(localization.getLanguage());
                 catGone = true;
             }
@@ -149,10 +151,27 @@ public class Cat : MonoBehaviour, Clickable
                     "การเล่นเกมและการดูวิดิโอสามารถเพิ่มความสุขชั่วขณะได้",
                     "การฟังเพลงนั้นจะทำให้ความสุขชั่วขณะรุนแรงขึ้น",
                     "ปริมาณการหลับที่นายได้รับนั้นส่งผลต่อความพึงพอใจของนาย",
-                    "ความสุขได้รับอิทธิพลจากความสุข ความสุขชั่วขณะได้รับอิทธิพลจากความสุขชั่วขณะ\nความพึงพอใจได้รับอิทธิพลจากความพึงพอใจ ความอดทนต่อความตายได้รับอิทธิพลจากความอดทนต่อความตาย"}
-                    , 1);
+                    "ความสุขได้รับอิทธิพลจากความสุข ความสุขชั่วขณะได้รับอิทธิพลจากความสุขชั่วขณะ\nความพึงพอใจได้รับอิทธิพลจากความพึงพอใจ ความอดทนต่อความตายได้รับอิทธิพลจากความอดทนต่อความตาย"
+                    }, 1);
+                tipsLo.addLanguage(new string[] {
+                    "Apprends comment rester en vie au fil des essais et des erreurs. Je t'aiderais avec des informations, à chaque fois que tu me verras.",
+                    "Sois sûr d'aller à l'école. Sinon ta satisfaction va baisser très rapidement.",
+                    "Les icônes qui sautillent indiquent les tâches qui se font plus rapidement.",
+                    "Le couteau va accroître ton Bonheur Instantané, mais baisser le Bonheur.",
+                    "Parler à quelqu'un de manière répétée va améliorer l'effet positif que cela a sur toi.",
+                    "La Tolérance à la Mort est influencée par le Bonheur Instantané.",
+                    "Le Bonheur est fortement influencé par la Satisfaction.",
+                    "La Mort dépend uniquement du Bonheur et du Bonheur instantané.",
+                    "La valeur d'Art, Codage, Amitié et École baisse naturellement.",
+                    "Le Bonheur Instantané est influencé par le Bonheur.",
+                    "Jouer à des jeux et regarder des vidéos peut accroître le Bonheur Instantané.",
+                    "Écouter de la musique exacerbe fortement le Bonheur Instantané.",
+                    "La quantité de sommeil que tu parviens à avoir affecte ta satisfaction.",
+                    "Le Bonheur est influencé par le Bonheur, le Bonheur Instantané est influencé par le Bonheur instantané.\nLa Satisfaction est influencée par la Satisfaction. La Tolérance à la Mort est influencée par la Tolérance à la Mort"
+                    }, 2);
                 localization.addLanguage("Postcard Acquired! " + (PlayerPrefs.GetInt("CatPostcards", 0)+1) + "/16\nTip: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
                 localization.addLanguage("ได้รับโปสการ์ด! " + (PlayerPrefs.GetInt("CatPostcards", 0) + 1) + "/16\nเคล็ดลับ: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|นายตายไปแล้วนะ|ทำไมนายถึงยังอยู่ที่นี่อีกหล่ะ?|นายควรจะไปได้แล้ว|*หาว*", 1);
+                localization.addLanguage("Carte Postale Obtenue! " + (PlayerPrefs.GetInt("CatPostcards", 0) + 1) + "/16\nAstuce: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|Tu es déjà mort.|Pourquoi es-tu toujours ici?|Tu devrais être parti|*Baîllement*", 2);
                 Cutscene.cutscene(localization.getLanguage());
                 catGone = false;
             }

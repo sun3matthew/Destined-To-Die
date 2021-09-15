@@ -41,6 +41,18 @@ public class Human8 : Classmate
             "เฮ้|'สวัสดีจ้าา!'|นั่- วันนี้เป็นไงบ้าง?|'มันแย่มากเลย! ฉันตื่นมาเรียนคาบแรกไม่ทัน จากนั้นแม่ก็ตะโกนดุฉัน! แล้วฉันก็ทำชานมไข่มุกหกเต็มตักฉันเลย!'|อ่า นั่นมัน เอ่อ แย่จัง|'ช่าย แย่เลยหล่ะ'"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Hey!|Salut?|Comment a été ta journée?|Oh euh, plutôt bonne|'Allez! Continues!'|Ben je me suis lever assez tôt donc c'était pas mal je pense?|'Okkkk, tu devrais parler plus!'|Bien",
+            "'Comment a été ta journée?'|Je euh, c'était pas mal|'Comment tu peux oublier!'|Quoi?|'Dis-m'en plus!!'|Bah le soleil était beau aujourd'hui je suppose|'Hey!C'est exactement ce que t'as dit hier!'|Ouep c'est nul d'être toi je suppose",
+            "'Bonjouuuur~'|Salut|'Comment s'est passé cette belle journée monsieur?'|Euhhhhh c'était bien, j'ai fais quelques trucs je suppose|'Okkkkk, Continues!'|Ben mes genoux me font mal, mais je pense que je peux toujours courir|'Awwww mec c'est pas cool!'",
+            "'Yooooohooooo!'|Comment t'arrives à trouver une nouvelle salutation à chaque fois?|'Hein? Je dis juste tout le temps ça!'|J'ai l'impression que cette fois c'était nouveau?|'Quoiii??? C'est pas sympa!'|Attends c'était un, c'était un compliment?|'Hmph! on dirait pas!",
+            "Bonjour|'Hmph! Pourquoi tu peux pas essayer quelque chose de nouveau pour une fois!'|Je- attends j'arrive pas à dire si t'es fachée contre moi?|'Hehe...Bien sûr que non! Je m'amusais just avec toi~'|Ah ok, J'ai cru que j'avais fait quelque chose de mal",
+            "Salut?|Au revoir'|Oh,...ok? J'suis désolé?|'Hehe, je t'ai fais peur?'|Ah ok, ben un peu je pense.|'Hehe!'",
+            "'Bien le bonjour!|C'est nouveau.|'Aller!! Je l'ai dit la dernière fois qu'on a parlé!'|Ah, oops je pense que j'ai oublié. Ma mémoire n'est pas incroyable en ce moment...|'Jsuis d'accord! Bien j'espère que tu t'en souviendras la prochaine fois que tu me parleras!'",
+            "Hey|'Bonjouuur!'|C'est-Comment était ta journée?|'C'était horrible! Je me suis levé en retard pour mon premier cours, ducoup ma mère m'a crié dessus! Et j'ai recraché mon boba sur mes jambes!|Ah, ça euh, ça craint|'Ouais, effectivement"
+        }, 2);
+
+
         tcsPos = lang.getLanguage();
 
 

@@ -41,6 +41,17 @@ public class Human13 : Classmate
             "'วันนี้เป็นวันที่ดีจังเลย คิดเหมือนกันไหมเพื่อน?'|หืม? ช่าย ฉันว่าวันนี้เป็นวันที่ค่อนข้างดีเลย|'เค้าว่าไม่มีอะไรที่ทำให้วันนี้เป็นวันที่แย่ได้แน่นอน! มันแทบจะสมบูรณ์แบบเลยหล่ะ!"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'J'aime juste trop ce temps, pas trop chaud, pas trop froid!'|Ouais, je suis d'accord, la météo est pas mal aujourd'hui.|'Je trouve qu'il y a quand même trop de vent aujourd'hui'|Hmm, ouais.",
+            "T'as réfléchi à quelle université tu voulais aller?|'J'ai prévu de me diriger vers un établissement Ivy League, je pense que je suis capable d'y arriver!'|Oh wow! Gros projet je suppose?|'En effet ça l'est.",
+            "'C'est vraiment agréable de te parler!'|Ah, merci!|'Tu penses pas que ce soit le cas?'|Hein? J'aime vraiment te parler aussi!|'C'est bien.'",
+            "'T'as fait le plus que tu pouvais aujourd'hui?'|Euh, ouais. J'ai pu finir un peu de travail ? Et toi?|'Eh bien, j'ai beaucoup travaillé aujourd'hui, et j'ai aussi réussi à obtenir un job!|Whoa! C'est trop cool!",
+            "C'est quoi ta nourriture favorite?|'Ben, je pense que le chocolat est pas mal!|Hmmm, je pense pas que ce soit... Ben c'est plus un dessert?|Donc tu veux une Entrée?'|Euh, ouais|'Hmmm, Je pense que je sais trop pour l'instant?'",
+            "'Ah ça fait plaisir de te voir aujourd'hui!'|Oh, quelque chose est arrivé?|'Hm? Je pense que je trouve juste les conversations avec toi particulièrement sympathiques!|Ahah, merci je suppose!",
+            "'Ah , j'aime tellement la météo, c'est vraiment plaisant!'|Ah, ce n'est pas un petit peu morne quand même?|Je pense que j'aime bien le temps morne et froid. J'aime vraiment ça.'|C'est bien , j'aime bien ce temps aussi!",
+            "'Quelle belle journée, tu trouves pas mon ami?'|Hm? Ouais je pense qu'aujourd'hui on est plutôt pas mal|'Je pense que cette journée ne peut pas mal tourner! C'est presque parfait!'"
+        }, 2);
+
 
         tcsPos = lang.getLanguage();
     }

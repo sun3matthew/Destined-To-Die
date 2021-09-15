@@ -41,6 +41,17 @@ public class Human11 : Classmate
             "'โ อ เ ค ห ล่ ะ ถ้านายมีสิ่งที่อยากได้อยู่ สิ่งนั้นมันคืออะไรอะ?'|หือ? ทำไมเหรอ?|'แค่ตอบมาเถอะหน่า!'|เอ่ออ ไม่รู้สิ|'โหห น่าเบื่อจัง!'|ช่าย อ่า.. เดี๋ยวต้องไปก่อนละ ไว้เจอกันนะ"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Hey salut! Merci de m'avoir aidée pendant l'été!'|Oh, c'était pas grand chose|'J'ai toujours du mal à être constante, mais je pense que je m'améliore!'|C'est bien, au moins tu fais quelque chose|'Ouiiii! Je vais continuer d'être plus productive!!'",
+            "Quand est-ce que t'as dormi?|'*Sniff* Je suis encore malade'|Je suppose que t'as déjà pris tes médicaments?|'C'était mauvais, pourquoi est-ce que ma mère m'a forcé à utiliser la médecine chinoise...'|C'est probablement bon pour toi d'une certaine manière|'Wahhhhhhh pas toi aussi-*Achou*'|Je pense quand même que la médecine occidentale fonctionne mieux.",
+            "Tu te sens mieux?|'non.'|...|Ça a empiré?|'Oui-ou peut être que c'est pareil plutôt.'|Je pense que c'est quand même bon signe|'C'est difficile à croire, ça fait trop mal'|Je suppose que t'as atteint le pire que ça pouvais être?|'Vraiment? Mais je me sens vraaaiment pas bien.'|Accroches-toi.",
+            "Comment tu te sens aujourd'hui?|'Je pense que ça va mieux.'|C'est cool|'Ugh...J'ai toujours le goût horrible des médicaments dans la bouche.'|T'as de l'eau?|'J'ai déjà essayé ça, mais je peux pas faire disparaître le goût!'|Ben il va certainement disparaître tout seul.|'C'est juste super amer.'",
+            "'*Achou*'|Tu vas bien?|'Wahhhhh je pense que c'est de nouveau pire, j'ai mal partout'|Quelque chose a changé?|'Attends. T'as pas remarqué? Il fait beaucoup plus froid!!!'|À ce point? Je suppose que les matins sont frais ces derniers jours.",
+            "'Il f-fait t-trop froid... p-pourquoi i-il f-fait si froid.'|Je pense que tu devrais rester chez toi pour la journée.|'J'ai dit à ma mère que je me sentais mal, mais elle veut pas que je reste!'|On va y aller doucement aujourdd'hui je pense, tu veux ma veste?|'Hmmmm, j'irais mieux une fois qu'on seras dans un bâtiment et aussi je veux pas que tu ai froid?'|Ok, si t'as besoin, demandes.",
+            "'Saluut!!'|Oh, je vois que tu vas mieux?|'C'est trop bizarre! C'est comme si j'avais jamais été malade!'|Je suppose que les médicament ont aidés-|'S'il te plaît, s'il te plaît, s'il te plaît, parle pas de ça. J'ai encore le goût à chaque fois que j'y pense!'|Ah ahah, oups.|'J'suis trop impatiente de retrouver une vie normale!'",
+            "'Ok, si tu pouvais avoir tout ce que tu voulais, tu voudrais quoi?'|Hein? Pourquoi?|'Réponds juste!'|Euhh, je sais pas|'Aww c'est ennuyeux!'|Ouais, bon faut que j'y aille, à plus."
+        }, 2);
+
         tcsPos = lang.getLanguage();
     }
 }

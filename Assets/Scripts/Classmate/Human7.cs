@@ -37,10 +37,21 @@ public class Human7 : Classmate
             "เฮ้!|'นายต้องดูแลตัวเองให้มากกว่านี้นะ'|เธอมีเรื่องพูดแค่นี้เหรอ?|'นายนี่จริงๆ เลย! กินผลไม้สดมันจะยากแค่ไหนกันเชียว!'|ก็ฉันต้องออกจากห้องไปหาผลไม้มากิน แค่นั้นมันก็ลำบากเกินไปแล้ว|'นั่นน่าเป็นห่วงนิดหน่อย แต่ก็ไม่เป็นไร'",
             "'นายจะไปเข้าชุมนุมไหมง่ะ?'|มีชุมนุมวันนี้เหรอ?|'ใช่สิ! เขาประกาศอาทิตย์ที่แล้วไง!'|เธอจะเสียงดังทำไมเนี่ย|'มันเป็นเสน่ของฉันไงหล่ะ~'|เหรออออ|'นายควรจะเป็นคนที่เป็นมิตรกว่านี่นะ!'|ไม่ ไม่เอา ไม่เป็น!",
             "'ทำไมนายดู... เศร้าจังเลย'|จริงๆ แล้วฉันก็ไม่รู้ มันน่าจะเป็นแค่เพราะฉันนอนไม่พอ หรืออะไรสักอย่างนี่แหละ|'ฉันว่าความเศร้าของนายเป็นเพราะสภาพอากาศวันนี้นะ หนาวๆ เปียกๆ ง่ะ'|เธอรู้รึเปล่าว่าหน้าฝนเป็นฤดูที่ฉันชอบ?|'ห่ะ? ทำไมง่ะ?'|ไม่รู้สิ แค่ชอบมันหน่ะ",
-            "ฉันมีคำถามมาถามเธอด้วยหล่ะ|'นายคิดว่านายจะทักทายฉันก่อนไหมง่ะ?'|อ่าาา ห่ะ?|'แบบว่า “ไง” หรือ “สวัสดี”'|มันสำคัญขนาดนั้นเลยเหรอ?|'คนอื่นอาจคิดว่านายเป็นคนหยาบคายได้นะ พูดหน่อยก็ไม่เสียหายนี่'|ก็ได้ งายย~ วันดีๆ แบบนี้ คุณสบายดีไหมครับ~|'ขอบคุณจ้าาา~ แล้วก็หยุดเสียดสีได้แล้ว'|ผมว่าผมจะไม่หยุดนะ",
+            "ฉันมีคำถามมาถามเธอด้วยหล่ะ|'นายคิดว่านายจะทักทายฉันก่อนไหมง่ะ?'|อ่าาา ห่ะ?|'แบบว่า \"ไง\" หรือ \"สวัสดี\"'|มันสำคัญขนาดนั้นเลยเหรอ?|'คนอื่นอาจคิดว่านายเป็นคนหยาบคายได้นะ พูดหน่อยก็ไม่เสียหายนี่'|ก็ได้ งายย~ วันดีๆ แบบนี้ คุณสบายดีไหมครับ~|'ขอบคุณจ้าาา~ แล้วก็หยุดเสียดสีได้แล้ว'|ผมว่าผมจะไม่หยุดนะ",
             "'นายเคยมีชื่อเล่นรึเปล่า?'|ทำไมเหรอ?|'ฉันมีชื่อเล่นเจ๋งๆ มาให้นายด้วยหล่ะ!'|ไม่เอาหล่ะ|'ไม่เอาจริงเหรอ? มันตลกมากเลยนะ!'|ความตลกของเราสองคนมันไม่ค่อยเข้ากันอยู่แล้ว|'เฮ้! เซ้นส์ฉันดีกว่านายอีกนะ!'|ฉันบอกว่ามันไม่เหมือนกัน ไม่ใช่ว่าใครดีกว่า ถึงฉันจะไม่เห็นด้วยกับที่เธอว่าก็เถอะร|'เฮ้!'",
             "'ถ้านายอยากทำอะไรก็ได้ที่อยากทำ นายจะทำอะไรง่ะ'|ถามโง่ๆ |'เชอะ! ฉันหน่ะอยากจะท่องเที่ยวไปทั่วโลก!'|ไม่ใช่ว่าทุกคนก็อยากทำแบบนั้นเหรอ?|'แล้วไงหล่ะ~ ฉันก็ยังอยากทำมันอยู่ดี'|อ่า งั้นก็ขอให้สนุก|'แน่นอน! โทษทีนะแต่ฉันต้องไปที่อื่นก่อนหน่ะ ไว้คุยกันคราวหน้านะ!'|ไว้คุยกันคราวหน้า"
         }, 1);
+
+        lang.addLanguage(new string[]{
+            "Hey|Hein? Oh, je crois que je t'ai déjà vu'|Oh, Attends vraiment?|'Hein? Peut-être que c'était quelqu'un d'autre...'|...|'Désolé c'est embarrassant'|Non tout va bien|'Fais juste comme si c'était jamais arrivé ok?'",
+            "'Faut que tu manges plus de fruits et de légumes!'|Pfft, t'es pas ma mère|'C'est pas bon pour la santé si tu continues à manger des buritos à faire réchauffer au micro-ondes!'|Mon métabolisme endurera ça, tout ira bieeeen...|'Je vais te rendre plus forts!'|Je pense vraiment pas que ça fonctionne comme ça",
+            "Hey!|'Il faut que tu prenne plus soins de toi-même'|C'est la seule chose dont tu sais parler?|'Sérieusement! C'est pas difficile de manger plus de fruits frais!'|Ben, faudrait que je sorte de ma chambre ce qui est déjà trop difficile|'C'est un peu inquiétant, mais tant pis'",
+            "'Tu comptes regarder le rallye?'|Il y a un rallye aujourd'hui?|'Bien sûr! Ils ont commencé à en parler la semaine dernière!'|Pourquoi tu parles parles si fort|'C'est une de mes qualitées qui à les plus charmantes~'|Biiiiien|'Tu devrais essayer d'être plus extraverti!'|Non, non, non!",
+            "'Pourquoi tu sembles si...Triste'|Honnêtement je sais pas, c'est sûrement parce que j'ai pas assez dormis ou quelque chose comme ça|'Je pense que ta tristesse vient de la météo, il fait froids et humide'|Tu sais que la pluie est ma météo préférée?|'Quoi? Pourquoi?'|Je sais pas, j'aime juste ça",
+            "J'ai une question à te poser|'Tu pense que tu peux me saluer d'abord?'|Euh, Quoi?|'Comme un \"Salut\" ou un \"Bonjour\"'|Ça compte à ce point?|'Les gens doivent penser que t'es malpoli, et ça fait pas de mal'|Bien, Saluut~Comment tu vas en cette belle journée~|'Merci~, maintenant arrêtes avec l'ironie|J'y compte pas",
+            "'T'as déjà eu un surnom?'|Pourquoi?|'J'ai trouvé un surnom incroyable pour toi!'|Non|'Vraiment? C'est super marrant!|Notre sens de l'humour va pas tout le temps ensemble |'Hey! Mon sens de l'humour est meilleur que le tien!'|J'ai dis différent pas meilleur, et puis je suis pas d'accord avec toi|'Hey!'",
+            "'Si tu pouvais faire ce que tu voulais, tu ferais quoi'|C'est une question stupide|'Bien! Bah je voudrais faire le tour du monde!'|C'est pas ce que tout le monde veut?|'Et alors~ Je veux quand même le faire'|Ben amuse toi bien avec ça|'Je le ferai! Désolé, il faut que j'aille quelque part, je te reparle plus tard!'|Ouais on se reparle plus tard"
+        }, 2);
 
         tcsPos = lang.getLanguage();
     }

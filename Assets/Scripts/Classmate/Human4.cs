@@ -39,8 +39,18 @@ public class Human4 : Classmate
             "'โห ดีเลย! ฉันกำลังตามหานายไปทั่ว!'|จริงเหรอ? ทำไมหล่ะ?|'*หาว* แต่อันดับแรก ทำไมฉันต้องตื่นเช้าทุกครั้งเลยนะ?'|ก็เพราะการเรียนมันสำคัญมั้งนะ?|'อืมมม...ทำไมพวกมันถึงไม่เลื่อนออกไปซักชั่วโมงสองชั่วโมงหน่อยนะ!|ก็ไม่ใช่ทุกคนที่จะนอนตื่นสายมากแบบนายนี่นา",
             "'โอ้ ไฮ้ยาาา!'|คำแปลกดีนะ|'คิดว่างั้นเหรอ? มันเป็นอะไรที่ฉันได้ยินมาจากโฆษณาบนทีวีหน่ะ'|มันคือโฆษณาอาหารเหรอ?|'เฮ้ นี่นายกำลังจะสื่ออะไรหน่ะ?'|มันคือโฆษณาอาหารรึเปล่า?|'ฉันกำลังจะแบ่งขนมให้นาย แต่ตอนนี้ไม่ให้แล้ว!'|อ่า โอเค ฉันแย่เองแหละ|'โหหห ฉันอุตส่าห์หวังว่านายจะขอนะเนี่ย!'|อยากจะขำกลิ้ง ฉันขอผ่านก็แล้วกัน",
             "'เฮ้! วันนี้มันมีอะไรแปลกๆ ไปนะ'|หืมม จริงเหรอ?|'*หาว* ฉันว่าฉันกินไม่พอหรือไม่นอนไม่พอ'|อ่า ก็คงงั้นแหละมั้ง|'ยังไงก็ช่างเถอะ ฉันต้องไปแล้วหล่ะ! ลาก่อนนะ!'"
-
         }, 1);
+
+        lang.addLanguage(new string[]{
+            "'*Baille* Je me suis levé beaucoup trop tôt'|Combien d'heures de sommeil t'as eu? |'Huit'|C'est plutôt normal, combien de temps tu dors d'habitude?|'Neuf heures et demi'|Honnêtement c'est plutôt impressionant|'J'ai maîtrisé l'art du sommeil!'",
+            "'Je pense que j'ai dû attrapé froid'|Qu'est-ce qui c'est passé ?|'Je me sens juste pas dans mon assiette'|T'aurais pas juste pas dormis assez ?|'Je peux jamais dormir assez, donc ça doit être en partie le problème'|Ben j'espère que tu te sentiras mieux assez vite.",
+            "'Pourquoi c'est toujours aussi lumineux le matin, ça me fait mal aux yeux.'|T'aime bien dormir?|'Bien évidemment! C'est teeeellement bien!'|Attends, tu dors combien de temps les weekends?|'... Euh... Je sais pas, peut être 3h?'|Excuses-moi , quoi?",
+            "Pourquoi aimes- tu autant manger?|'Je suis à la chasse à la meilleure nourriture! Tu dois la trouver d'une manière ou d'une autre!'|Je vois, eh bien c'est quoi le meilleur pour l'instant?|'J'ai oublié'|Est-ce que ça ne va pas à l'encontre de toute cette quête?|'Quoi??? Je le saurais quand j'y goûterais!'|Eh bien dis le moi quand tu l'auras trouvé.",
+            "Tu sors manger souvent?|'Ben...Peut-être une fois ou deux par jour?'|Attends, comment t'as le temps deux fois par jour? Et ça coûte pas cher?|'Devines quoi? Une fois je l'ai même fait 5 fois en une journée!'|Je suis à la fois impressionné et inquiet.|'Je pense que ça coûte cher aussi, mais ça en vaut le coût!",
+            "'Oh, super! Je te cherchais partout!'|Vraiment? Pourquoi?|'*Baille* Mais d'abord, pourquoi tu es obligé de te lever si tôt le matin à chaque fois?'|Parce que l'éducation c'est important?|'Hmmm...Pourquoi ça peut pas tout être décalé de quelques heures![Ben tout le monde ne dort pas autant que toi",
+            "'Oh, hiya'|C'est nouveau|'Tu crois? C'est quelque chose que j'ai entendu dans une pub à la tv'|C'était une pub de nourriture?|'Eh, qu'est-ce que tu insinues là?'|C'était une pub de nourriture?|'J'allais t'offrir un bout à manger, mais plus maintenant!'|Ah ok, je suppose que c'est pas cool d'être moi.|'Oh, j'espérais que t'allais me supplier!|Mdr, je passe mon tour.",
+            "Hey! Quelque semble bizarre aujourd'hui'|Ah vraiment?|'*Baille* Je pense juste que j'ai pas assez mangé ou dormi'|Ah, ça explique tout je pense|'Dans tous les cas faut que j'y aille! Au revoir!'"
+        }, 2);
 
         tcsPos = lang.getLanguage();
     }

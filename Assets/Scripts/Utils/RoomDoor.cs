@@ -80,7 +80,8 @@ public class RoomDoor : MonoBehaviour
         {
             LanguageLocalization<string> localization = new LanguageLocalization<string>();
             localization.addLanguage("Practice has not started yet.", 0);
-            localization.addLanguage("ยังไม่ถึงเวลาซ้อม", 1);
+            localization.addLanguage("ยังไม่ถึงเวลาซ้อม.", 1);
+            localization.addLanguage("L'entraînement n'a pas encore débuté.", 2);
             Cutscene.cutscene(localization.getLanguage());
         }
     }

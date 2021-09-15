@@ -41,6 +41,17 @@ public class Human6 : Classmate
             "'ฉันว่าฉันอาจจะกำลังย้ายบ้านเร็วๆ นี้'|ห่ะ เดี๋ยวนะ อะไรนะ? จริงเหรอ? เมื่อไหร่หน่ะ?|'เฮ้ ใจเย็นสิ! มันไม่ใช่เรื่องที่นายต้องมาเครียดหรอกนะ! มันไม่ได้เร็วขนาดนั้น แล้วเราก็ยังคุยกันแบบออนไลน์ได้!'|อ่า… มันก็ใช่มั้ง..."
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'J'adore jaboter!'|Je peux dire, je crois que t'es la seule personne que je connais qui utilise le mot jaboter'|'Pas possible! Quand j'étais dans ma ville on disait ça tout le temps! Vous utilisez vraiment jamais ce mot?'|Non, parce que c'est p't'être trop, euh, je sais pas. Bizarre?|'Haha! Ben je vais continuer à le dire!'|Ça te rend unique je pense?",
+            "'TU T'ES CLONÉ??'|Quoi?|'Je t'ai vu tellement de fois aujourd'hui!'|Bah, euh, je ne me suis pas cloné|'J'te crois pas~!|Je veux dire genre, je pense pas que c'était moi mais peut être que j'ai bougé vite?|'NON! t'avais un t-shirt différent!'|...Ducoup...Comment t'as su que c'était moi?|'Ta façon de marcher! T'es tout penché!'|Ah. T'es défoncé?",
+            "'Oh mon dieux, encore toi!'|C'est la première fois qu'on se vois- T'es toujours sur le truc de clonage?|'J'te promet il te ressemble parfaitement!!!'|J'arrive vraiment pas à dire si tu rigoles ou pas...|'J'te promeeeeeeet! Pourquoi je te mentirais?'|Je vais juste en conclure que t'es aveugle.",
+            "'Re-Bonjour!'|T'as une bonne vision?|'Euh? 20/20?|Je comprends pas...|'Je sais pas ce que tu cherche à savoir. Dans tous les cas, est-ce que le soleil est pas super aujourd'hui!'|Euuuuuh, j'aime pas trop le soleil, c'est juste trop brillant et chaud.|'Ahhhhhh, mec! Mais les rayons de soleil! Ils sont trop beaux!'",
+            "Je suis trop fatiguée aujourd'hui...'|Quand est'ce que tu t'es couchée?|'Oh mon dieux, genre 1h du mat ou quelque chose comme ça!'|Ah, tu faisais quoi jusqu'à cette heure?|'Bah j'arrivais juste pas à dormir! Mon esprit est toujours en train de travailler!'|Et tu pensais à quoi?|'Ha! Je pense que je vais pas te l'dire~'",
+            "'Gah! Oh c'est juste toi. Tu vas beaucoup faire du shopping?'|Euhhh, pas souvent. Pourquoi?|'Ah je me me demandais juste! C'est quand la dernière fois que t'es allé faire du shopping?'|Pas récemment? Peut-être genre il y a un an-Attends comme pour des vêtement on est d'accord?|'Qu'est ce que tu voudrais acheter d'autre?'|Euhhh, du bois?",
+            "'J'aimerais que le soleil reste levé plus longtemps!'|Bah, peut être que tu devrais te lever plus tôt, que tu puisses voir le soleil du levé au couché!|'Noooon! J'aime pas le soleil à ce point...Je peux pas me lever tôt!'",
+            "'Je pense que je vais bientôt déménager'|Attends quoi? Vraiment? Quand?|'Eh, calmes toi! C'est pas quelque chose qui devrait te faire stresser! C'est pas pour tout de suite et on peut toujours se parler en ligne!'|Ouais je suppose..."
+        }, 2);
+
         tcsPos = lang.getLanguage();
     }
 }

@@ -8,6 +8,7 @@ public class IconMessenger : IconNotificationManage
         LanguageLocalization<string> localization = new LanguageLocalization<string>();
         localization.addLanguage("There's no one online.", 0);
         localization.addLanguage("ไม่มีใครออนไลน์", 1);
+        localization.addLanguage("Il n'y a personne en ligne.", 2);
         return localization.getLanguage();
     }
 

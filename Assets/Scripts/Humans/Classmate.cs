@@ -250,6 +250,7 @@ public abstract class Classmate : Human, Clickable
                     LanguageLocalization<string> localization = new LanguageLocalization<string>();
                     localization.addLanguage("My social battery is drained.", 0);
                     localization.addLanguage("แบตเตอร์รี่ในการพบปะผู้คนของฉันหมดแล้ว", 1);
+                    localization.addLanguage("Ma batterie sociale est vidée", 2);
                     Cutscene.cutscene(localization.getLanguage());
                 }
             }
@@ -258,6 +259,7 @@ public abstract class Classmate : Human, Clickable
                 LanguageLocalization<string> localization = new LanguageLocalization<string>();
                 localization.addLanguage("I already talked to them.", 0);
                 localization.addLanguage("ฉันคุยกับพวกเขาไปแล้ว", 1);
+                localization.addLanguage("Je leur ai déjà parlés", 2);
                 Cutscene.cutscene(localization.getLanguage());
             }
         }

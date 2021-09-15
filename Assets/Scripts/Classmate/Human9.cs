@@ -41,6 +41,17 @@ public class Human9 : Classmate
             "'เฮ้ พรุ่งนี้นายอยากไปซื้อชานมไข่มุกกะฉันไหม?'|อ่าา เอ่ออ โทษทีนะ คงไปไม่ได้หน่ะ|'อ่า โอเค งั้นก็ไม่เป็นไร! ฉันแค่ถามหน่ะ!'"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "'Je trouve que l'école est trop compliquée, J'aimerais que ce soit plus simple.'|'Ah c'est pas cool, je pense que tu devrais juste y aller doucement?|'Ben, je deteste juste à quel point c'est chronophage, le travail est plutôt facile lui?'|Ah, vas y quand même doucement ?",
+            "Tu as une odeur vraiment particulière!|'D'un côté positif ou négatif?'|Positif?|C'est cool, je suis plutôt d'accord avec toi. J'y passe du temps.",
+            "'Hey, j'suis toujours populaire n'est ce pas?'|Bien sûr!|'Bien sûr? Qu'est ce que ça signifie?'|Bah je pense que t'es toujours assez populaire!|'Ouais, je suppose que tu peux pas trop comprendre'|Heh, pas faux.",
+            "'J'aimerais vivre plus proche de chez toi!'|Oh, intéressant. Pourquoi?|'La nuit dernière j'ai réalisé que je voulais te parler!'|Oh, heh. Bah tu pourrais juste m'envoyer des messages?|'Non! Je voulais te parler en personne!'",
+            "Salut!|'Je pense que tu devrais essayer de nouvelles tenues!'|Ah, comme quoi?|'Quelque chose d'autre qu'un jean et un t-shirt?'|Ah, je pense que ça demande trop d'effort…",
+            "'J'ai super froid!'|Ah c'est pas cool, ben je pens eque c'est le bon moment pour commencer à se couvrir plus?|'Ouuuuu tu peux me prêter ta veste!'|Mais ducoup j'aurais froid?|'Oooh mec… émoji triste",
+            "'J'aime trop ta coupe de cheveux! C'est mignon!'|Oh, merci!|'Je pense que tu pourrais laisser pousser tes cheveux! Ça rendrait encore mieux!'|Ah ok , je vais voir ça!",
+            "'Hey, tu veux venir prendre un boba avec moi demain?'|Oh euh, désolé, pas vraiment?|'Oh...ok ! Je proposais juste!'"
+        }, 2);
+
         tcsPos = lang.getLanguage();
 
     }

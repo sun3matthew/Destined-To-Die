@@ -34,6 +34,7 @@ public class Bed : Interactable, Clickable
         LanguageLocalization<string> localization = new LanguageLocalization<string>();
         localization.addLanguage("I'm not sleepy, it's still too early in the day", 0);
         localization.addLanguage("ฉันไม่ง่วง มันยังไม่ดึกเลย", 1);
+        localization.addLanguage("Je ne suis pas fatigué, il est trop tôt dans la journée", 2);
         notice = localization.getLanguage();
     }
     public void clickedOn(bool type)

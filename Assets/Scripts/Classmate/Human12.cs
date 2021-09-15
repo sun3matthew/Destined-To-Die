@@ -41,6 +41,18 @@ public class Human12 : Classmate
             "'นายชอบการพูดตรงๆ ของฉันรึเปล่า?'|ช่ายแหละมั้ง? มันก็สนุกดีนะ? แบบว่าก็เพลินดี?|'อ่า โอเค ฉันรู้สึกว่าตัวเองน่ารำคาญตลอดเลย!'|หึ ไม่เลย ฉันชอบนะ"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "Comment se sont passés les cours aujourd'hui?|'Je déteste vraiment ça. Mon groupe est inutile, j'ai tellement travaillé, et quand je leur ai montré, ils n'ont pas aimé!'|Ah je vois, ben c'est juste pour ce projet je suppose, peut-être que tu auras un meilleur groupe la prochaine fois?",
+            "'Aah, meeeeeeec'|Oh oh, qu'est ce qui se passe?|'Je pense que j'ai mangé trop tard. J'ai des crampes d'estomac.'|Pas cool, hm, forces pas trop je pense, ok??|'Probablement pas, ça va partir assez vite, je le sais.'",
+            "'Est-ce que t'aime bien les livres en général?'|Euuuuh, pas vraiment, j'aime que certains livres.|''Oh, bah j'aime vraiment pas lire. C'est juste tellement ennuyeux!'|Ouais, je suis d'accord, je déteste lire aussi.",
+            "'Je déteste vraiment les cours en ligne!'|Oh vraiment? J'ai l'impression que c'est plus facile au moins?|'C'est juste trop ennuyeux. Les cours sont juste horribles.'|Ouais je suppose, mais je pense quand même que je les préfère en ligne.",
+            "Comment vont les cours?|'C'est littéralement la pire chose qui ait jamais existé. Pourquoi les profs donnent-ils des travaux de groupe pendant les cours en ligne?? Les salles de travail sont horribles et l'ambiance est dérangeante'|Eheh, ouais. Je suis d'accord!",
+            "'Oh mon dieu. Pourquoi mon prof, N'A PAS MARQUÉ LES DEVOIRS, ET A DONNÉ À TOUT LE MONDE UN ZÉRO!!!'|Mdr, peut-être qu'il vous deteste juste?|'Pfff, sûrement, l'école en général est juste naze.'",
+            "Tu veux faire quoi plus tard?|'Honnêtement j'en sais rien, je pense que mes parents veulent que je sois docteur'|Ahah, typique des parents je suppose. Et t'as envie toi?|'Je déteste pas l'idée mais je sais pas trop.",
+            "'T'aimes bien écouter mes coups de gueule?'|Ouais? C'est plutôt marrant? Genre c'est amusant?|'Ah ok, j'ai toujours l'impression que j'ennuie les gens!'|Ahah, pas du tout, j'adore ça."
+        }, 2);
+
+
         tcsPos = lang.getLanguage();
     }
 }

@@ -41,6 +41,23 @@ public class Human1 : Classmate
             "'วันนี้ฉันเหนื่อยจริงๆ ...'|เอ่อ... นายนอนพอรึเปล่า?|'ก็นะ ฉันกินยานอนหลับเข้าไปเพิ่มแต่ก็ยังนอนไม่หลับเลย!'|อ๋อ... หวังว่าจะนอนหลับได้ดีขึ้นเร็วๆ นี้นะ..|'ขอบใจนะ!'"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "Quoi de neuf ?|'Tu es si bavard !'|Mdr, j’imagine que je suis juste de bonne humeur aujourd’hui?| 'Super ! Tu as fait quoi de beau ?'|Euuh je sais pas trop, j’imagine que j’ai juste beaucoup dormi?|'Ahh moi je peux pas me coucher aussi tôt, j’ai trop d’énergie! J’ai dansé toute la nuit !'|Dansé ? |'Oh, j'exagère juste ! En réalité je danse pas tant que ça~'|Oh je vois.",
+            "Tu as bien dormi ? |'Et bien j’ai pris quelques comprimés de mélatonine et je me suis vite endormi. '|  Oh tu en as pris combien ?|'Hmm ? Un seul ? '| Oh je vois. 'Hmmm pourquoi tu poses la question ?'|  Oh je me rappelle juste que si tu en prends trop après tu fais des cauchemars.|' Haha, je savais pas du tout c’est étrange comme fait.'|Oui un ami m’avait raconté ça une fois.",
+            "'Je suis tellement stressé en ce moment!' |Oh qu’est-ce qui s’est passé ? |'J’ai raté mes qcm en chimie !' |Genre vraiment raté raté? Ou tu penses quand même avoir la moyenne ? | 'J’ai obtenu 69 !'| Hehe, 69. |'Eh je suis en train d’avoir un crise de panique là !!'| Et bien peut-être que tu pourrais repasser ton test ? | 'Je sais bien, mais ça n’empêche pas que je suis super stressé !' |Bah écoute, j’espère que tout va s’arranger ?",
+            "'Tu préférerai nager aussi vite qu’un poisson ou voler aussi vite qu’un oiseau ?' |Comment quelqu’un pourrait choisir de nager ? | 'Hmmm. Oh! Tu peux aussi respirer sous l’eau ?'| Dans l’eau douce comme l’eau salée? | 'Um…Oui? ' |Je pense juste que le fait de pouvoir voler est bien plus pratique, pour voyager par exemple, ou pour se déplacer vers des endroits sans avoir à emprunter une échelle.",
+            "'Je pense que je vais déménager…'| Oh non ! Pourquoi ? |'Je ne sais pas vraiment, mais ça me rend super triste…' |C’est vraiment chiant, en tout cas viens nous rendre visite après ton déménagement ! |'Sûrement, je pense que je vais partir vivre assez loin, mais je ferai de mon mieux !'",
+            "J’aurais dû manger plus tôt, ou alors j’ai juste trop mangé. |'Quoi?! Tu es déjà tellement maigre! Tu devrais manger plus justement !' |Et bien j’ai des crampes maintenant, et je me sens trop rempli. |' Quoi ? Hmmmm…Tu devrais probablement manger plus tôt alors!' |Alors…Alors c’est ça le but ?",
+            "'Salut! Tu te souviens quand je t’avais dit que je déménageais ? Et bien mes parents ont changé d’avis !'| Ah, je me suis fait avoir alors  'QUOI?! Tu étais content à l’idée que je parte ???' |Je plaisantais ! Bien sûr que je suis ravi que tu restes ! | 'Hehe, Je suis tellement heureux !'",
+            "'Je me sens tellement fatigué aujourd’hui…' |Oh, tu as assez dormi ? | 'Et bien j’ai pris un peu plus de somnifères mais je n’ai quand même pas réussi à m’endormir !' |Oh, bah écoute j’espère que tu pourras mieux dormir la prochaine fois.. | 'Yep!'"
+        }, 2);
+        
+
+        
+
+        
+
+        
         tcsPos = lang.getLanguage();
     }
 }

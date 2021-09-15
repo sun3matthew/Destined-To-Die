@@ -41,6 +41,17 @@ public class Human5 : Classmate
             "เฮ้โย่!|'โย่ เป็นไงบ้างพวก!'|อืมม ไม่ค่อยเท่าไหร่ นายหล่ะเป็นไงบ้าง?|'ดีสุดๆ !'|นั่นเยี่ยมเลย|'ใช่เลย พวก!'"
         }, 1);
 
+        lang.addLanguage(new string[]{
+            "Bonjour|'Yo, t'as besoin de quelque chose mec?'|Oh je disais juste salut|'J'ai capté le reuf, quoi de neuf frérot?|Rien de spécial, et toi?|'J'me sens super bien! J'suis impatient de mieux te connaître mec!'",
+            "'Qu'est-ce tu fais mec?|Euh, je marche?|Ahah, je voulais dire en général, comment vont les cours, comment va la vie?'|Ah ok, les cours se passent bien, et ma vie aussi je suppose|Frérot! Faut que tu parles plus mec!'",
+            "'T'aimes un peu la musique?| Ouais, j'aime bien en général je pense?|'Cool! Quel type de musique?'|Je sais pas vraiment comment on appelle ça, juste plein de trucs bizarres, et toi?|'Du Rock!'",
+            "'Yo, tu veux venir avec moi?|Désolé, quoi?|'J'ai trouvé un nouveau chemin pour courir aujourd'hui! J'ai besoin de quelqu'un pour tester ça avec moi!'|Hmm, désolé mais je vais passer mon tour.|'Ohhhhh, mec! Bon je vais pas te forcer!'",
+            "'Salut, faut que j'te pose une question'|Ouais?|'Est-ce que les dinosaures sont vraiment des oiseaux? Genre mec quand j'ai entendu ça, j'me suis rappelé qu'ils pondaient tous les deux des œufs!'|Je pense que c'est plutôt l'inverse, comme le truc des carrés rectangles.|'Le quoi?'",
+            "'Salut mec, tu peux m'aider avec une question de calcul?'|Euhhhhhh, bien sûr?|'Donc comme le truc de séparation des variables, comment ça marche?'|Euhhhhhh, écoutes, honnêtement j'ai oublié comment ça fonctionnait...",
+            "'Yo, il y a un spectacle de feux d'artifices bientôt! Moi et mes potes on va aller voir ça! Tu veux venir?'|Euhhh, désolé, j'suis assez occupé ces derniers jours.|'Ohhhh, mec, juste un jour frérot?'|Désolé, je peux vraiment pas|'Ça craint.'",
+            "Salut!|'Quoi d'neuf frère?'|Uhm, pas grand chose, et toi?|'Ça va plutôt bien!|C'est cool.|Ouais mec!'"
+        }, 2);
+
 
         tcsPos = lang.getLanguage();
     }
