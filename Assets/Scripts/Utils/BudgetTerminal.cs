@@ -208,7 +208,7 @@ public class BudgetTerminal : MonoBehaviour
                     currTxt += "skip - " + temp[5] + "\n";
                     currTxt += "push - " + temp[7] + "\n";
                     currTxt += "tips - " + temp[8] + "\n";
-                    currTxt += "\nlanguage - " + temp[6] + ":\n{english=0}\n{ภาษาไทย=1} by Tidamard Malaithong\n\n{français=2} by Sima, Dorian\n";
+                    currTxt += "\nlanguage - " + temp[6] + ":\n{english=0}\n{ภาษาไทย=1} by Tidamard Malaithong\n{français=2} by Dorian\n";
                 }
                 else if(requestedCommand.Equals("kill"))
                 {
