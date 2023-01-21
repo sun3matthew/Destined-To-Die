@@ -16,7 +16,7 @@ public class CatDeathExit : MonoBehaviour
     void Update()
     {
         counter += Time.deltaTime;
-        if(counter > 5)
+        if(counter > 9)
             SceneManager.LoadScene("BudgetTerminal");
     }
 }

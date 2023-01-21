@@ -13,12 +13,10 @@ public class DeathVideoController : MonoBehaviour
     GameObject[] days;
 
     private SpriteRenderer dsr;
-    private SpriteRenderer deathPicSR;
     private VideoPlayer vp;
 
     private bool donePlay;
     private float time;
-
     void Start()
     {
         int day = -1;
@@ -27,7 +25,6 @@ public class DeathVideoController : MonoBehaviour
         else
             day = GameObject.Find("DeathDayTransfer").GetComponent<DeathDayTransfer>().getDay();
         dsr = Instantiate(days[day], new Vector3(0, 0, 0), Quaternion.identity).GetComponent<SpriteRenderer>();
-        deathPicSR = GameObject.Find("DeathPic").GetComponent<SpriteRenderer>();
         dsr.color = new Color(1f, 1f, 1f, 0f);
         vp = transform.GetComponent<VideoPlayer>();
         vp.clip = clips[day];
@@ -35,8 +32,12 @@ public class DeathVideoController : MonoBehaviour
     }
     private void Update()
     {
+        if(PlayerPrefs.GetInt("Censored", 0) == 1)
+            vp.audioOutputMode = VideoAudioOutputMode.None;
         time += Time.deltaTime;
-        if (time > 38)
+        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Space))
+            SceneManager.LoadScene("BudgetTerminal");
+        if (time > 34)
         {
             SceneManager.LoadScene("BudgetTerminal");
         }
@@ -57,23 +58,6 @@ public class DeathVideoController : MonoBehaviour
                 donePlay = true;
                 vp.Play();
             }
-        }
-        else if (time < 32)
-        {
-            vp.enabled = false;
-            deathPicSR.color = new Color(1f, 1f, 1f, (time - 31f));
-        }
-        else if (time < 34)
-        {
-            deathPicSR.color = Color.white;
-        }
-        else if (time < 37)
-        {
-            deathPicSR.color = new Color(1f, 1f, 1f, 1 - (time - 34f) / 3f);
-        }
-        else
-        {
-            deathPicSR.color = Color.black;
         }
     }
 }

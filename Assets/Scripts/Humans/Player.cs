@@ -41,8 +41,13 @@ public class Player : Human
 
     private string[] statsTranslated;
 
+    [SerializeField]
+    private GameObject textPref;
+
     protected override void Start()
     {
+        FadeAwayText.numTexts = 0;
+
         timeDayObj = GameObject.Find("Time(Clone)").GetComponent<TimeDay>();
         cutscene = GameObject.Find("Cutscene(Clone)").GetComponent<Cutscene>();
         textCutscreen = GameObject.Find("TextCutscene(Clone)").GetComponent<TextCutscreen>();
@@ -61,10 +66,17 @@ public class Player : Human
         emotionsPrev = new HundredBound[5];
         abilitiesPrev = new HundredBound[4];
 
-        for (int i = 0; i < emotions.Length; i++)
-            emotions[i] = new HundredBound();
+        for (int i = 0; i < emotions.Length; i++){
+            if(i == 3){
+                emotions[i] = new HundredBound(statsTranslated[0], textPref);
+            }else if(i == 4){
+                emotions[i] = new HundredBound(statsTranslated[4], textPref);
+            }else{
+                emotions[i] = new HundredBound(statsTranslated[i + 1], textPref);
+            }
+        }
         for (int i = 0; i < abilities.Length; i++)
-            abilities[i] = new HundredBound();
+            abilities[i] = new HundredBound(statsTranslated[i + emotions.Length], textPref);
 
         for (int i = 0; i < emotions.Length; i++)
             emotions[i].setValue(Random.Range(-10, 5));
@@ -72,9 +84,9 @@ public class Player : Human
             abilities[i].setValue(Random.Range(-10, 10));
 
         for (int i = 0; i < emotionsPrev.Length; i++)
-            emotionsPrev[i] = new HundredBound();
+            emotionsPrev[i] = new HundredBound(statsTranslated[i], textPref);
         for (int i = 0; i < abilitiesPrev.Length; i++)
-            abilitiesPrev[i] = new HundredBound();
+            abilitiesPrev[i] = new HundredBound(statsTranslated[i + emotions.Length], textPref);
 
         for (int i = 0; i < emotionsPrev.Length; i++)
             emotionsPrev[i].setValue(emotions[i].getValue());
@@ -88,6 +100,8 @@ public class Player : Human
         falseDay = 0;
         emotions[3].setValue(Random.Range(60, 80));
         base.Start();
+
+        //PlayerPrefs.SetInt("CatPostcards", 14);
     }
     // Update is called once per frame
     protected override void Update()
@@ -187,6 +201,13 @@ public class Player : Human
             for (int i = 0; i < emotions.Length; i++)
                 emotions[i].changeValue(timeDayObj.day * -1);//emotions by "Intentional Game Design'
 
+        if (PlayerPrefs.GetInt("Difficulty" , 1) == 0)
+            for (int i = 0; i < emotions.Length; i++)
+                emotions[i].changeValue(timeDayObj.day * -3);//emotions by "Intentional Game Design'
+        if (PlayerPrefs.GetInt("Difficulty" , 1) == 1)
+            for (int i = 0; i < emotions.Length; i++)
+                emotions[i].changeValue(timeDayObj.day * -1);//emotions by "Intentional Game Design'
+
         wentToClass = false;
         wentToPractice = false;
         wentToBed = true;
@@ -278,6 +299,7 @@ public class Player : Human
         }
         if ((timeDayObj.day == 7 && timeDayObj.timeDay > 7) || timeDayObj.day >= 8)//not the start of day 7, or it's 8
         {
+            Debug.Log("fuck: " + PlayerPrefs.GetInt("CatPostcards", 0));
             PlayerPrefs.SetInt("GameWin", 1);
             if (PlayerPrefs.GetInt("CatPostcards", 0) >= 17)
             {
@@ -291,6 +313,7 @@ public class Player : Human
                     }
                 }
                 DontDestroyOnLoadManager.becomeMortal();
+                DontDestroyOnLoadManager.endType = true;
                 SceneManager.LoadScene("Win");
             }
             else
@@ -316,7 +339,7 @@ public class Player : Human
         for (int i = 0; i < interactables.Length; i++)
             interactables[i].gameObject.SetActive(false);
         for (int i = 0; i < emotions.Length; i++)
-            emotions[i] = new HundredBound();
+            emotions[i] = new HundredBound(statsTranslated[i], textPref);
         timeDayObj.fastFowards(100000);
     }
 
@@ -362,6 +385,7 @@ public class Player : Human
         for (int i = 0; i < abilities.Length; i++)
             print("Ability " + i + ": " + abilities[i].getValue());
     }
+
 
     public static Player player() => GameObject.Find("Player(Clone)").GetComponent<Player>();
 }

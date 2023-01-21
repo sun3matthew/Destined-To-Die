@@ -26,6 +26,7 @@ public class TextCutscreen : MonoBehaviour, Clickable
         transform.GetChild(0).gameObject.SetActive(false);
         transform.GetComponent<BoxCollider2D>().enabled = false;
         sceneName = SceneManager.GetActiveScene().name;
+
     }
 
     // Update is called once per frame

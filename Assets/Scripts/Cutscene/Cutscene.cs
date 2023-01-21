@@ -34,7 +34,10 @@ public class Cutscene : MonoBehaviour
     private TextCutscreen tcs;
     private AudioSource audioPlay;
     private VideoPlayer videoplayer;
+    private VideoClip tempClip;
     private GameObject blackOut;
+
+    private GameObject blur;
 
     //private VideoManager videoManager;
 
@@ -43,9 +46,12 @@ public class Cutscene : MonoBehaviour
         audioPlay = GetComponent<AudioSource>();
         videoplayer = GameObject.Find("CutscenePlayer").GetComponent<VideoPlayer>();
         tcs = GameObject.Find("TextCutscene(Clone)").GetComponent<TextCutscreen>();
+        
+
         transform.GetComponent<BoxCollider2D>().enabled = false;
 //        videoManager = transform.GetChild(0).GetComponent<VideoManager>();
         turnOn = false;
+
 
         //videoplayer.sendFrameReadyEvents = true;
         //videoplayer.frameReady += Videoplayer_FrameReady;
@@ -61,21 +67,37 @@ public class Cutscene : MonoBehaviour
 
     void Update()
     {
-        if(blackOut == null)
+        if(blackOut == null){
             blackOut = transform.GetChild(0).gameObject;
+        }
+        if(blur == null){
+            blur = GameObject.Find("Blur");
+            if(blur != null){
+                blur.transform.GetChild(0).gameObject.SetActive(true);
+                blur.SetActive(false);
+            }
+        }
         if (videoplayer == null && SceneManager.GetActiveScene().name.Equals("Room"))
             videoplayer = GameObject.Find("CutscenePlayer").GetComponent<VideoPlayer>();
         if (playCS == -1)//activated yet?
             return;
         if (tcs.inactive())
         {
-            if (turnOffCounter > 7) //if playing for more then 7 seconds, turn off
+            if(PlayerPrefs.GetInt("Censored", 0) == 1 && playCS <= 9)
+                blur.SetActive(true);
+            videoplayer.clip = tempClip;
+            if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Space))
+                turnOffCounter = 10;
+            if (turnOffCounter > 5) //if playing for more then 7 seconds, turn off
             {
                 playCS = -1;
                 audioPlay.mute = true;
                 blackOut.SetActive(false);//transform.GetChild(0).gameObject.SetActive(false);
+                blur.SetActive(false);
                 transform.GetComponent<BoxCollider2D>().enabled = false;
                 videoplayer.enabled = false;
+                videoplayer.clip = null;
+                tempClip = null;
                 videoplayer.Pause();
                 //turnOn = false;
             }
@@ -96,7 +118,11 @@ public class Cutscene : MonoBehaviour
 //        print((num+10) + "\t\t" + playCS);
         turnOffCounter = 0.0f;
         string nameOfCS = cutsceneRefs[playCS][Random.Range(0, cutsceneRefs[playCS].Length)];
-        videoplayer.clip = Resources.Load<VideoClip>(nameOfCS);
+        tempClip = Resources.Load<VideoClip>(nameOfCS);
+        if(PlayerPrefs.GetInt("Censored", 0) == 0 || playCS > 9)
+            videoplayer.clip = tempClip;
+        else
+            videoplayer.clip = null;
         if(nameOfCS.Equals("LoveTwoHandMakeHeart") && PlayerPrefs.GetInt("SINGLE", 0) == 0)
         {
             PlayerPrefs.SetInt("SINGLE", 1);

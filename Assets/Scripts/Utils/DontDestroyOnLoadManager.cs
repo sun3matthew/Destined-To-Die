@@ -5,6 +5,7 @@ using UnityEngine;
 public static class DontDestroyOnLoadManager
 {
     static List<GameObject> imortalDicks = new List<GameObject>();
+    public static bool endType;
     public static void DontDestroyOnLoad(this GameObject gameobject)
     {
         UnityEngine.Object.DontDestroyOnLoad(gameobject);

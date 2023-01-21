@@ -8,7 +8,10 @@ public class Discord : Window
     {
         if (type && WindowManager.focused(this))
         {
-            Application.OpenURL("https://discord.gg/Z6tkrAeXQn");
+            try{
+                Application.OpenURL("https://discord.gg/Z6tkrAeXQn");
+            }catch{}
+            //Application.OpenURL("https://discord.gg/yhFQS2kUQu");
         }
         base.clickedOn(type);
     }

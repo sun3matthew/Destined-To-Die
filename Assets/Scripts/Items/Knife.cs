@@ -41,7 +41,8 @@ public class Knife : Interactable, Clickable
                 int painPrev = player.emotions[1].getIntValue();
                 player.emotions[0].changeValue(-1 * Random.Range(1, 40));
                 player.emotions[1].changeValue(Random.Range(20, 70));
-                GetComponent<AudioSource>().PlayOneShot(clip[Random.Range(0,3)]);
+                if(PlayerPrefs.GetInt("Censored", 0) == 0)
+                    GetComponent<AudioSource>().PlayOneShot(clip[Random.Range(0,3)]);
                 Cutscene.cutscene("HARM\nINSTANTANEOUS HAPPY: " + painPrev + " => " + player.emotions[1].getIntValue());
                 Cutscene.cutscene(player.emotions[1].getIntValue() / 10);
                 time.fastFowards(0.5f);

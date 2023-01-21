@@ -11,6 +11,12 @@ public class BudgetTerminal : MonoBehaviour
     Text textComponent;
     InputField keyb;
 
+    [SerializeField]
+    GameObject cantFuckingFindIt;
+
+    [SerializeField]
+    GameObject shit;
+
     string[] logIn;
     string[] logo;
     char blanking = '\u2588';
@@ -27,13 +33,13 @@ public class BudgetTerminal : MonoBehaviour
 
     bool typn;
 
-    void Start()
+    void Awake()
     {
         //print(PlayerPrefs.HasKey("volume"));
         //if (!PlayerPrefs.HasKey("volume"))
         //    PlayerPrefs.SetInt("volume", 50);
-        DontDestroyOnLoadManager.becomeMortal();
-        AudioListener.volume = PlayerPrefs.GetInt("volume", 50)/100f;
+        //DontDestroyOnLoadManager.becomeMortal();
+        //AudioListener.volume = PlayerPrefs.GetInt("volume", 50)/100f;
         currTimer = 0;
         currTxt = "";
         typn = false;
@@ -126,8 +132,13 @@ public class BudgetTerminal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(cantFuckingFindIt.activeSelf)
+            return;
+        shit.SetActive(true);
+        Camera.main.backgroundColor = Color.black;
+
         if (Input.GetKey(KeyCode.Escape))
-            Application.Quit();
+            SceneManager.LoadScene("BudgetTerminal");
         if (done)
             return;
         keyb.ActivateInputField();
@@ -138,7 +149,7 @@ public class BudgetTerminal : MonoBehaviour
             if(waitTimer > 4)
             {
                 done = true;
-                GameObject.Find("Door").GetComponent<Door>().provoke();
+                shit.GetComponent<Door>().provoke();
             }
             return;
         }
@@ -436,6 +447,6 @@ public class BudgetTerminal : MonoBehaviour
             textComponent.text = currTxt + blanking.ToString();
         }
     }
-    public void pauseFor(float seconds) => pauseSeconds = seconds;
+    public void pauseFor(float seconds) => pauseSeconds = seconds/4;
     public void pauseFor() => pauseFor(Random.Range(0.0f, 1.0f));
 }

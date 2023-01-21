@@ -19,6 +19,8 @@ public class AudioGlitch : MonoBehaviour
     private int randomRepeat;
 
     public int newAmtRepeat;
+
+    public const int storeSize = 960;
     void Start()
     {
         newAmtRepeat = 0;
@@ -27,7 +29,7 @@ public class AudioGlitch : MonoBehaviour
         glitchLen = 9;
         repeatAmt = 0;
         counter = 0;
-        store = new float[2048* glitchLen];
+        store = new float[storeSize* glitchLen];
         randomRepeat = 5;
         glitchRecorded = 0;
         glitchAdded = 0;
@@ -42,18 +44,18 @@ public class AudioGlitch : MonoBehaviour
     {
         if (counter > randomRepeat)
         {
-            for (int i = 0; i < 2048; i++)
-                store[2048 * glitchRecorded + i] = data[i];
+            for (int i = 0; i < storeSize; i++)
+                store[storeSize * glitchRecorded + i] = data[i];
             glitchRecorded++;
             if (glitchRecorded >= glitchLen)
             {
-                for (int i = 0; i < 2048; i++)
-                    store[i] *= i / 2048f;
-                for (int i = 0; i < 2048; i++)
-                    store[2048 * (glitchLen-1) + i] *= (2048-i)/2048f;
+                for (int i = 0; i < storeSize; i++)
+                    store[i] *= i / (float)storeSize;
+                for (int i = 0; i < storeSize; i++)
+                    store[storeSize * (glitchLen-1) + i] *= (storeSize-i)/(float)storeSize;
                 if (newAmtRepeat != 0)
-                    for (int i = 0; i < 2048; i++)
-                        data[i] *= (2048 - i) / 2048f;
+                    for (int i = 0; i < storeSize; i++)
+                        data[i] *= (storeSize - i) / (float)storeSize;
                 repeatAmt = 0;
                 counter = 0;
                 randomRepeat = 5;
@@ -70,8 +72,8 @@ public class AudioGlitch : MonoBehaviour
             {
                 if (data == null || store == null)
                     return;
-                for (int i = 0; i < 2048; i++)
-                    data[i] = store[2048 * glitchAdded + i];
+                for (int i = 0; i < storeSize; i++)
+                    data[i] = store[storeSize * glitchAdded + i];
                 glitchAdded++;
                 if (glitchAdded >= glitchLen)
                 {
@@ -81,8 +83,8 @@ public class AudioGlitch : MonoBehaviour
             }else if(amtRepeat != 0 && repeatAmt == amtRepeat)
             {
                 repeatAmt++;
-                for (int i = 0; i < 2048; i++)
-                    data[i] *= i / 2048f;
+                for (int i = 0; i < storeSize; i++)
+                    data[i] *= i / (float)storeSize;
             }
         }
     }

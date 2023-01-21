@@ -44,6 +44,7 @@ public class Cat : MonoBehaviour, Clickable
         };
         if (PlayerPrefs.GetInt("CatPostcards", 0) >= 17)
         {
+            PlayerPrefs.SetInt("CatPostcards", 17);
             stopAt = 15;
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<PolygonCollider2D>().enabled = false;
@@ -75,6 +76,7 @@ public class Cat : MonoBehaviour, Clickable
             if (endGame > stopAt)
             {
                 DontDestroyOnLoadManager.becomeMortal();
+                DontDestroyOnLoadManager.endType = true;
                 SceneManager.LoadScene(catGone ? "CatGone" : "Death");
             }
         }
@@ -97,6 +99,9 @@ public class Cat : MonoBehaviour, Clickable
         }
         else
         {
+            int updateAmt = 1;
+            if( PlayerPrefs.GetInt("CatPostcards", 0) < 15 && PlayerPrefs.GetInt("Speed", 0) == 1)
+                updateAmt = 2;
             if(PlayerPrefs.GetInt("CatPostcards", 0) == 16)
             {
                 if(PlayerPrefs.GetInt("GOOD_BYE", 0) == 0)
@@ -169,13 +174,13 @@ public class Cat : MonoBehaviour, Clickable
                     "La quantité de sommeil que tu parviens à avoir affecte ta satisfaction.",
                     "Le Bonheur est influencé par le Bonheur, le Bonheur Instantané est influencé par le Bonheur instantané.\nLa Satisfaction est influencée par la Satisfaction. La Tolérance à la Mort est influencée par la Tolérance à la Mort"
                     }, 2);
-                localization.addLanguage("Postcard Acquired! " + (PlayerPrefs.GetInt("CatPostcards", 0)+1) + "/16\nTip: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
+                localization.addLanguage("Postcard Acquired! " + (PlayerPrefs.GetInt("CatPostcards", 0)+updateAmt) + "/16\nTip: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|You're already dead.|Why are you still here?|You should be gone.|*Yawn*", 0);
                 localization.addLanguage("ได้รับโปสการ์ด! " + (PlayerPrefs.GetInt("CatPostcards", 0) + 1) + "/16\nเคล็ดลับ: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|นายตายไปแล้วนะ|ทำไมนายถึงยังอยู่ที่นี่อีกหล่ะ?|นายควรจะไปได้แล้ว|*หาว*", 1);
                 localization.addLanguage("Carte Postale Obtenue! " + (PlayerPrefs.GetInt("CatPostcards", 0) + 1) + "/16\nAstuce: " + tipsLo.getLanguage()[PlayerPrefs.GetInt("CatPostcards", 0)] + "|Tu es déjà mort.|Pourquoi es-tu toujours ici?|Tu devrais être parti|*Baîllement*", 2);
                 Cutscene.cutscene(localization.getLanguage());
                 catGone = false;
             }
-            PlayerPrefs.SetInt("CatPostcards", PlayerPrefs.GetInt("CatPostcards", 0) + 1);
+            PlayerPrefs.SetInt("CatPostcards", PlayerPrefs.GetInt("CatPostcards", 0) + updateAmt);
         }
         endGame = 1;
     }
